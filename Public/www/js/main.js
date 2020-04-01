@@ -26,31 +26,75 @@ $(function () {
         },
     })
 
-    // partenr
-    var mySwiper = new Swiper('.partner .swiper-container', {
-        loop: true,
-        autoplay: true,
-        speed: 1200,
-        slidesPerView: 3,
-        spaceBetween: 30,
-        navigation: {
-            nextEl: '.partner .swiper-button-next',
-            prevEl: '.partner .swiper-button-prev',
-        },
-    })
 
-    // Feedback
-    var mySwiper = new Swiper('.feedback .swiper-container', {
-        loop: true,
-        autoplay: true,
-        speed: 1200,
-        slidesPerView: 3,
-        spaceBetween: 30,
-        navigation: {
-            nextEl: '.feedback .swiper-button-next',
-            prevEl: '.feedback .swiper-button-prev',
-        },
-    });
+    //定义变量获取屏幕视口宽度
+    var windowWidth = $(window).width();
+    if (windowWidth < 768) {
+        // partenr
+        var mySwiper = new Swiper('.partner .swiper-container', {
+            loop: true,
+            autoplay: true,
+            speed: 1200,
+            slidesPerView: 2,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: '.partner .swiper-button-next',
+                prevEl: '.partner .swiper-button-prev',
+            },
+            pagination: {
+                el: '.partner .swiper-pagination',
+                clickable: true,
+            },
+        })
+        // Feedback
+        var mySwiper = new Swiper('.feedback .swiper-container', {
+            loop: true,
+            speed: 1200,
+            autoplay: true,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.feedback .swiper-button-next',
+                prevEl: '.feedback .swiper-button-prev',
+            },
+            pagination: {
+                el: '.feedback .swiper-pagination',
+                clickable: true,
+            },
+
+        });
+
+        $(".nav li").click(function () {
+            $(this).parent().parent().removeClass("in");
+        })
+
+
+
+    }
+    if (windowWidth >= 768) {
+        var mySwiper = new Swiper('.partner .swiper-container', {
+            loop: true,
+            autoplay: true,
+            speed: 1200,
+            slidesPerView: 3,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.partner .swiper-button-next',
+                prevEl: '.partner .swiper-button-prev',
+            },
+        })
+        var mySwiper = new Swiper('.feedback .swiper-container', {
+            loop: true,
+            autoplay: true,
+            speed: 1200,
+            slidesPerView: 3,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.feedback .swiper-button-next',
+                prevEl: '.feedback .swiper-button-prev',
+            },
+        });
+    }
+
 
     // 滚动监听
     $('body').scrollspy({
@@ -64,7 +108,6 @@ $(function () {
         } else {
             $(".goTop").fadeOut(1000);
             $(".navbar").removeClass("navbar-fixed-top");
-         
         }
     });
     $(".goTop").click(function () {

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -22,9 +22,9 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
 
-    <meta name="keywords" content="{$seo_keywords}" />
-    <meta name="description" content="{$seo_description}" />
-    <title>{if MODULE_NAME != 'Index'}{$seo_title}{else}{$site_name}{/if}</title>
+    <meta name="keywords" content="<?php echo ($seo_keywords); ?>" />
+    <meta name="description" content="<?php echo ($seo_description); ?>" />
+    <title><?php if(MODULE_NAME != 'Index') : echo ($seo_title); else : echo ($site_name); endif;?></title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="renderer" content="webkit">
@@ -83,7 +83,7 @@
                 <div class="row">
                     <div class="phone col-lg-3 col-md-3 col-sm-4"><span>+86-21-59101751-153</span></div>
                     <div class="eamil col-lg-3 col-md-3 col-sm-4">
-                        <a href="mailto:{$email}" target="_blank" class="emails">
+                        <a href="mailto:<?php echo ($email); ?>" target="_blank" class="emails">
                             <span>info@gerpman.com</span></a>
                     </div>
                 </div>
@@ -119,3 +119,42 @@
             </div>
         </nav>
     </header>
+
+<div class="thank">
+    <div class="container">
+        <div class="row">
+            <h5>Thanks for your inquiry!</h5>
+            <p>Our Professional Team Will Contact With You In 24 Hours</p>
+            <a class="link" href="/" onclick="history.go(-1)"><span id="sec">5</span>s Back Home</a>
+            <img class="back" src="__PUBLIC__/www/images/back.png" alt="back" onClick="javascript :history.go(-1);" />
+        </div>
+    </div>
+</div>
+
+<script src="__PUBLIC__/www/js/jquery.js"></script>
+<script>
+    $(function () {
+        setTimeout("lazyGo();", 1000);
+    });
+
+    function lazyGo() {
+        var sec = $("#sec").text();
+        $("#sec").text(--sec);
+        if (sec > 0)
+            setTimeout("lazyGo();", 1000);
+        else
+
+            javascript: history.back(-1);
+    }
+</script>
+<!-- footer -->
+<footer>
+    <div class="copy"> © 2020 Shanghai Jason Plastic Co.,Ltd </div>
+    <div class="goTop">
+        <i class="topIcon"></i>
+        <p>TOP</p>
+    </div>
+</footer>
+</body>
+
+</html>

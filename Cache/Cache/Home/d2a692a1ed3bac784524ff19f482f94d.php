@@ -46,7 +46,7 @@
     <script src="__PUBLIC__/www/js/swiper.min.js"></script>
     <script src="__PUBLIC__/www/js/bootstrap.min.js"></script>
     <script src="__PUBLIC__/www/js/main.js"></script>
-    <script>
+    <!-- <script>
         function IsPC() {
             var userAgentInfo = navigator.userAgent;
             var Agents = ["Android", "iPhone",
@@ -66,7 +66,7 @@
         if (!isp) {
             window.location.href = "/mobile.php";
         }
-    </script>
+    </script> -->
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
@@ -156,138 +156,268 @@
     <div class="product">
       <h3>Product</h3>
       <div class="list clearfix">
+
+        <!-- pc -->
         <!-- 图文 -->
-        <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-          <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
-            <div class="box-img">
-              <img src="__PUBLIC__/www/images/product.png" alt="">
+        <div class="pro-pc">
+          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
+            <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
+              <div class="box-img">
+                <img src="__PUBLIC__/www/images/product.png" alt="">
+              </div>
+
+            </div>
+            <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
+              <div class="pro-content">
+                <div class="title">Product description of 75% alcohol disinfectant gel
+                </div>
+                <p>
+                  Main active ingredient: 75±5% alcohol (V/V)
+                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
+                  clean
+                </p>
+                <a class="down" href="" download="">Download</a>
+              </div>
+
+            </div>
+          </div>
+          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
+            <div class="img col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="box-img">
+                <img src="__PUBLIC__/www/images/product2.png" alt="">
+              </div>
+
+            </div>
+            <div class="txt col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="pro-content">
+                <div class="title">Product description of 75% alcohol disinfectant gel
+                </div>
+                <p>
+                  Main active ingredient: 75±5% alcohol (V/V)
+                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
+                  clean
+                </p>
+                <a class="down" href="" download="">Download</a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 文图 -->
+          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
+            <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
+              <div class="pro-content">
+                <div class="title">Product description of 75% alcohol disinfectant gel
+                </div>
+                <p>
+                  Main active ingredient: 75±5% alcohol (V/V)
+                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
+                  clean
+                </p>
+                <a class="down" href="" download="">Download</a>
+              </div>
+
+            </div>
+            <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
+              <div class="box-img">
+                <img src="__PUBLIC__/www/images/product3.png" alt="">
+              </div>
+
             </div>
 
           </div>
-          <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
-            <div class="pro-content">
-              <div class="title">Product description of 75% alcohol disinfectant gel
+          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
+            <div class="txt col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="pro-content">
+                <div class="title">Product description of 75% alcohol disinfectant gel
+                </div>
+                <p>
+                  Main active ingredient: 75±5% alcohol (V/V)
+                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
+                  clean
+                </p>
+                <a class="down" href="" download="">Download</a>
               </div>
-              <p>
-                Main active ingredient: 75±5% alcohol (V/V)
-                Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
-                clean
-              </p>
-              <a class="down" href="" download="">Download</a>
-            </div>
 
+            </div>
+            <div class="img col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="box-img">
+                <img src="__PUBLIC__/www/images/product4.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <!-- 图文 -->
+          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
+            <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
+              <div class="box-img">
+                <img src="__PUBLIC__/www/images/product5.png" alt="">
+              </div>
+
+            </div>
+            <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
+              <div class="pro-content">
+                <div class="title">Product description of 75% alcohol disinfectant gel
+                </div>
+                <p>
+                  Main active ingredient: 75±5% alcohol (V/V)
+                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
+                  clean
+                </p>
+                <a class="down" href="" download="">Download</a>
+              </div>
+
+            </div>
+          </div>
+          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
+            <div class="img col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="box-img">
+                <img src="__PUBLIC__/www/images/product6.png" alt="">
+              </div>
+
+            </div>
+            <div class="txt col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="pro-content">
+                <div class="title">Product description of 75% alcohol disinfectant gel
+                </div>
+                <p>
+                  Main active ingredient: 75±5% alcohol (V/V)
+                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
+                  clean
+                </p>
+                <a class="down" href="" download="">Download</a>
+              </div>
+
+            </div>
           </div>
         </div>
-        <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-          <div class="img col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="box-img">
-              <img src="__PUBLIC__/www/images/product2.png" alt="">
-            </div>
 
-          </div>
-          <div class="txt col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="pro-content">
-              <div class="title">Product description of 75% alcohol disinfectant gel
+        <!-- wap -->
+        <div class="pro-wap">
+          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
+            <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
+              <div class="box-img">
+                <img src="__PUBLIC__/www/images/product.png" alt="">
               </div>
-              <p>
-                Main active ingredient: 75±5% alcohol (V/V)
-                Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
-                clean
-              </p>
-              <a class="down" href="" download="">Download</a>
             </div>
+            <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
+              <div class="pro-content clearfix">
+                <div class="title">Product description of 75% alcohol disinfectant gel
+                </div>
+                <p>
+                  Main active ingredient: 75±5% alcohol (V/V)
+                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
+                  clean
+                </p>
+                <a class="down" href="" download="">Download</a>
+              </div>
 
+            </div>
+          </div>
+          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
+            <div class="img col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="box-img">
+                <img src="__PUBLIC__/www/images/product2.png" alt="">
+              </div>
+
+            </div>
+            <div class="txt col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="pro-content clearfix">
+                <div class="title">Product description of 75% alcohol disinfectant gel
+                </div>
+                <p>
+                  Main active ingredient: 75±5% alcohol (V/V)
+                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
+                  clean
+                </p>
+                <a class="down" href="" download="">Download</a>
+              </div>
+
+            </div>
+          </div>
+          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
+            <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
+              <div class="box-img">
+                <img src="__PUBLIC__/www/images/product3.png" alt="">
+              </div>
+            </div>
+            <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
+              <div class="pro-content clearfix">
+                <div class="title">Product description of 75% alcohol disinfectant gel
+                </div>
+                <p>
+                  Main active ingredient: 75±5% alcohol (V/V)
+                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
+                  clean
+                </p>
+                <a class="down" href="" download="">Download</a>
+              </div>
+
+            </div>
+          </div>
+          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
+            <div class="img col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="box-img">
+                <img src="__PUBLIC__/www/images/product4.png" alt="">
+              </div>
+            </div>
+            <div class="txt col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="pro-content clearfix">
+                <div class="title">Product description of 75% alcohol disinfectant gel
+                </div>
+                <p>
+                  Main active ingredient: 75±5% alcohol (V/V)
+                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
+                  clean
+                </p>
+                <a class="down" href="" download="">Download</a>
+              </div>
+
+            </div>
+          </div>
+          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
+            <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
+              <div class="box-img">
+                <img src="__PUBLIC__/www/images/product5.png" alt="">
+              </div>
+
+            </div>
+            <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
+              <div class="pro-content clearfix">
+                <div class="title">Product description of 75% alcohol disinfectant gel
+                </div>
+                <p>
+                  Main active ingredient: 75±5% alcohol (V/V)
+                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
+                  clean
+                </p>
+                <a class="down" href="" download="">Download</a>
+              </div>
+
+            </div>
+          </div>
+          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
+            <div class="img col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="box-img">
+                <img src="__PUBLIC__/www/images/product6.png" alt="">
+              </div>
+
+            </div>
+            <div class="txt col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="pro-content clearfix">
+                <div class="title">Product description of 75% alcohol disinfectant gel
+                </div>
+                <p>
+                  Main active ingredient: 75±5% alcohol (V/V)
+                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
+                  clean
+                </p>
+                <a class="down" href="" download="">Download</a>
+              </div>
+
+            </div>
           </div>
         </div>
-
-        <!-- 文图 -->
-        <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-          <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
-            <div class="pro-content">
-              <div class="title">Product description of 75% alcohol disinfectant gel
-              </div>
-              <p>
-                Main active ingredient: 75±5% alcohol (V/V)
-                Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
-                clean
-              </p>
-              <a class="down" href="" download="">Download</a>
-            </div>
-
-          </div>
-          <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
-            <div class="box-img">
-              <img src="__PUBLIC__/www/images/product3.png" alt="">
-            </div>
-
-          </div>
-
-        </div>
-        <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-          <div class="txt col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="pro-content">
-              <div class="title">Product description of 75% alcohol disinfectant gel
-              </div>
-              <p>
-                Main active ingredient: 75±5% alcohol (V/V)
-                Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
-                clean
-              </p>
-              <a class="down" href="" download="">Download</a>
-            </div>
-
-          </div>
-          <div class="img col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="box-img">
-              <img src="__PUBLIC__/www/images/product4.png" alt="">
-            </div>
-          </div>
-        </div>
-
-        <!-- 图文 -->
-        <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-          <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
-            <div class="box-img">
-              <img src="__PUBLIC__/www/images/product5.png" alt="">
-            </div>
-
-          </div>
-          <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
-            <div class="pro-content">
-              <div class="title">Product description of 75% alcohol disinfectant gel
-              </div>
-              <p>
-                Main active ingredient: 75±5% alcohol (V/V)
-                Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
-                clean
-              </p>
-              <a class="down" href="" download="">Download</a>
-            </div>
-
-          </div>
-        </div>
-        <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-          <div class="img col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="box-img">
-              <img src="__PUBLIC__/www/images/product6.png" alt="">
-            </div>
-
-          </div>
-          <div class="txt col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <div class="pro-content">
-              <div class="title">Product description of 75% alcohol disinfectant gel
-              </div>
-              <p>
-                Main active ingredient: 75±5% alcohol (V/V)
-                Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
-                clean
-              </p>
-              <a class="down" href="" download="">Download</a>
-            </div>
-
-          </div>
-        </div>
-
       </div>
     </div>
 
@@ -326,27 +456,27 @@
           <div class="business">
             <div class="title">Business scope</div>
             <div class="list clearfix">
-              <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-6">
+              <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <div class="box-img"><img src="__PUBLIC__/www/images/business1.png" alt=""></div>
                 <p> Mold design and manufacturing </p>
               </div>
-              <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-6">
+              <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <div class="box-img"><img src="__PUBLIC__/www/images/business2.png" alt=""></div>
                 <p>Plastic injection manufacture</p>
               </div>
-              <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-6">
+              <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <div class="box-img"><img src="__PUBLIC__/www/images/business3.png" alt=""></div>
                 <p>Electronics</p>
               </div>
-              <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-6">
+              <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <div class="box-img"><img src="__PUBLIC__/www/images/business4.png" alt=""></div>
                 <p>Gold stamping</p>
               </div>
-              <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-6">
+              <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <div class="box-img"><img src="__PUBLIC__/www/images/business5.png" alt=""></div>
                 <p>Printing</p>
               </div>
-              <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-6">
+              <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <div class="box-img"><img src="__PUBLIC__/www/images/business6.png" alt=""></div>
                 <p>Packaging</p>
               </div>
@@ -390,7 +520,7 @@
                   </div>
                 </div>
               </div>
-
+              <div class="swiper-pagination"></div>
             </div>
             <div class="swiper-btn">
               <div class="swiper-button-prev"></div>
@@ -415,8 +545,8 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="box clearfix">
-                    <div class="img col-lg-4"><img src="__PUBLIC__/www/images/feedback.png" alt=""></div>
-                    <div class="txt col-lg-8">
+                    <div class="img col-lg-4 col-xs-4"><img src="__PUBLIC__/www/images/feedback.png" alt=""></div>
+                    <div class="txt col-lg-8 col-xs-8">
                       <div class="title">here is the title</div>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod
@@ -429,36 +559,8 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="box clearfix">
-                    <div class="img col-lg-4"><img src="__PUBLIC__/www/images/feedback.png" alt=""></div>
-                    <div class="txt col-lg-8">
-                      <div class="title">here is the title</div>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-                        suspendisse
-                        ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                        facilisis. </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="box clearfix">
-                    <div class="img col-lg-4"><img src="__PUBLIC__/www/images/feedback.png" alt=""></div>
-                    <div class="txt col-lg-8">
-                      <div class="title">here is the title</div>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-                        suspendisse
-                        ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                        facilisis. </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="box clearfix">
-                    <div class="img col-lg-4"><img src="__PUBLIC__/www/images/feedback.png" alt=""></div>
-                    <div class="txt col-lg-8">
+                    <div class="img col-lg-4 col-xs-4"><img src="__PUBLIC__/www/images/feedback.png" alt=""></div>
+                    <div class="txt col-lg-8 col-xs-8">
                       <div class="title">here is the title</div>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod
@@ -471,6 +573,7 @@
                 </div>
 
               </div>
+              <div class="swiper-pagination"></div>
             </div>
             <div class="swiper-btn">
               <div class="swiper-button-prev swiper-button-white"></div>
@@ -491,7 +594,8 @@
           <h3>Contact Us</h3>
           <div class="form-box clearfix">
 
-            <form class="col-lg-7 col-md-7 col-sm-6" name="form" method="post" onsubmit="return beforeSubmit2(this);" action="">
+            <form class="col-lg-7 col-md-7 col-sm-6" name="form" method="post" onsubmit="return beforeSubmit2(this);"
+              action="">
               <div class="clearfix">
                 <input name="forward" type="hidden" value="www.yaolong.com/index.php">
                 <input type="hidden" name="product" id="product" value="">
