@@ -111,9 +111,10 @@
                   <!--                   <div class="title">Here Is The Title</div>
                   <p>Here is the subtitleHere is the subtitleHere is the subtitleHere</p>
                   <a href="#contact"> Contact Us</a> -->
-                  <div class="title ani" swiper-animate-effect="slideInLeft"><?php echo ($r["title"]); ?></div>
+                  <div class="title ani" swiper-animate-effect="slideInLeft" swiper-animate-delay="0.2s"><?php echo ($r["title"]); ?>
+                  </div>
                   <p class="ani" swiper-animate-effect="slideInLeft" swiper-animate-delay="0.2s"><?php echo ($r["description"]); ?></p>
-                  <a class="ani" swiper-animate-effect="slideInLeft" swiper-animate-delay="0.2s" href="contact"> Contact
+                  <a class="ani" swiper-animate-effect="slideInLeft" swiper-animate-delay="0.4s" href="contact"> Contact
                     Us</a>
                 </div>
               </div>
@@ -173,7 +174,6 @@
             </div>
             <?php endif; endforeach; endif;?>
         </div>
-
         <!-- wap -->
         <div class="pro-wap">
           <?php  $_result=M("Product")->field("thumb,title,radis,cont,listorder,id")->where(" 1  AND status=1  AND catid=73")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
@@ -190,10 +190,11 @@
               </div>
             </div><?php endforeach; endif;?>
         </div>
-
       </div>
-    </div>
 
+
+
+    </div>
   </div>
 
   <!-- about -->
