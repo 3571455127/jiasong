@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2020-03-31 12:00:06
+Date: 2020-04-01 15:46:48
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -32,6 +32,9 @@ CREATE TABLE `cosmo_access` (
 -- ----------------------------
 -- Records of cosmo_access
 -- ----------------------------
+INSERT INTO `cosmo_access` VALUES ('2', '165', '2', '1', '');
+INSERT INTO `cosmo_access` VALUES ('2', '164', '2', '1', '');
+INSERT INTO `cosmo_access` VALUES ('2', '163', '2', '1', '');
 INSERT INTO `cosmo_access` VALUES ('2', '162', '3', '129', '');
 INSERT INTO `cosmo_access` VALUES ('2', '161', '2', '1', '');
 INSERT INTO `cosmo_access` VALUES ('2', '160', '2', '1', '');
@@ -56,7 +59,6 @@ INSERT INTO `cosmo_access` VALUES ('2', '129', '2', '1', '');
 INSERT INTO `cosmo_access` VALUES ('2', '128', '2', '1', '');
 INSERT INTO `cosmo_access` VALUES ('2', '127', '2', '1', '');
 INSERT INTO `cosmo_access` VALUES ('2', '126', '2', '1', '');
-INSERT INTO `cosmo_access` VALUES ('2', '110', '2', '1', '');
 INSERT INTO `cosmo_access` VALUES ('2', '107', '2', '1', '');
 INSERT INTO `cosmo_access` VALUES ('2', '88', '3', '81', '');
 INSERT INTO `cosmo_access` VALUES ('2', '81', '2', '1', '');
@@ -85,7 +87,6 @@ INSERT INTO `cosmo_access` VALUES ('2', '4', '3', '3', '');
 INSERT INTO `cosmo_access` VALUES ('2', '3', '2', '1', '');
 INSERT INTO `cosmo_access` VALUES ('2', '2', '2', '1', '');
 INSERT INTO `cosmo_access` VALUES ('2', '1', '1', '0', '');
-INSERT INTO `cosmo_access` VALUES ('2', '163', '2', '1', '');
 
 -- ----------------------------
 -- Table structure for cosmo_article
@@ -153,7 +154,6 @@ CREATE TABLE `cosmo_attachment` (
 -- ----------------------------
 -- Records of cosmo_attachment
 -- ----------------------------
-INSERT INTO `cosmo_attachment` VALUES ('3', '230', '2', '3', 'newUp.png', '/Uploads/201512/567fc608ede1c.png', '1991', 'png', '1', '0', '1', '1451214344', '127.0.0.1', '1');
 INSERT INTO `cosmo_attachment` VALUES ('47', '6', '2', '0', 'section-banner.jpg', '/Uploads/201609/57d77651b1e91.jpg', '115208', 'jpg', '1', '0', '1', '1473738321', '0.0.0.0', '1');
 INSERT INTO `cosmo_attachment` VALUES ('49', '1', '20', '0', '111.jpg', '/Uploads/201609/57d7aca38e5b2.jpg', '263261', 'jpg', '1', '0', '1', '1473752227', '0.0.0.0', '1');
 INSERT INTO `cosmo_attachment` VALUES ('50', '1', '1', '0', '111.jpg', '/Uploads/201609/57d7acb5403bd.jpg', '263261', 'jpg', '1', '0', '1', '1473752245', '0.0.0.0', '1');
@@ -199,18 +199,10 @@ INSERT INTO `cosmo_attachment` VALUES ('221', '1', '77', '77', 'GFC-888f.png', '
 INSERT INTO `cosmo_attachment` VALUES ('222', '1', '77', '77', 'GFC-888A-1.png', '/Uploads/201705/590be5d6c608c.png', '118805', 'png', '1', '0', '1', '1493951958', '119.129.74.157', '1');
 INSERT INTO `cosmo_attachment` VALUES ('223', '1', '77', '77', '未标题-2.jpg', '/Uploads/201705/590be5e96a5d1.jpg', '18787', 'jpg', '1', '0', '1', '1493951977', '119.129.74.157', '1');
 INSERT INTO `cosmo_attachment` VALUES ('224', '230', '1', '7', 'banner01.jpg', '/Uploads/201705/59101012d93da.jpg', '103808', 'jpg', '1', '0', '1', '1494224914', '119.129.75.206', '1');
-INSERT INTO `cosmo_attachment` VALUES ('225', '230', '1', '8', 'banner02.jpg', '/Uploads/201705/5910102f82bc9.jpg', '166487', 'jpg', '1', '0', '1', '1494224943', '119.129.75.206', '1');
-INSERT INTO `cosmo_attachment` VALUES ('226', '230', '1', '9', 'banner03.jpg', '/Uploads/201705/591010546e2f4.jpg', '216005', 'jpg', '1', '0', '1', '1494224980', '119.129.75.206', '1');
-INSERT INTO `cosmo_attachment` VALUES ('228', '230', '1', '9', 'banner03（最终）_看图王.jpg', '/Uploads/201705/5913ca49a7841.jpg', '170369', 'jpg', '1', '0', '1', '1494469193', '119.129.75.224', '1');
 INSERT INTO `cosmo_attachment` VALUES ('355', '0', '0', '0', '0.png', '/Uploads/201709/59b7b01ff13a2.png', '61223', 'png', '1', '0', '2', '1505210399', '192.168.1.1', '0');
 INSERT INTO `cosmo_attachment` VALUES ('353', '6', '0', '0', '0.png', '/Uploads/201709/59b7afca7ff33.png', '61223', 'png', '1', '1', '2', '1505210314', '192.168.1.1', '0');
 INSERT INTO `cosmo_attachment` VALUES ('354', '0', '0', '0', '0.png', '/Uploads/201709/59b7afcdb8536.png', '61223', 'png', '1', '0', '2', '1505210317', '192.168.1.1', '0');
-INSERT INTO `cosmo_attachment` VALUES ('352', '230', '2', '3', 'm-indexBanner_01.jpg', '/Uploads/201708/59a3b141a079d.jpg', '157819', 'jpg', '1', '0', '3', '1503899969', '192.168.1.50', '1');
 INSERT INTO `cosmo_attachment` VALUES ('732', '230', '2', '11', 'banner.jpg', '/Uploads/201810/5bcda1f4e634a.jpg', '187224', 'jpg', '1', '0', '3', '1540202996', '127.0.0.1', '1');
-INSERT INTO `cosmo_attachment` VALUES ('731', '230', '2', '10', 'banner.jpg', '/Uploads/201810/5bcda1e670926.jpg', '187224', 'jpg', '1', '0', '3', '1540202982', '127.0.0.1', '1');
-INSERT INTO `cosmo_attachment` VALUES ('730', '230', '2', '3', 'banner.jpg', '/Uploads/201810/5bcda1c7383a4.jpg', '187224', 'jpg', '1', '0', '3', '1540202951', '127.0.0.1', '1');
-INSERT INTO `cosmo_attachment` VALUES ('759', '230', '1', '8', '微信图片_20181129140702.jpg', '/Uploads/201811/5bff821f1d1d7.jpg', '1249112', 'jpg', '1', '0', '2', '1543471647', '61.140.26.193', '1');
-INSERT INTO `cosmo_attachment` VALUES ('760', '230', '1', '9', '微信图片_20181129140708.jpg', '/Uploads/201811/5bff822e7cb6e.jpg', '1143590', 'jpg', '1', '0', '2', '1543471662', '113.109.78.255', '1');
 INSERT INTO `cosmo_attachment` VALUES ('761', '230', '1', '7', '20181212155424.jpg', '/Uploads/201812/5c10befba9726.jpg', '1374989', 'jpg', '1', '0', '2', '1544601339', '27.45.146.101', '1');
 INSERT INTO `cosmo_attachment` VALUES ('321', '1', '74', '74', 'wenyoung whiteboard production line.jpg', '/Uploads/201705/5926796e10f5a.jpg', '144687', 'jpg', '1', '0', '1', '1495693678', '192.154.105.114', '1');
 INSERT INTO `cosmo_attachment` VALUES ('329', '6', '0', '0', 'WY-81 with  gliding- magnetic whiteboard  (2).jpg', '/Uploads/201705/5927bdd30d8f4.jpg', '56555', 'jpg', '1', '1', '1', '1495776723', '113.70.215.251', '0');
@@ -254,22 +246,14 @@ INSERT INTO `cosmo_attachment` VALUES ('524', '6', '0', '0', '0.png', '/Uploads/
 INSERT INTO `cosmo_attachment` VALUES ('554', '6', '0', '0', '1.jpg', '/Uploads/201709/59b9e9b2365be.jpg', '66657', 'jpg', '1', '0', '2', '1505356210', '192.168.1.1', '0');
 INSERT INTO `cosmo_attachment` VALUES ('555', '6', '0', '0', '2.jpg', '/Uploads/201709/59b9e9b257497.jpg', '59811', 'jpg', '1', '0', '2', '1505356210', '192.168.1.1', '0');
 INSERT INTO `cosmo_attachment` VALUES ('556', '6', '0', '0', '3.jpg', '/Uploads/201709/59b9e9b33c819.jpg', '134414', 'jpg', '1', '0', '2', '1505356211', '192.168.1.1', '0');
-INSERT INTO `cosmo_attachment` VALUES ('704', '230', '1', '9', 'banner.jpg', '/Uploads/201810/5bc855ccbd272.jpg', '1378680', 'jpg', '1', '0', '3', '1539855820', '127.0.0.1', '1');
-INSERT INTO `cosmo_attachment` VALUES ('703', '230', '1', '8', 'banner.jpg', '/Uploads/201810/5bc8557fc3e3f.jpg', '1378680', 'jpg', '1', '0', '3', '1539855743', '127.0.0.1', '1');
 INSERT INTO `cosmo_attachment` VALUES ('702', '230', '1', '7', 'banner.jpg', '/Uploads/201810/5bc85571c69ff.jpg', '1378680', 'jpg', '1', '0', '3', '1539855729', '127.0.0.1', '1');
 INSERT INTO `cosmo_attachment` VALUES ('747', '6', '0', '0', '01-GD2.JPG', '/Uploads/201811/5beb9cab3c267.jpg', '153256', 'jpg', '1', '1', '4', '1542167723', '61.140.24.141', '0');
 INSERT INTO `cosmo_attachment` VALUES ('762', '230', '1', '7', 'new_20181212155636.jpg', '/Uploads/201812/5c10c091376c2.jpg', '1629902', 'jpg', '1', '0', '2', '1544601745', '27.45.146.101', '1');
 INSERT INTO `cosmo_attachment` VALUES ('763', '230', '1', '7', 'new_20181212155636.jpg', '/Uploads/201812/5c10c0dad639c.jpg', '758583', 'jpg', '1', '0', '2', '1544601818', '27.45.146.101', '1');
 INSERT INTO `cosmo_attachment` VALUES ('764', '230', '1', '7', '20181212161857.jpg', '/Uploads/201812/5c10c6375975b.jpg', '1724677', 'jpg', '1', '0', '2', '1544603191', '27.45.146.101', '1');
 INSERT INTO `cosmo_attachment` VALUES ('765', '230', '1', '7', '20181212161857.jpg', '/Uploads/201812/5c10c6c04a34e.jpg', '468255', 'jpg', '1', '0', '2', '1544603328', '27.45.146.101', '1');
-INSERT INTO `cosmo_attachment` VALUES ('766', '230', '1', '8', '20181212161903.jpg', '/Uploads/201812/5c10c6d0dfeb6.jpg', '513969', 'jpg', '1', '0', '2', '1544603344', '27.45.146.101', '1');
-INSERT INTO `cosmo_attachment` VALUES ('767', '230', '1', '9', '20181212161912.jpg', '/Uploads/201812/5c10c6dce088b.jpg', '306525', 'jpg', '1', '0', '2', '1544603356', '27.45.146.101', '1');
 INSERT INTO `cosmo_attachment` VALUES ('768', '230', '1', '7', '20181217165919.jpg', '/Uploads/201812/5c1765b6c33a7.jpg', '514815', 'jpg', '1', '0', '2', '1545037238', '157.61.159.48', '1');
-INSERT INTO `cosmo_attachment` VALUES ('769', '230', '1', '8', '20181217143100.jpg', '/Uploads/201812/5c1765c703ee7.jpg', '468510', 'jpg', '1', '0', '2', '1545037255', '157.61.159.48', '1');
 INSERT INTO `cosmo_attachment` VALUES ('770', '230', '1', '7', '20181217170909.jpg', '/Uploads/201812/5c1767d2ee058.jpg', '501013', 'jpg', '1', '0', '2', '1545037778', '157.61.159.48', '1');
-INSERT INTO `cosmo_attachment` VALUES ('771', '230', '1', '8', '20181217170901.jpg', '/Uploads/201812/5c1767eba085e.jpg', '559565', 'jpg', '1', '0', '2', '1545037803', '157.61.159.48', '1');
-INSERT INTO `cosmo_attachment` VALUES ('772', '230', '1', '9', '20181217170909.jpg', '/Uploads/201812/5c1767f93805e.jpg', '501013', 'jpg', '1', '0', '2', '1545037817', '157.61.159.48', '1');
-INSERT INTO `cosmo_attachment` VALUES ('773', '230', '1', '9', '20181217170854.jpg', '/Uploads/201812/5c1768185f4b8.jpg', '327317', 'jpg', '1', '0', '2', '1545037848', '157.61.159.48', '1');
 INSERT INTO `cosmo_attachment` VALUES ('778', '2', '0', '0', 'Family-members-visit-the-workshop.jpg', '/Uploads/201812/5c25a1f918130.jpg', '142598', 'jpg', '1', '0', '2', '1545970169', '120.83.155.3', '0');
 INSERT INTO `cosmo_attachment` VALUES ('779', '2', '0', '0', 'Family-members-visit-the-workshop2.jpg', '/Uploads/201812/5c25a1fa3cd5b.jpg', '159655', 'jpg', '1', '0', '2', '1545970170', '120.83.155.3', '0');
 INSERT INTO `cosmo_attachment` VALUES ('780', '2', '0', '0', 'General-manager\'s-speech.jpg', '/Uploads/201812/5c25a1fa9d2a9.jpg', '98679', 'jpg', '1', '0', '2', '1545970170', '120.83.155.3', '0');
@@ -280,11 +264,6 @@ INSERT INTO `cosmo_attachment` VALUES ('786', '2', '0', '0', 'Martial-arts-perfo
 INSERT INTO `cosmo_attachment` VALUES ('787', '2', '0', '0', 'Staff-chorus.jpg', '/Uploads/201812/5c25a20002906.jpg', '99679', 'jpg', '1', '0', '2', '1545970176', '120.83.155.3', '0');
 INSERT INTO `cosmo_attachment` VALUES ('788', '2', '0', '0', 'Staff-dance-performance.jpg', '/Uploads/201812/5c25a2008a443.jpg', '161741', 'jpg', '1', '0', '2', '1545970176', '120.83.155.3', '0');
 INSERT INTO `cosmo_attachment` VALUES ('824', '2', '0', '0', 'news1.jpg', '/Uploads/201904/5cab0cc0b2fe4.jpg', '3841319', 'jpg', '1', '0', '4', '1554713792', '40.83.76.20', '0');
-INSERT INTO `cosmo_attachment` VALUES ('828', '230', '1', '12', '���(2).jpg', '/Uploads/201904/5cb353e6643d2.jpg', '1011944', 'jpg', '1', '0', '4', '1555256294', '66.42.100.254', '1');
-INSERT INTO `cosmo_attachment` VALUES ('829', '230', '2', '13', '���(3).jpg', '/Uploads/201904/5cb3548a66f18.jpg', '55099', 'jpg', '1', '0', '4', '1555256458', '66.42.100.254', '1');
-INSERT INTO `cosmo_attachment` VALUES ('830', '230', '2', '13', '���(2).jpg', '/Uploads/201904/5cb35636c2aea.jpg', '1011944', 'jpg', '1', '0', '4', '1555256886', '66.42.100.254', '1');
-INSERT INTO `cosmo_attachment` VALUES ('831', '230', '1', '12', '广锻2(5).jpg', '/Uploads/201904/5cb3e98c70fb9.jpg', '492493', 'jpg', '1', '0', '4', '1555294604', '52.141.38.119', '1');
-INSERT INTO `cosmo_attachment` VALUES ('832', '230', '2', '13', '广锻2(5).jpg', '/Uploads/201904/5cb3e9a06768e.jpg', '492493', 'jpg', '1', '0', '4', '1555294624', '52.141.38.119', '1');
 INSERT INTO `cosmo_attachment` VALUES ('836', '230', '0', '0', '5dd2735194d4c.jpg', '/Uploads/201912/5dfc6fb6afa98.jpg', '709285', 'jpg', '1', '0', '2', '1576824758', '127.0.0.1', '0');
 
 -- ----------------------------
@@ -343,11 +322,17 @@ CREATE TABLE `cosmo_case` (
   KEY `status` (`id`,`status`,`listorder`),
   KEY `catid` (`id`,`catid`,`status`),
   KEY `listorder` (`id`,`catid`,`status`,`listorder`)
-) ENGINE=MyISAM AUTO_INCREMENT=38 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=44 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of cosmo_case
 -- ----------------------------
+INSERT INTO `cosmo_case` VALUES ('38', '110', '2', 'admin', 'Mold design and manufacturing', '', '/Public/www/images/business1.png', '', '', '', '/Businessscope_38.html', '', '0', '1', '0', '0', '1585710762', '1585711067', '0', '', '', '', '', '', '', '');
+INSERT INTO `cosmo_case` VALUES ('39', '110', '2', 'admin', 'Plastic injection manufacture', '', '/Public/www/images/business2.png', '', '', '', '/Businessscope_39.html', '', '0', '1', '0', '0', '1585710934', '1585710934', '0', '', '', '', '', '', '', '');
+INSERT INTO `cosmo_case` VALUES ('40', '110', '2', 'admin', 'Electronics', '', '/Public/www/images/business3.png', '', '', '', '/Businessscope_40.html', '', '0', '1', '0', '0', '1585710961', '1585710961', '0', '', '', '', '', '', '', '');
+INSERT INTO `cosmo_case` VALUES ('41', '110', '2', 'admin', 'Gold stamping', '', '/Public/www/images/business4.png', '', '', '', '/Businessscope_41.html', '', '0', '1', '0', '0', '1585710989', '1585710989', '0', '', '', '', '', '', '', '');
+INSERT INTO `cosmo_case` VALUES ('42', '110', '2', 'admin', 'Printing', '', '/Public/www/images/business5.png', '', '', '', '/Businessscope_42.html', '', '0', '1', '0', '0', '1585711020', '1585711020', '0', '', '', '', '', '', '', '');
+INSERT INTO `cosmo_case` VALUES ('43', '110', '2', 'admin', 'Packaging', '', '/Public/www/images/business6.png', '', '', '', '/Businessscope_43.html', '', '0', '1', '0', '0', '1585711044', '1585711044', '0', '', '', '', '', '', '', '');
 
 -- ----------------------------
 -- Table structure for cosmo_category
@@ -389,17 +374,18 @@ CREATE TABLE `cosmo_category` (
   PRIMARY KEY (`id`),
   KEY `parentid` (`parentid`),
   KEY `listorder` (`listorder`)
-) ENGINE=MyISAM AUTO_INCREMENT=110 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=111 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of cosmo_category
 -- ----------------------------
 INSERT INTO `cosmo_category` VALUES ('73', 'PRODUCTS', 'product', '', '0', '6', 'Product', '0', '73', '0', '', '', '', '1', '0', '0', '0', '', '0', '/product.html', 'list', 'show', '12', '', '0', '0', '0', '0', '0', '0', '0', '');
-INSERT INTO `cosmo_category` VALUES ('74', 'ABOUT US', 'about', '', '0', '1', 'Page', '0', '74', '0', '', '', '', '2', '0', '0', '0', '', '0', '/about.html', 'AboutUs', 'AboutUs', '0', '', '0', '0', '0', '0', '0', '0', '0', '');
-INSERT INTO `cosmo_category` VALUES ('77', 'Partner', 'cases', '', '0', '4', 'Case', '0', '77', '0', '', '', '', '3', '0', '0', '0', '', '0', '/cases.html', 'list', 'show', '0', '', '0', '0', '0', '0', '0', '0', '0', '');
+INSERT INTO `cosmo_category` VALUES ('74', 'ABOUT US', 'about', '', '0', '1', 'Page', '0', '74,110', '0', '', '', '', '2', '0', '0', '0', '', '1', '/about.html', 'AboutUs', 'AboutUs', '0', '', '0', '0', '0', '0', '0', '0', '0', '');
+INSERT INTO `cosmo_category` VALUES ('77', 'Partner', 'Partner', '', '0', '11', 'History', '0', '77', '0', '', '', '', '3', '0', '0', '0', '', '0', '/Partner.html', 'list', 'show', '0', '', '0', '0', '0', '0', '0', '0', '0', '');
 INSERT INTO `cosmo_category` VALUES ('78', 'CONTACT US', 'contact', '', '0', '1', 'Page', '0', '78', '0', '', '', '', '5', '0', '0', '0', '', '0', '/contact.html', 'contact', 'contact', '0', '', '0', '0', '0', '0', '0', '0', '0', '');
+INSERT INTO `cosmo_category` VALUES ('110', 'Business scope', 'Businessscope', 'about/', '74', '4', 'Case', '0,74', '110', '0', '', '', '', '0', '0', '0', '0', '', '0', '/Businessscope.html', '', '', '0', '', '0', '0', '0', '0', '0', '0', '0', '');
 INSERT INTO `cosmo_category` VALUES ('103', 'THANKS', 'thanks', '', '0', '1', 'Page', '0', '103', '0', '', '', '', '100', '0', '0', '0', '', '0', '/thanks.html', 'thank', 'thank', '0', '', '0', '0', '0', '0', '0', '0', '0', '');
-INSERT INTO `cosmo_category` VALUES ('108', 'Customer Feedback', 'service', '', '0', '1', 'Page', '0', '108', '0', '', '', '', '4', '0', '0', '0', '', '0', '/service.html', 'service', 'show', '0', '', '0', '0', '0', '0', '0', '0', '0', '');
+INSERT INTO `cosmo_category` VALUES ('108', 'Customer Feedback', 'Customer', '', '0', '12', 'Customer', '0', '108', '0', '', '', '', '4', '0', '0', '0', '', '0', '/Customer.html', 'service', 'show', '0', '', '0', '0', '0', '0', '0', '0', '0', '');
 
 -- ----------------------------
 -- Table structure for cosmo_config
@@ -472,7 +458,7 @@ INSERT INTO `cosmo_config` VALUES ('name', '公司名称', '1', 'Shanghai Jason 
 INSERT INTO `cosmo_config` VALUES ('address', '公司地址', '1', 'B3,No.108,Pengfeng Rd,Malu,Jiading,Shanghai,China 201801', '0');
 INSERT INTO `cosmo_config` VALUES ('phone', '电话', '1', '+86-21-59101751-153', '0');
 INSERT INTO `cosmo_config` VALUES ('email', '邮箱', '1', 'info@gerpman.com', '0');
-INSERT INTO `cosmo_config` VALUES ('cop', '版权', '1', '© 2020', '0');
+INSERT INTO `cosmo_config` VALUES ('cop', '版权', '1', '© 2020 Shanghai Jason Plastic Co.,Ltd', '0');
 INSERT INTO `cosmo_config` VALUES ('google', 'Google主页地址', '1', '', '0');
 INSERT INTO `cosmo_config` VALUES ('facebook', 'Facebook主页地址', '1', '', '0');
 INSERT INTO `cosmo_config` VALUES ('ins', 'INS主页地址', '1', '', '0');
@@ -480,6 +466,45 @@ INSERT INTO `cosmo_config` VALUES ('youtube', 'Youtube主页地址', '1', '', '0
 INSERT INTO `cosmo_config` VALUES ('twitter', 'Twitter主页地址', '1', '', '0');
 INSERT INTO `cosmo_config` VALUES ('domestic_fax', 'domestic_fax', '1', '', '0');
 INSERT INTO `cosmo_config` VALUES ('shield', '屏蔽关键词空格隔开', '1', 'yige guge', '0');
+
+-- ----------------------------
+-- Table structure for cosmo_customer
+-- ----------------------------
+DROP TABLE IF EXISTS `cosmo_customer`;
+CREATE TABLE `cosmo_customer` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `catid` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `userid` int(8) unsigned NOT NULL DEFAULT '0',
+  `username` varchar(40) NOT NULL DEFAULT '',
+  `title` varchar(120) NOT NULL DEFAULT '',
+  `title_style` varchar(40) NOT NULL DEFAULT '',
+  `thumb` varchar(100) NOT NULL DEFAULT '',
+  `keywords` varchar(120) NOT NULL DEFAULT '',
+  `description` mediumtext NOT NULL,
+  `content` mediumtext NOT NULL,
+  `url` varchar(60) NOT NULL DEFAULT '',
+  `template` varchar(40) NOT NULL DEFAULT '',
+  `posid` tinyint(2) unsigned NOT NULL DEFAULT '0',
+  `status` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `listorder` int(10) unsigned NOT NULL DEFAULT '0',
+  `hits` int(11) unsigned NOT NULL DEFAULT '0',
+  `createtime` int(11) unsigned NOT NULL DEFAULT '0',
+  `updatetime` int(11) unsigned NOT NULL DEFAULT '0',
+  `lang` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `cont` text NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `status` (`id`,`status`,`listorder`),
+  KEY `catid` (`id`,`catid`,`status`),
+  KEY `listorder` (`id`,`catid`,`status`,`listorder`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of cosmo_customer
+-- ----------------------------
+INSERT INTO `cosmo_customer` VALUES ('1', '108', '2', 'admin', 'here is the title', '', '/Public/www/images/feedback.png', '', '', '', '/Customer_1.html', '', '0', '1', '0', '0', '1585712432', '1585712432', '0', '<div class=\"title\">\r\n	here is the title\r\n</div>\r\n<p>\r\n	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\r\n                        eiusmod\r\n                        tempor incididunt ut labore et dolore magna aliqua. Quis ipsum\r\n                        suspendisse\r\n                        ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel\r\n                        facilisis.\r\n</p>');
+INSERT INTO `cosmo_customer` VALUES ('2', '108', '2', 'admin', 'here is the title', '', '/Public/www/images/feedback.png', '', '', '', '/Customer_2.html', '', '0', '1', '0', '0', '1585712768', '1585712768', '0', '<div class=\"title\" style=\"white-space:normal;\">\r\n	here is the title\r\n</div>\r\n<p style=\"white-space:normal;\">\r\n	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.\r\n</p>');
+INSERT INTO `cosmo_customer` VALUES ('3', '108', '2', 'admin', 'here is the title', '', '/Public/www/images/feedback.png', '', '', '', '/Customer_3.html', '', '0', '1', '0', '0', '1585712794', '1585712794', '0', '<div class=\"title\" style=\"white-space:normal;\">\r\n	here is the title\r\n</div>\r\n<p style=\"white-space:normal;\">\r\n	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.\r\n</p>');
+INSERT INTO `cosmo_customer` VALUES ('4', '108', '2', 'admin', 'here is the title', '', '/Public/www/images/feedback.png', '', '', '', '/Customer_4.html', '', '0', '1', '0', '0', '1585712940', '1585712940', '0', '<div class=\"title\" style=\"white-space:normal;\">\r\n	here is the title\r\n</div>\r\n<p style=\"white-space:normal;\">\r\n	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.\r\n</p>');
 
 -- ----------------------------
 -- Table structure for cosmo_dbsource
@@ -560,7 +585,7 @@ CREATE TABLE `cosmo_field` (
   `status` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `issystem` tinyint(1) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=133 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=147 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of cosmo_field
@@ -568,7 +593,7 @@ CREATE TABLE `cosmo_field` (
 INSERT INTO `cosmo_field` VALUES ('1', '1', 'title', '标题', '', '1', '3', '80', '', '标题必填3-80个字', '', 'title', 'array (\n  \'thumb\' => \'1\',\n  \'style\' => \'0\',\n  \'size\' => \'\',\n)', '1', '', '0', '1', '1');
 INSERT INTO `cosmo_field` VALUES ('2', '1', 'keywords', '关键词', '', '0', '0', '0', '', '', '', 'text', 'array (\n  \'size\' => \'55\',\n  \'default\' => \'\',\n  \'ispassword\' => \'0\',\n)', '1', '', '0', '1', '1');
 INSERT INTO `cosmo_field` VALUES ('3', '1', 'description', 'SEO简介', '', '0', '0', '0', '0', '', '', 'textarea', 'array (\n  \'fieldtype\' => \'mediumtext\',\n  \'rows\' => \'4\',\n  \'cols\' => \'56\',\n  \'default\' => \'\',\n)', '1', '', '0', '1', '1');
-INSERT INTO `cosmo_field` VALUES ('4', '1', 'content', '内容', '', '0', '0', '0', '', '', '', 'editor', 'array (\n  \'toolbar\' => \'full\',\n  \'default\' => \'\',\n  \'height\' => \'\',\n  \'showpage\' => \'1\',\n  \'enablekeylink\' => \'0\',\n  \'replacenum\' => \'\',\n  \'enablesaveimage\' => \'0\',\n  \'flashupload\' => \'1\',\n  \'alowuploadexts\' => \'jpg,jpeg,gif,doc,rar,zip,xls\',\n)', '1', '', '0', '1', '1');
+INSERT INTO `cosmo_field` VALUES ('4', '1', 'content', '内容', '', '0', '0', '0', '', '', '', 'editor', 'array (\n  \'toolbar\' => \'full\',\n  \'default\' => \'\',\n  \'height\' => \'\',\n  \'showpage\' => \'1\',\n  \'enablekeylink\' => \'0\',\n  \'replacenum\' => \'\',\n  \'enablesaveimage\' => \'0\',\n  \'flashupload\' => \'1\',\n  \'alowuploadexts\' => \'jpg,jpeg,gif,doc,rar,zip,xls\',\n)', '1', '', '0', '0', '1');
 INSERT INTO `cosmo_field` VALUES ('5', '2', 'catid', '栏目', '', '1', '1', '6', 'digits', '必须选择一个栏目', '', 'catid', '', '1', '', '0', '1', '1');
 INSERT INTO `cosmo_field` VALUES ('6', '2', 'title', '标题', '', '1', '0', '0', '', '标题必须为1-80个字符', '', 'title', 'array (\n  \'thumb\' => \'1\',\n  \'style\' => \'1\',\n  \'size\' => \'55\',\n)', '1', '', '0', '1', '1');
 INSERT INTO `cosmo_field` VALUES ('7', '2', 'keywords', '关键词', '', '0', '0', '0', '', '', '', 'text', 'array (\n  \'size\' => \'55\',\n  \'default\' => \'\',\n  \'ispassword\' => \'0\',\n)', '1', '', '0', '1', '1');
@@ -587,13 +612,13 @@ INSERT INTO `cosmo_field` VALUES ('19', '3', 'linktype', '链接类型', '', '0'
 INSERT INTO `cosmo_field` VALUES ('20', '3', 'siteinfo', '站点简介', '', '0', '0', '0', '', '', '', 'textarea', 'array (\n  \'fieldtype\' => \'mediumtext\',\n  \'rows\' => \'3\',\n  \'cols\' => \'60\',\n  \'default\' => \'\',\n)', '1', '', '4', '1', '0');
 INSERT INTO `cosmo_field` VALUES ('21', '4', 'catid', '栏目', '', '1', '1', '6', '', '必须选择一个栏目', '', 'catid', '', '1', '', '0', '1', '1');
 INSERT INTO `cosmo_field` VALUES ('22', '4', 'title', '标题', '', '1', '1', '80', '', '标题必须为1-80个字符', '', 'title', 'array (\n  \'thumb\' => \'1\',\n  \'style\' => \'1\',\n  \'size\' => \'55\',\n)', '1', '', '0', '1', '1');
-INSERT INTO `cosmo_field` VALUES ('23', '4', 'keywords', '关键词', '', '0', '0', '80', '', '', '', 'text', 'array (\n  \'size\' => \'55\',\n  \'default\' => \'\',\n  \'ispassword\' => \'0\',\n  \'fieldtype\' => \'varchar\',\n)', '1', '', '2', '1', '1');
-INSERT INTO `cosmo_field` VALUES ('24', '4', 'description', 'SEO简介', '', '0', '0', '0', '', '', '', 'textarea', 'array (\n  \'fieldtype\' => \'mediumtext\',\n  \'rows\' => \'4\',\n  \'cols\' => \'55\',\n  \'default\' => \'\',\n)', '1', '', '3', '1', '1');
-INSERT INTO `cosmo_field` VALUES ('25', '4', 'content', '内容', '', '0', '0', '0', '', '', '', 'editor', 'array (\n  \'toolbar\' => \'full\',\n  \'default\' => \'\',\n  \'height\' => \'\',\n  \'showpage\' => \'1\',\n  \'enablekeylink\' => \'0\',\n  \'replacenum\' => \'\',\n  \'enablesaveimage\' => \'0\',\n  \'flashupload\' => \'1\',\n  \'alowuploadexts\' => \'\',\n)', '1', '', '10', '1', '1');
+INSERT INTO `cosmo_field` VALUES ('23', '4', 'keywords', '关键词', '', '0', '0', '80', '', '', '', 'text', 'array (\n  \'size\' => \'55\',\n  \'default\' => \'\',\n  \'ispassword\' => \'0\',\n  \'fieldtype\' => \'varchar\',\n)', '1', '', '2', '0', '1');
+INSERT INTO `cosmo_field` VALUES ('24', '4', 'description', 'SEO简介', '', '0', '0', '0', '', '', '', 'textarea', 'array (\n  \'fieldtype\' => \'mediumtext\',\n  \'rows\' => \'4\',\n  \'cols\' => \'55\',\n  \'default\' => \'\',\n)', '1', '', '3', '0', '1');
+INSERT INTO `cosmo_field` VALUES ('25', '4', 'content', '内容', '', '0', '0', '0', '', '', '', 'editor', 'array (\n  \'toolbar\' => \'full\',\n  \'default\' => \'\',\n  \'height\' => \'\',\n  \'showpage\' => \'1\',\n  \'enablekeylink\' => \'0\',\n  \'replacenum\' => \'\',\n  \'enablesaveimage\' => \'0\',\n  \'flashupload\' => \'1\',\n  \'alowuploadexts\' => \'\',\n)', '1', '', '10', '0', '1');
 INSERT INTO `cosmo_field` VALUES ('26', '4', 'createtime', '发布时间', '', '0', '0', '0', '', '', '', 'datetime', '', '1', '3,4', '93', '1', '1');
 INSERT INTO `cosmo_field` VALUES ('27', '4', 'hits', '点击次数', '', '0', '0', '8', '', '', '', 'number', 'array (\n  \'size\' => \'10\',\n  \'numbertype\' => \'1\',\n  \'decimaldigits\' => \'0\',\n  \'default\' => \'0\',\n)', '1', '3,4', '93', '0', '0');
-INSERT INTO `cosmo_field` VALUES ('28', '4', 'posid', '推荐位', '', '0', '0', '0', '', '', '', 'posid', '', '1', '', '97', '1', '1');
-INSERT INTO `cosmo_field` VALUES ('29', '4', 'template', '模板', '', '0', '0', '0', '', '', '', 'template', '', '1', '3,4', '98', '1', '1');
+INSERT INTO `cosmo_field` VALUES ('28', '4', 'posid', '推荐位', '', '0', '0', '0', '', '', '', 'posid', '', '1', '', '97', '0', '1');
+INSERT INTO `cosmo_field` VALUES ('29', '4', 'template', '模板', '', '0', '0', '0', '', '', '', 'template', '', '1', '3,4', '98', '0', '1');
 INSERT INTO `cosmo_field` VALUES ('30', '4', 'status', '状态', '', '0', '0', '0', '0', '', '', 'radio', 'array (\n  \\\'options\\\' => \\\'发布|1\r\n暂停发布|0\\\',\n  \\\'fieldtype\\\' => \\\'tinyint\\\',\n  \\\'numbertype\\\' => \\\'1\\\',\n  \\\'labelwidth\\\' => \\\'75\\\',\n  \\\'default\\\' => \\\'1\\\',\n)', '1', '', '99', '1', '1');
 INSERT INTO `cosmo_field` VALUES ('31', '5', 'catid', '栏目', '', '1', '1', '6', '', '必须选择一个栏目', '', 'catid', '', '1', '', '0', '1', '1');
 INSERT INTO `cosmo_field` VALUES ('32', '5', 'title', '标题', '', '1', '1', '80', '', '标题必须为1-80个字符', '', 'title', 'array (\n  \'thumb\' => \'1\',\n  \'style\' => \'1\',\n  \'size\' => \'55\',\n)', '1', '', '0', '1', '1');
@@ -605,23 +630,23 @@ INSERT INTO `cosmo_field` VALUES ('37', '5', 'hits', '点击次数', '', '0', '0
 INSERT INTO `cosmo_field` VALUES ('38', '5', 'posid', '推荐位', '', '0', '0', '0', '', '', '', 'posid', '', '1', '', '97', '1', '1');
 INSERT INTO `cosmo_field` VALUES ('39', '5', 'template', '模板', '', '0', '0', '0', '', '', '', 'template', '', '1', '3,4', '98', '1', '1');
 INSERT INTO `cosmo_field` VALUES ('40', '5', 'status', '状态', '', '0', '0', '0', '', '', '', 'radio', 'array (\n  \'options\' => \'发布|1\r\n定时发布|0\',\n  \'fieldtype\' => \'tinyint\',\n  \'numbertype\' => \'1\',\n  \'labelwidth\' => \'75\',\n  \'default\' => \'1\',\n)', '1', '3,4', '99', '1', '1');
-INSERT INTO `cosmo_field` VALUES ('41', '4', 'pic', '多图', '', '0', '0', '0', '0', '', '', 'images', 'array (\n  \\\'default\\\' => \\\'\\\',\n  \\\'upload_maxnum\\\' => \\\'20\\\',\n  \\\'upload_maxsize\\\' => \\\'20\\\',\n  \\\'upload_allowext\\\' => \\\'jpg,jpeg,gif,png\\\',\n  \\\'watermark\\\' => \\\'0\\\',\n  \\\'more\\\' => \\\'0\\\',\n)', '0', '', '9', '1', '0');
+INSERT INTO `cosmo_field` VALUES ('41', '4', 'pic', '多图', '', '0', '0', '0', '0', '', '', 'images', 'array (\n  \\\'default\\\' => \\\'\\\',\n  \\\'upload_maxnum\\\' => \\\'20\\\',\n  \\\'upload_maxsize\\\' => \\\'20\\\',\n  \\\'upload_allowext\\\' => \\\'jpg,jpeg,gif,png\\\',\n  \\\'watermark\\\' => \\\'0\\\',\n  \\\'more\\\' => \\\'0\\\',\n)', '0', '', '9', '0', '0');
 INSERT INTO `cosmo_field` VALUES ('42', '6', 'catid', '栏目', '', '1', '1', '6', '', '必须选择一个栏目', '', 'catid', '', '1', '', '0', '1', '1');
 INSERT INTO `cosmo_field` VALUES ('43', '6', 'title', '标题', '', '1', '1', '80', '', '标题必须为1-80个字符', '', 'title', 'array (\n  \'thumb\' => \'1\',\n  \'style\' => \'1\',\n  \'size\' => \'55\',\n)', '1', '', '0', '1', '1');
 INSERT INTO `cosmo_field` VALUES ('44', '6', 'keywords', 'Model', '', '0', '0', '80', '0', '', '', 'text', 'array (\n  \\\'size\\\' => \\\'55\\\',\n  \\\'default\\\' => \\\'\\\',\n  \\\'ispassword\\\' => \\\'0\\\',\n  \\\'fieldtype\\\' => \\\'varchar\\\',\n)', '1', '', '2', '1', '1');
 INSERT INTO `cosmo_field` VALUES ('45', '6', 'description', 'SEO简介', '', '0', '0', '0', '', '', '', 'textarea', 'array (\n  \'fieldtype\' => \'mediumtext\',\n  \'rows\' => \'4\',\n  \'cols\' => \'55\',\n  \'default\' => \'\',\n)', '1', '', '3', '1', '1');
-INSERT INTO `cosmo_field` VALUES ('46', '6', 'content', '内容', '', '0', '0', '0', '', '', '', 'editor', 'array (\n  \'toolbar\' => \'full\',\n  \'default\' => \'\',\n  \'height\' => \'\',\n  \'showpage\' => \'1\',\n  \'enablekeylink\' => \'0\',\n  \'replacenum\' => \'\',\n  \'enablesaveimage\' => \'0\',\n  \'flashupload\' => \'1\',\n  \'alowuploadexts\' => \'\',\n)', '1', '', '5', '1', '1');
+INSERT INTO `cosmo_field` VALUES ('46', '6', 'content', '内容', '', '0', '0', '0', '', '', '', 'editor', 'array (\n  \'toolbar\' => \'full\',\n  \'default\' => \'\',\n  \'height\' => \'\',\n  \'showpage\' => \'1\',\n  \'enablekeylink\' => \'0\',\n  \'replacenum\' => \'\',\n  \'enablesaveimage\' => \'0\',\n  \'flashupload\' => \'1\',\n  \'alowuploadexts\' => \'\',\n)', '1', '', '5', '0', '1');
 INSERT INTO `cosmo_field` VALUES ('47', '6', 'createtime', '发布时间', '', '0', '0', '0', '', '', '', 'datetime', '', '1', '3,4', '93', '1', '1');
 INSERT INTO `cosmo_field` VALUES ('48', '6', 'hits', '点击次数', '', '0', '0', '8', '', '', '', 'number', 'array (\n  \'size\' => \'10\',\n  \'numbertype\' => \'1\',\n  \'decimaldigits\' => \'0\',\n  \'default\' => \'0\',\n)', '1', '3,4', '93', '0', '0');
-INSERT INTO `cosmo_field` VALUES ('49', '6', 'posid', '推荐位', '', '0', '0', '0', '', '', '', 'posid', '', '1', '', '97', '1', '1');
-INSERT INTO `cosmo_field` VALUES ('50', '6', 'template', '模板', '', '0', '0', '0', '', '', '', 'template', '', '1', '3,4', '98', '1', '1');
+INSERT INTO `cosmo_field` VALUES ('49', '6', 'posid', '推荐位', '', '0', '0', '0', '', '', '', 'posid', '', '1', '', '97', '0', '1');
+INSERT INTO `cosmo_field` VALUES ('50', '6', 'template', '模板', '', '0', '0', '0', '', '', '', 'template', '', '1', '3,4', '98', '0', '1');
 INSERT INTO `cosmo_field` VALUES ('51', '6', 'status', '状态', '', '0', '0', '0', '0', '', '', 'radio', 'array (\n  \\\'options\\\' => \\\'发布|1\r\n暂停发布|0\\\',\n  \\\'fieldtype\\\' => \\\'tinyint\\\',\n  \\\'numbertype\\\' => \\\'1\\\',\n  \\\'labelwidth\\\' => \\\'75\\\',\n  \\\'default\\\' => \\\'1\\\',\n)', '1', '', '99', '1', '1');
-INSERT INTO `cosmo_field` VALUES ('54', '6', 'pic', '多图', '', '0', '0', '0', '0', '', '', 'images', 'array (\n  \\\'default\\\' => \\\'\\\',\n  \\\'upload_maxnum\\\' => \\\'20\\\',\n  \\\'upload_maxsize\\\' => \\\'20\\\',\n  \\\'upload_allowext\\\' => \\\'jpg,jpeg,gif,png\\\',\n  \\\'watermark\\\' => \\\'0\\\',\n  \\\'more\\\' => \\\'0\\\',\n)', '0', '', '11', '1', '0');
-INSERT INTO `cosmo_field` VALUES ('130', '11', 'cont', '内容', '', '0', '0', '0', '0', '', '', 'editor', 'array (\n  \\\'edittype\\\' => \\\'kindeditor\\\',\n  \\\'toolbar\\\' => \\\'basic\\\',\n  \\\'default\\\' => \\\'\\\',\n  \\\'height\\\' => \\\'\\\',\n  \\\'show_add_description\\\' => \\\'0\\\',\n  \\\'show_auto_thumb\\\' => \\\'0\\\',\n  \\\'showpage\\\' => \\\'0\\\',\n  \\\'enablekeylink\\\' => \\\'0\\\',\n  \\\'replacenum\\\' => \\\'\\\',\n  \\\'enablesaveimage\\\' => \\\'0\\\',\n  \\\'flashupload\\\' => \\\'0\\\',\n  \\\'alowuploadexts\\\' => \\\'\\\',\n  \\\'alowuploadlimit\\\' => \\\'\\\',\n)', '0', '', '10', '1', '0');
-INSERT INTO `cosmo_field` VALUES ('56', '6', 'document', '相关技术信息和下载PDF文档', '', '0', '0', '0', '0', '', '', 'file', 'array (\n  \\\'size\\\' => \\\'30\\\',\n  \\\'default\\\' => \\\'\\\',\n  \\\'upload_maxsize\\\' => \\\'20\\\',\n  \\\'upload_allowext\\\' => \\\'zip,rar,doc,ppt\\\',\n  \\\'more\\\' => \\\'0\\\',\n)', '0', '', '13', '1', '0');
+INSERT INTO `cosmo_field` VALUES ('54', '6', 'pic', '多图', '', '0', '0', '0', '0', '', '', 'images', 'array (\n  \\\'default\\\' => \\\'\\\',\n  \\\'upload_maxnum\\\' => \\\'20\\\',\n  \\\'upload_maxsize\\\' => \\\'20\\\',\n  \\\'upload_allowext\\\' => \\\'jpg,jpeg,gif,png\\\',\n  \\\'watermark\\\' => \\\'0\\\',\n  \\\'more\\\' => \\\'0\\\',\n)', '0', '', '11', '0', '0');
+INSERT INTO `cosmo_field` VALUES ('130', '11', 'cont', '内容', '', '0', '0', '0', '0', '', '', 'editor', 'array (\n  \\\'edittype\\\' => \\\'kindeditor\\\',\n  \\\'toolbar\\\' => \\\'basic\\\',\n  \\\'default\\\' => \\\'\\\',\n  \\\'height\\\' => \\\'\\\',\n  \\\'show_add_description\\\' => \\\'0\\\',\n  \\\'show_auto_thumb\\\' => \\\'0\\\',\n  \\\'showpage\\\' => \\\'0\\\',\n  \\\'enablekeylink\\\' => \\\'0\\\',\n  \\\'replacenum\\\' => \\\'\\\',\n  \\\'enablesaveimage\\\' => \\\'0\\\',\n  \\\'flashupload\\\' => \\\'0\\\',\n  \\\'alowuploadexts\\\' => \\\'\\\',\n  \\\'alowuploadlimit\\\' => \\\'\\\',\n)', '0', '', '10', '0', '0');
+INSERT INTO `cosmo_field` VALUES ('56', '6', 'document', '相关技术信息和下载PDF文档', '', '0', '0', '0', '0', '', '', 'file', 'array (\n  \\\'size\\\' => \\\'30\\\',\n  \\\'default\\\' => \\\'\\\',\n  \\\'upload_maxsize\\\' => \\\'20\\\',\n  \\\'upload_allowext\\\' => \\\'zip,rar,doc,ppt\\\',\n  \\\'more\\\' => \\\'0\\\',\n)', '0', '', '13', '0', '0');
 INSERT INTO `cosmo_field` VALUES ('120', '11', 'catid', '栏目', '', '1', '1', '6', '', '必须选择一个栏目', '', 'catid', '', '1', '', '0', '1', '1');
 INSERT INTO `cosmo_field` VALUES ('121', '11', 'title', '标题', '', '1', '1', '80', '', '标题必须为1-80个字符', '', 'title', 'array (\n  \'thumb\' => \'1\',\n  \'style\' => \'1\',\n  \'size\' => \'55\',\n)', '1', '', '0', '1', '1');
-INSERT INTO `cosmo_field` VALUES ('58', '4', 'document', '相关技术信息和下载PDF文档', '', '0', '0', '0', '0', '', '', 'file', 'array (\n  \\\'size\\\' => \\\'30\\\',\n  \\\'default\\\' => \\\'\\\',\n  \\\'upload_maxsize\\\' => \\\'20\\\',\n  \\\'upload_allowext\\\' => \\\'zip,rar,doc,ppt\\\',\n  \\\'more\\\' => \\\'0\\\',\n)', '0', '', '12', '1', '0');
+INSERT INTO `cosmo_field` VALUES ('58', '4', 'document', '相关技术信息和下载PDF文档', '', '0', '0', '0', '0', '', '', 'file', 'array (\n  \\\'size\\\' => \\\'30\\\',\n  \\\'default\\\' => \\\'\\\',\n  \\\'upload_maxsize\\\' => \\\'20\\\',\n  \\\'upload_allowext\\\' => \\\'zip,rar,doc,ppt\\\',\n  \\\'more\\\' => \\\'0\\\',\n)', '0', '', '12', '0', '0');
 INSERT INTO `cosmo_field` VALUES ('59', '7', 'createtime', '发布时间', '', '1', '0', '0', '', '', '', 'datetime', '', '0', '3,4', '93', '1', '1');
 INSERT INTO `cosmo_field` VALUES ('60', '7', 'status', '状态', '', '0', '0', '0', '', '', '', 'radio', 'array (\n  \'options\' => \'已审核|1\r\n未审核|0\',\n  \'fieldtype\' => \'tinyint\',\n  \'numbertype\' => \'1\',\n  \'labelwidth\' => \'75\',\n  \'default\' => \'1\',\n)', '0', '3,4', '99', '1', '1');
 INSERT INTO `cosmo_field` VALUES ('61', '7', 'name', 'Name', '', '0', '0', '0', '0', '', '', 'text', 'array (\n  \'size\' => \'30\',\n  \'default\' => \'\',\n  \'ispassword\' => \'0\',\n  \'fieldtype\' => \'varchar\',\n)', '0', '', '0', '1', '0');
@@ -633,12 +658,12 @@ INSERT INTO `cosmo_field` VALUES ('71', '5', 'address', 'address', '', '0', '0',
 INSERT INTO `cosmo_field` VALUES ('72', '5', 'phone', 'phone', '', '0', '0', '0', '0', '', '', 'text', 'array (\n  \\\'size\\\' => \\\'\\\',\n  \\\'default\\\' => \\\'\\\',\n  \\\'ispassword\\\' => \\\'0\\\',\n  \\\'fieldtype\\\' => \\\'varchar\\\',\n)', '0', '', '0', '1', '0');
 INSERT INTO `cosmo_field` VALUES ('73', '5', 'fax', 'fax', '', '0', '0', '0', '0', '', '', 'text', 'array (\n  \\\'size\\\' => \\\'\\\',\n  \\\'default\\\' => \\\'\\\',\n  \\\'ispassword\\\' => \\\'0\\\',\n  \\\'fieldtype\\\' => \\\'varchar\\\',\n)', '0', '', '0', '1', '0');
 INSERT INTO `cosmo_field` VALUES ('74', '5', 'email', 'email', '', '0', '0', '0', '0', '', '', 'text', 'array (\n  \\\'size\\\' => \\\'\\\',\n  \\\'default\\\' => \\\'\\\',\n  \\\'ispassword\\\' => \\\'0\\\',\n  \\\'fieldtype\\\' => \\\'varchar\\\',\n)', '0', '', '0', '1', '0');
-INSERT INTO `cosmo_field` VALUES ('127', '11', 'posid', '推荐位', '', '0', '0', '0', '', '', '', 'posid', '', '1', '', '97', '1', '1');
-INSERT INTO `cosmo_field` VALUES ('128', '11', 'template', '模板', '', '0', '0', '0', '', '', '', 'template', '', '1', '3,4', '98', '1', '1');
+INSERT INTO `cosmo_field` VALUES ('127', '11', 'posid', '推荐位', '', '0', '0', '0', '', '', '', 'posid', '', '1', '', '97', '0', '1');
+INSERT INTO `cosmo_field` VALUES ('128', '11', 'template', '模板', '', '0', '0', '0', '', '', '', 'template', '', '1', '3,4', '98', '0', '1');
 INSERT INTO `cosmo_field` VALUES ('126', '11', 'hits', '点击次数', '', '0', '0', '8', '', '', '', 'number', 'array (\n  \'size\' => \'10\',\n  \'numbertype\' => \'1\',\n  \'decimaldigits\' => \'0\',\n  \'default\' => \'0\',\n)', '1', '3,4', '93', '0', '0');
 INSERT INTO `cosmo_field` VALUES ('125', '11', 'createtime', '发布时间', '', '0', '0', '0', '', '', '', 'datetime', '', '1', '3,4', '93', '1', '1');
-INSERT INTO `cosmo_field` VALUES ('122', '11', 'keywords', '关键词', '', '0', '0', '80', '', '', '', 'text', 'array (\n  \'size\' => \'55\',\n  \'default\' => \'\',\n  \'ispassword\' => \'0\',\n  \'fieldtype\' => \'varchar\',\n)', '1', '', '2', '1', '1');
-INSERT INTO `cosmo_field` VALUES ('123', '11', 'description', 'SEO简介', '', '0', '0', '0', '', '', '', 'textarea', 'array (\n  \'fieldtype\' => \'mediumtext\',\n  \'rows\' => \'4\',\n  \'cols\' => \'55\',\n  \'default\' => \'\',\n)', '1', '', '3', '1', '1');
+INSERT INTO `cosmo_field` VALUES ('122', '11', 'keywords', '关键词', '', '0', '0', '80', '', '', '', 'text', 'array (\n  \'size\' => \'55\',\n  \'default\' => \'\',\n  \'ispassword\' => \'0\',\n  \'fieldtype\' => \'varchar\',\n)', '1', '', '2', '0', '1');
+INSERT INTO `cosmo_field` VALUES ('123', '11', 'description', 'SEO简介', '', '0', '0', '0', '', '', '', 'textarea', 'array (\n  \'fieldtype\' => \'mediumtext\',\n  \'rows\' => \'4\',\n  \'cols\' => \'55\',\n  \'default\' => \'\',\n)', '1', '', '3', '0', '1');
 INSERT INTO `cosmo_field` VALUES ('124', '11', 'content', '内容', '', '0', '0', '0', '', '', '', 'editor', 'array (\n  \'toolbar\' => \'full\',\n  \'default\' => \'\',\n  \'height\' => \'\',\n  \'showpage\' => \'1\',\n  \'enablekeylink\' => \'0\',\n  \'replacenum\' => \'\',\n  \'enablesaveimage\' => \'0\',\n  \'flashupload\' => \'1\',\n  \'alowuploadexts\' => \'\',\n)', '1', '', '10', '0', '1');
 INSERT INTO `cosmo_field` VALUES ('93', '7', 'title', '主题', '', '0', '0', '0', '0', '', '', 'text', 'array (\n  \\\'size\\\' => \\\'55\\\',\n  \\\'default\\\' => \\\'\\\',\n  \\\'ispassword\\\' => \\\'0\\\',\n  \\\'fieldtype\\\' => \\\'varchar\\\',\n)', '0', '', '0', '1', '0');
 INSERT INTO `cosmo_field` VALUES ('94', '8', 'createtime', '发布时间', '', '1', '0', '0', '', '', '', 'datetime', '', '0', '3,4', '93', '1', '1');
@@ -659,6 +684,20 @@ INSERT INTO `cosmo_field` VALUES ('118', '10', 'status', '状态', '', '0', '0',
 INSERT INTO `cosmo_field` VALUES ('119', '10', 'download', 'PDF等文件上传', '', '0', '0', '0', '0', '', '', 'file', 'array (\n  \\\'size\\\' => \\\'PDF等文件上传\\\',\n  \\\'default\\\' => \\\'\\\',\n  \\\'upload_maxsize\\\' => \\\'10\\\',\n  \\\'upload_allowext\\\' => \\\'zip,rar,doc,ppt,pdf\\\',\n  \\\'more\\\' => \\\'0\\\',\n)', '0', '', '4', '1', '0');
 INSERT INTO `cosmo_field` VALUES ('131', '7', 'files', '附件', '', '0', '0', '0', '0', '', '', 'file', 'array (\n  \\\'size\\\' => \\\'55\\\',\n  \\\'default\\\' => \\\'\\\',\n  \\\'upload_maxsize\\\' => \\\'20\\\',\n  \\\'upload_allowext\\\' => \\\'zip,rar,doc,ppt\\\',\n  \\\'more\\\' => \\\'0\\\',\n)', '0', '', '0', '0', '0');
 INSERT INTO `cosmo_field` VALUES ('132', '7', 'forward', '来源页面', '', '0', '0', '0', '0', '', '', 'text', 'array (\n  \\\'size\\\' => \\\'55\\\',\n  \\\'default\\\' => \\\'\\\',\n  \\\'ispassword\\\' => \\\'0\\\',\n  \\\'fieldtype\\\' => \\\'varchar\\\',\n)', '0', '', '0', '1', '0');
+INSERT INTO `cosmo_field` VALUES ('133', '6', 'cont', '描述', '', '0', '0', '0', '0', '', '', 'editor', 'array (\n  \\\'edittype\\\' => \\\'kindeditor\\\',\n  \\\'toolbar\\\' => \\\'full\\\',\n  \\\'default\\\' => \\\'\\\',\n  \\\'height\\\' => \\\'\\\',\n  \\\'show_add_description\\\' => \\\'0\\\',\n  \\\'show_auto_thumb\\\' => \\\'0\\\',\n  \\\'showpage\\\' => \\\'0\\\',\n  \\\'enablekeylink\\\' => \\\'0\\\',\n  \\\'replacenum\\\' => \\\'\\\',\n  \\\'enablesaveimage\\\' => \\\'0\\\',\n  \\\'flashupload\\\' => \\\'1\\\',\n  \\\'alowuploadexts\\\' => \\\'\\\',\n  \\\'alowuploadlimit\\\' => \\\'\\\',\n)', '0', '', '5', '1', '0');
+INSERT INTO `cosmo_field` VALUES ('134', '6', 'radis', '排版选择', '', '0', '0', '0', '0', '', '', 'radio', 'array (\n  \\\'options\\\' => \\\'左图右文|1\r\n左文右图|2\\\',\n  \\\'fieldtype\\\' => \\\'varchar\\\',\n  \\\'numbertype\\\' => \\\'1\\\',\n  \\\'labelwidth\\\' => \\\'\\\',\n  \\\'default\\\' => \\\'1\\\',\n)', '1', '', '4', '1', '0');
+INSERT INTO `cosmo_field` VALUES ('135', '1', 'cont', '内容', '', '0', '0', '0', '0', '', '', 'editor', 'array (\n  \\\'edittype\\\' => \\\'kindeditor\\\',\n  \\\'toolbar\\\' => \\\'full\\\',\n  \\\'default\\\' => \\\'\\\',\n  \\\'height\\\' => \\\'\\\',\n  \\\'show_add_description\\\' => \\\'0\\\',\n  \\\'show_auto_thumb\\\' => \\\'0\\\',\n  \\\'showpage\\\' => \\\'0\\\',\n  \\\'enablekeylink\\\' => \\\'0\\\',\n  \\\'replacenum\\\' => \\\'\\\',\n  \\\'enablesaveimage\\\' => \\\'0\\\',\n  \\\'flashupload\\\' => \\\'1\\\',\n  \\\'alowuploadexts\\\' => \\\'\\\',\n  \\\'alowuploadlimit\\\' => \\\'\\\',\n)', '1', '', '0', '1', '0');
+INSERT INTO `cosmo_field` VALUES ('136', '12', 'catid', '栏目', '', '1', '1', '6', '', '必须选择一个栏目', '', 'catid', '', '1', '', '0', '1', '1');
+INSERT INTO `cosmo_field` VALUES ('137', '12', 'title', '标题', '', '1', '1', '80', '', '标题必须为1-80个字符', '', 'title', 'array (\n  \'thumb\' => \'1\',\n  \'style\' => \'1\',\n  \'size\' => \'55\',\n)', '1', '', '0', '1', '1');
+INSERT INTO `cosmo_field` VALUES ('138', '12', 'keywords', '关键词', '', '0', '0', '80', '', '', '', 'text', 'array (\n  \'size\' => \'55\',\n  \'default\' => \'\',\n  \'ispassword\' => \'0\',\n  \'fieldtype\' => \'varchar\',\n)', '1', '', '2', '1', '1');
+INSERT INTO `cosmo_field` VALUES ('139', '12', 'description', 'SEO简介', '', '0', '0', '0', '', '', '', 'textarea', 'array (\n  \'fieldtype\' => \'mediumtext\',\n  \'rows\' => \'4\',\n  \'cols\' => \'55\',\n  \'default\' => \'\',\n)', '1', '', '3', '1', '1');
+INSERT INTO `cosmo_field` VALUES ('140', '12', 'content', '内容', '', '0', '0', '0', '', '', '', 'editor', 'array (\n  \'toolbar\' => \'full\',\n  \'default\' => \'\',\n  \'height\' => \'\',\n  \'showpage\' => \'1\',\n  \'enablekeylink\' => \'0\',\n  \'replacenum\' => \'\',\n  \'enablesaveimage\' => \'0\',\n  \'flashupload\' => \'1\',\n  \'alowuploadexts\' => \'\',\n)', '1', '', '10', '0', '1');
+INSERT INTO `cosmo_field` VALUES ('141', '12', 'createtime', '发布时间', '', '0', '0', '0', '', '', '', 'datetime', '', '1', '3,4', '93', '1', '1');
+INSERT INTO `cosmo_field` VALUES ('142', '12', 'hits', '点击次数', '', '0', '0', '8', '', '', '', 'number', 'array (\n  \'size\' => \'10\',\n  \'numbertype\' => \'1\',\n  \'decimaldigits\' => \'0\',\n  \'default\' => \'0\',\n)', '1', '3,4', '93', '0', '0');
+INSERT INTO `cosmo_field` VALUES ('143', '12', 'posid', '推荐位', '', '0', '0', '0', '', '', '', 'posid', '', '1', '', '97', '0', '1');
+INSERT INTO `cosmo_field` VALUES ('144', '12', 'template', '模板', '', '0', '0', '0', '', '', '', 'template', '', '1', '3,4', '98', '0', '1');
+INSERT INTO `cosmo_field` VALUES ('145', '12', 'status', '状态', '', '0', '0', '0', '', '', '', 'radio', 'array (\n  \'options\' => \'发布|1\r\n定时发布|0\',\n  \'fieldtype\' => \'tinyint\',\n  \'numbertype\' => \'1\',\n  \'labelwidth\' => \'75\',\n  \'default\' => \'1\',\n)', '1', '3,4', '99', '1', '1');
+INSERT INTO `cosmo_field` VALUES ('146', '12', 'cont', '描述', '', '0', '0', '0', '0', '', '', 'editor', 'array (\n  \\\'edittype\\\' => \\\'kindeditor\\\',\n  \\\'toolbar\\\' => \\\'full\\\',\n  \\\'default\\\' => \\\'\\\',\n  \\\'height\\\' => \\\'\\\',\n  \\\'show_add_description\\\' => \\\'0\\\',\n  \\\'show_auto_thumb\\\' => \\\'0\\\',\n  \\\'showpage\\\' => \\\'0\\\',\n  \\\'enablekeylink\\\' => \\\'0\\\',\n  \\\'replacenum\\\' => \\\'\\\',\n  \\\'enablesaveimage\\\' => \\\'0\\\',\n  \\\'flashupload\\\' => \\\'0\\\',\n  \\\'alowuploadexts\\\' => \\\'\\\',\n  \\\'alowuploadlimit\\\' => \\\'\\\',\n)', '0', '', '5', '1', '0');
 
 -- ----------------------------
 -- Table structure for cosmo_history
@@ -689,11 +728,15 @@ CREATE TABLE `cosmo_history` (
   KEY `status` (`id`,`status`,`listorder`),
   KEY `catid` (`id`,`catid`,`status`),
   KEY `listorder` (`id`,`catid`,`status`,`listorder`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of cosmo_history
 -- ----------------------------
+INSERT INTO `cosmo_history` VALUES ('3', '77', '2', 'admin', 'partner1', '', '/Public/www/images/partner1.png', '', '', '', '/Partner_3.html', '', '0', '1', '0', '0', '1585711531', '1585711531', '0', '');
+INSERT INTO `cosmo_history` VALUES ('4', '77', '2', 'admin', 'partner2', '', '/Public/www/images/partner2.png', '', '', '', '/Partner_4.html', '', '0', '1', '0', '0', '1585711553', '1585711553', '0', '');
+INSERT INTO `cosmo_history` VALUES ('5', '77', '2', 'admin', 'partner3', '', '/Public/www/images/partner3.png', '', '', '', '/Partner_5.html', '', '0', '1', '0', '0', '1585711578', '1585711578', '0', '');
+INSERT INTO `cosmo_history` VALUES ('6', '77', '2', 'admin', 'partner2', '', '/Public/www/images/partner2.png', '', '', '', '/Partner_6.html', '', '0', '1', '0', '0', '1585711623', '1585711623', '0', '');
 
 -- ----------------------------
 -- Table structure for cosmo_jobs
@@ -792,7 +835,7 @@ CREATE TABLE `cosmo_log` (
   `time` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `ip` (`ip`,`time`)
-) ENGINE=MyISAM AUTO_INCREMENT=497 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=498 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of cosmo_log
@@ -1008,6 +1051,7 @@ INSERT INTO `cosmo_log` VALUES ('493', '0', '0', 'admin', '登录成功', '127.0
 INSERT INTO `cosmo_log` VALUES ('494', '0', '0', 'admin', '登录成功', '127.0.0.1', '1584684480');
 INSERT INTO `cosmo_log` VALUES ('495', '0', '0', 'admin', '登录成功', '127.0.0.1', '1585124443');
 INSERT INTO `cosmo_log` VALUES ('496', '0', '0', 'admin', '登录成功', '127.0.0.1', '1585551384');
+INSERT INTO `cosmo_log` VALUES ('497', '0', '0', 'admin', '登录成功', '127.0.0.1', '1585705236');
 
 -- ----------------------------
 -- Table structure for cosmo_mailbox
@@ -1053,7 +1097,7 @@ CREATE TABLE `cosmo_menu` (
   KEY `status` (`status`),
   KEY `parentid` (`parentid`),
   KEY `model` (`model`)
-) ENGINE=MyISAM AUTO_INCREMENT=103 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=105 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of cosmo_menu
@@ -1114,7 +1158,7 @@ INSERT INTO `cosmo_menu` VALUES ('77', '1', 'Slide', 'index', '', '1', '1', '0',
 INSERT INTO `cosmo_menu` VALUES ('78', '77', 'Slide', 'add', '', '1', '1', '0', '添加幻灯片', '', '0');
 INSERT INTO `cosmo_menu` VALUES ('83', '1', 'Log', 'index', '', '1', '1', '0', '后台登陆日志', '', '83');
 INSERT INTO `cosmo_menu` VALUES ('84', '1', 'Config', '', '', '1', '1', '0', '站点配置', '', '2');
-INSERT INTO `cosmo_menu` VALUES ('85', '3', 'Case', 'index', '', '1', '1', '0', '案例管理', '', '9');
+INSERT INTO `cosmo_menu` VALUES ('85', '3', 'Case', 'index', '', '1', '1', '0', 'Business', '', '9');
 INSERT INTO `cosmo_menu` VALUES ('86', '85', 'Case', 'add', '', '1', '1', '0', '添加信息', '', '9');
 INSERT INTO `cosmo_menu` VALUES ('87', '3', 'Jobs', 'index', '', '1', '1', '0', '招聘管理', '', '9');
 INSERT INTO `cosmo_menu` VALUES ('88', '87', 'Jobs', 'add', '', '1', '1', '0', '添加信息', '', '9');
@@ -1126,10 +1170,12 @@ INSERT INTO `cosmo_menu` VALUES ('93', '3', 'Mailbox', 'index', '', '1', '1', '0
 INSERT INTO `cosmo_menu` VALUES ('94', '93', 'Mailbox', 'add', '', '1', '1', '0', '添加信息', '', '9');
 INSERT INTO `cosmo_menu` VALUES ('98', '97', 'Download', 'add', '', '1', '1', '0', '添加信息', '', '9');
 INSERT INTO `cosmo_menu` VALUES ('97', '3', 'Download', 'index', '', '1', '1', '0', '下载管理', '', '9');
-INSERT INTO `cosmo_menu` VALUES ('99', '3', 'History', 'index', '', '1', '1', '0', 'History', '', '9');
+INSERT INTO `cosmo_menu` VALUES ('99', '3', 'Partner', 'index', '', '1', '1', '0', 'Partner', '', '9');
 INSERT INTO `cosmo_menu` VALUES ('100', '99', 'History', 'add', '', '1', '1', '0', '添加信息', '', '9');
 INSERT INTO `cosmo_menu` VALUES ('101', '3', 'Slide', 'index', '', '1', '1', '0', '幻灯片管理', '', '0');
 INSERT INTO `cosmo_menu` VALUES ('102', '101', 'Slide', 'add', '', '1', '1', '0', '添加幻灯片', '', '0');
+INSERT INTO `cosmo_menu` VALUES ('103', '3', 'Customer', 'index', '', '1', '1', '0', 'Customer', '', '9');
+INSERT INTO `cosmo_menu` VALUES ('104', '103', 'Customer', 'add', '', '1', '1', '0', '添加信息', '', '9');
 
 -- ----------------------------
 -- Table structure for cosmo_message
@@ -1219,21 +1265,22 @@ CREATE TABLE `cosmo_module` (
   `postgroup` varchar(100) NOT NULL DEFAULT '',
   `ispost` tinyint(1) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of cosmo_module
 -- ----------------------------
 INSERT INTO `cosmo_module` VALUES ('1', '单页模型', 'Page', '单页模型', '1', '1', '0', '*', '', '0', '1', '', '0');
-INSERT INTO `cosmo_module` VALUES ('2', '文章管理', 'Article', '新闻文章', '1', '1', '1', 'id,catid,url,title,username,hits,keywords,description,thumb,createtime,status,listorder', '', '0', '1', '', '0');
+INSERT INTO `cosmo_module` VALUES ('2', '文章管理', 'Article', '新闻文章', '1', '1', '1', 'id,catid,url,title,username,hits,keywords,description,thumb,createtime,status,listorder', '', '0', '0', '', '0');
 INSERT INTO `cosmo_module` VALUES ('3', '友情链接', 'Link', '友情链接', '2', '0', '0', '*', '', '0', '1', '', '0');
-INSERT INTO `cosmo_module` VALUES ('4', '案例管理', 'Case', '案例', '1', '0', '0', '*', '', '0', '1', '', '0');
-INSERT INTO `cosmo_module` VALUES ('5', '招聘管理', 'Jobs', '招聘', '1', '0', '0', '*', '', '0', '1', '', '0');
+INSERT INTO `cosmo_module` VALUES ('4', 'Business scope', 'Case', 'Business scope', '1', '0', '0', '*', '', '0', '1', '', '0');
+INSERT INTO `cosmo_module` VALUES ('5', '招聘管理', 'Jobs', '招聘', '1', '0', '0', '*', '', '0', '0', '', '0');
 INSERT INTO `cosmo_module` VALUES ('6', '产品管理', 'Product', '产品', '1', '0', '0', '*', '', '0', '1', '', '0');
 INSERT INTO `cosmo_module` VALUES ('7', '留言管理', 'Message', '留言', '1', '0', '0', '*', '', '0', '1', '', '0');
 INSERT INTO `cosmo_module` VALUES ('8', '邮箱管理', 'Mailbox', '邮箱管理', '1', '0', '0', '*', '', '0', '1', '', '1');
-INSERT INTO `cosmo_module` VALUES ('10', '下载管理', 'Download', '下载管理', '1', '0', '0', '*', '', '0', '1', '', '0');
-INSERT INTO `cosmo_module` VALUES ('11', 'History', 'History', 'History', '1', '0', '0', '*', '', '0', '1', '', '0');
+INSERT INTO `cosmo_module` VALUES ('10', '下载管理', 'Download', '下载管理', '1', '0', '0', '*', '', '0', '0', '', '0');
+INSERT INTO `cosmo_module` VALUES ('11', 'Partner', 'History', 'Partner', '1', '0', '1', '*', '', '0', '1', '', '0');
+INSERT INTO `cosmo_module` VALUES ('12', 'Customer', 'Customer', 'Customer', '1', '0', '1', '*', '', '0', '1', '', '0');
 
 -- ----------------------------
 -- Table structure for cosmo_node
@@ -1251,7 +1298,7 @@ CREATE TABLE `cosmo_node` (
   `groupid` tinyint(3) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `name` (`name`,`status`,`pid`)
-) ENGINE=MyISAM AUTO_INCREMENT=164 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=166 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of cosmo_node
@@ -1328,6 +1375,8 @@ INSERT INTO `cosmo_node` VALUES ('160', 'Message', '留言模型', '1', '', '0',
 INSERT INTO `cosmo_node` VALUES ('161', 'Case', '案例模型', '1', 'Case', '0', '1', '2', '3');
 INSERT INTO `cosmo_node` VALUES ('162', 'deletepic', '删除图片', '1', '删除图片', '0', '129', '3', '7');
 INSERT INTO `cosmo_node` VALUES ('163', 'Mailbox', '邮箱管理', '1', '邮箱管理', '0', '1', '2', '3');
+INSERT INTO `cosmo_node` VALUES ('164', 'Customer', 'Customer', '1', 'Customer', '0', '1', '2', '3');
+INSERT INTO `cosmo_node` VALUES ('165', 'History', 'Partner', '1', 'Partner', '0', '1', '2', '3');
 
 -- ----------------------------
 -- Table structure for cosmo_online
@@ -1347,6 +1396,7 @@ CREATE TABLE `cosmo_online` (
 -- ----------------------------
 -- Records of cosmo_online
 -- ----------------------------
+INSERT INTO `cosmo_online` VALUES ('e29326ffb6080e81957b351773f90617', '0', '', '127.0.0.1', '1585713397', '4');
 
 -- ----------------------------
 -- Table structure for cosmo_page
@@ -1361,28 +1411,29 @@ CREATE TABLE `cosmo_page` (
   `content` mediumtext NOT NULL,
   `template` varchar(30) NOT NULL DEFAULT '',
   `listorder` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `cont` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of cosmo_page
 -- ----------------------------
-INSERT INTO `cosmo_page` VALUES ('1', '关于我们', '', '', '', '<p>\r\n	<span style=\"line-height:2;\">&nbsp; &nbsp;Sichuan Hui Da Tong (Phedaton) Mechanical Equipment Manufacturing Co., Ltd Is located at Chongzhou Industrial port in&nbsp;T EDA, an industrial concentration development area in Sichuan. Established in the year of 2012 with a registered capital of 11 million&nbsp;yuan, Now we’ve reached an annual turnover of $ 90 million, at the same time, we have obtained the import &amp; export certificates issued by the Ministry of Foreign Trade and Economic Cooperation and General Administration of Customs of PRC.</span>\r\n</p>\r\n<p>\r\n	<span style=\"line-height:2;\">&nbsp;&nbsp;We are mainly engaged in research, production and sales of dish-washing machine. With an innovation-driven culture, we’ve been dedicating in laser cutter, Automatic welding machine as well as Highland field kitchen car. Our major products have been widely used for cleaning.</span> \r\n</p>\r\n<p>\r\n	<span style=\"line-height:2;\">Featured with advanced technology, reliable performance and high durability, our Phedaton products earn good reputation. We&nbsp;have 2 in-house manufacturing plants and 2 exhibition centers and over 100 staffs around Chengdu, China.&nbsp;Honored as “High-Tech Enterprise”, we have acquired more than 15 National patents,&nbsp;among which two patents are Municipal Science and Technology Progress Award.</span> \r\n</p>\r\n<p>\r\n	<span style=\"line-height:2;\">&nbsp;&nbsp;Apart from the 2 manufacturing plants, we have a robotics lab, a heavy equipment production base (built by a joint effort with Sichuan Xihe Mechanical and Electrical Equipment Manufacturing Co.,Ltd), and an automation equipment lab (built by a joint effort with Sichuan Agricultural University).Based on a disciplined and professional R&amp;D and production team, we produce and deliver quality products as well as projects, receiving strongly positive feedbacks from clients.</span> \r\n</p>', '', '0');
-INSERT INTO `cosmo_page` VALUES ('2', '新闻中心', '', '', '', '', '', '0');
-INSERT INTO `cosmo_page` VALUES ('3', '案例中心', '', '', '', '', '', '0');
-INSERT INTO `cosmo_page` VALUES ('4', '联系我们', '', '', '', '', '', '0');
-INSERT INTO `cosmo_page` VALUES ('5', '关于茅台510', '', '', '', '', '', '0');
-INSERT INTO `cosmo_page` VALUES ('6', '关于茅台510', '', '', '', '', '', '0');
-INSERT INTO `cosmo_page` VALUES ('14', 'product', '', '', '', '', '', '0');
-INSERT INTO `cosmo_page` VALUES ('24', 'Video', '', '', '', '', '', '0');
-INSERT INTO `cosmo_page` VALUES ('25', 'Micro Hi-Fi', '/Uploads/201609/57d7bd53a3317.jpg', '', '', '', '', '0');
-INSERT INTO `cosmo_page` VALUES ('27', 'MCB1533', '', '', '', '', '', '0');
-INSERT INTO `cosmo_page` VALUES ('39', '联系我们', '', '', '', '<div style=\"padding:0px;margin:0px;color:#8F969F;font-family:Arial, Helvetica, Arial, Verdana, sans-serif;font-size:14px;line-height:28px;white-space:normal;background-color:#FFFFFF;\">\r\n	如有咨询事项，请联系技术客服QQ&nbsp;：3341822209<br />\r\n公司：贵州高峰石油机械股份有限公司<br />\r\n地址：贵州省贵阳市观山湖区长岭南路22号<br />\r\n邮编：550081\r\n</div>\r\n<div style=\"padding:0px;margin:0px;color:#8F969F;font-family:Arial, Helvetica, Arial, Verdana, sans-serif;font-size:14px;line-height:28px;white-space:normal;background-color:#FFFFFF;\">\r\n</div>\r\n<div style=\"padding:0px;margin:0px;color:#8F969F;font-family:Arial, Helvetica, Arial, Verdana, sans-serif;font-size:14px;line-height:28px;white-space:normal;background-color:#FFFFFF;\">\r\n	<p style=\"padding:0px;margin-top:0px;margin-bottom:10px;\">\r\n		<span style=\"padding:0px;margin:0px;font-weight:700;\">国内</span><br />\r\n电话：86-851-84668339<br />\r\n86-851-84810952<br />\r\n传真：86-851-84668503<br />\r\n86-851-84810845<br />\r\n邮箱：xsb1@gaofeng-petro.com\r\n	</p>\r\n	<p style=\"padding:0px;margin-top:0px;margin-bottom:10px;\">\r\n		&nbsp;\r\n	</p>\r\n</div>\r\n<div style=\"padding:0px;margin:0px;color:#8F969F;font-family:Arial, Helvetica, Arial, Verdana, sans-serif;font-size:14px;line-height:28px;white-space:normal;background-color:#FFFFFF;\">\r\n	<span style=\"padding:0px;margin:0px;font-weight:700;\">国际</span><br />\r\n电话：86-851-87995502<br />\r\n传真：86-851-87995503<br />\r\n邮箱：sales@gaofeng-petro.com<br />\r\n网址：<a href=\"http://www.gaofeng-petro.com/\" style=\"padding:0px;margin:0px;color:#006FA8;\">www.gaofeng-petro.com</a>\r\n</div>', '', '0');
-INSERT INTO `cosmo_page` VALUES ('77', 'Highlight', '', '', '', '<p>\r\n	<table style=\"width:100%;\" cellpadding=\"2\" cellspacing=\"0\" border=\"1\" bordercolor=\"#FFFFFF\">\r\n		<tbody>\r\n			<tr>\r\n				<td rowspan=\"3\">\r\n					<p>\r\n						<img src=\"/Uploads/201705/590be5d6c608c.png\" style=\"line-height:1.5;\" /> \r\n					</p>\r\n				</td>\r\n				<td style=\"vertical-align:bottom;\">\r\n					<p>\r\n						<img src=\"/Uploads/201705/590be5e96a5d1.jpg\" style=\"line-height:1.5;\" /> \r\n					</p>\r\n				</td>\r\n			</tr>\r\n			<tr>\r\n				<td style=\"height:50%;\">\r\n					<h3 style=\"box-sizing:border-box;margin:20px 0px 1rem;padding:0.8rem 0px 1.5rem;font-family:Arial;font-weight:500;line-height:1.1;color:#4EB136;font-size:24px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#4EB136;white-space:normal;background-color:#FFFFFF;\">\r\n						<span style=\"line-height:3;\">Mobile Flipchart Easel</span> \r\n					</h3>\r\n				</td>\r\n			</tr>\r\n			<tr>\r\n				<td>\r\n					<p style=\"box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding:0px;color:#333333;font-family:Arial;font-size:14px;line-height:20px;white-space:normal;background-color:#FFFFFF;\">\r\n						<img src=\"http://wenyang.networkgrand.com/images/2.png\" style=\"box-sizing:border-box;margin:0px 5px 0px 0px;padding:0px;vertical-align:middle;\" /><strong><span style=\"font-size:16px;line-height:1.5;\">Board Size:70x100cm(28\"x40\")</span></strong><strong><span style=\"font-size:16px;\"></span></strong> \r\n					</p>\r\n					<p style=\"box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding:0px;color:#333333;font-family:Arial;font-size:14px;line-height:20px;white-space:normal;background-color:#FFFFFF;\">\r\n						<img src=\"http://wenyang.networkgrand.com/images/2.png\" style=\"color:#333333;font-family:Arial;font-size:14px;line-height:20px;white-space:normal;box-sizing:border-box;margin:0px 5px 0px 0px;padding:0px;vertical-align:middle;\" /><strong><span style=\"font-size:16px;\"></span></strong><strong><span style=\"font-size:16px;line-height:1.5;\">Max Height:195cm(78\")</span></strong> \r\n					</p>\r\n					<p style=\"box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding:0px;color:#333333;font-family:Arial;font-size:14px;line-height:20px;white-space:normal;background-color:#FFFFFF;\">\r\n						<span class=\"Advantage\" style=\"box-sizing:border-box;margin:0px;padding:0px;font-size:0.7rem;\"><strong><span style=\"font-size:16px;\"><img src=\"http://wenyang.networkgrand.com/images/2.png\" style=\"color:#333333;font-family:Arial;font-size:14px;line-height:20px;white-space:normal;box-sizing:border-box;margin:0px 5px 0px 0px;padding:0px;vertical-align:middle;max-width:100%;\" /><span style=\"line-height:1.5;\">Board: H</span></span></strong><strong><span style=\"font-size:16px;line-height:1.5;\">igh quality lacquered steel sheet surface with magnetic, aluminum frame, ABS corner;</span></strong></span> \r\n					</p>\r\n					<p style=\"box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding:0px;color:#333333;font-family:Arial;font-size:14px;line-height:20px;white-space:normal;background-color:#FFFFFF;\">\r\n						<img src=\"http://wenyang.networkgrand.com/images/2.png\" style=\"box-sizing:border-box;margin:0px 5px 0px 0px;padding:0px;vertical-align:middle;\" /><strong style=\"color:#333333;font-family:Arial;line-height:20px;white-space:normal;background-color:#FFFFFF;\"><span style=\"font-size:16px;line-height:1.5;\">S</span></strong><span class=\"Advantage\" style=\"box-sizing:border-box;margin:0px;padding:0px;font-size:0.7rem;\"><strong><span style=\"font-size:16px;\"></span><span style=\"font-size:16px;line-height:1.5;\">tand: Steel tube,five star let,dia 5cm castor with brake,height adjustable.Round base dia 68cm(26.7\");</span></strong></span> \r\n					</p>\r\n					<p style=\"box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding:0px;color:#333333;font-family:Arial;font-size:14px;line-height:20px;white-space:normal;background-color:#FFFFFF;\">\r\n						<img src=\"http://wenyang.networkgrand.com/images/2.png\" style=\"box-sizing:border-box;margin:0px 5px 0px 0px;padding:0px;vertical-align:middle;\" /><span class=\"Advantage\" style=\"box-sizing:border-box;margin:0px;padding:0px;font-size:16px;line-height:1.5;\"><strong>Accessories: 1 pcs magnetic eraser,3 pcs magnets;</strong></span> \r\n					</p>\r\n					<p style=\"box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding:0px;color:#333333;font-family:Arial;font-size:14px;line-height:20px;white-space:normal;background-color:#FFFFFF;\">\r\n						<span class=\"Advantage\" style=\"box-sizing:border-box;margin:0px;padding:0px;font-size:0.7rem;\"><img src=\"http://wenyang.networkgrand.com/images/2.png\" style=\"color:#333333;font-family:Arial;font-size:14px;line-height:20px;white-space:normal;box-sizing:border-box;margin:0px 5px 0px 0px;padding:0px;vertical-align:middle;max-width:100%;\" /><strong><span style=\"font-size:16px;line-height:1.5;\">Extra Choice: Extention bar.</span></strong></span> \r\n					</p>\r\n					<p style=\"box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding:0px;color:#333333;font-family:Arial;font-size:14px;line-height:20px;white-space:normal;background-color:#FFFFFF;\">\r\n						<img src=\"http://wenyang.networkgrand.com/images/2.png\" style=\"font-size:14px;box-sizing:border-box;margin:0px 5px 0px 0px;padding:0px;vertical-align:middle;\" /><strong><span style=\"font-size:16px;line-height:1.5;\">Packing:1set/ctn,0.096cbm/pcs,&nbsp;</span></strong><strong><span style=\"font-size:16px;line-height:1.5;\">G.W.:15.7kgs/set;</span></strong> \r\n					</p>\r\n<br />\r\n				</td>\r\n			</tr>\r\n		</tbody>\r\n	</table>\r\n</p>', '', '0');
-INSERT INTO `cosmo_page` VALUES ('78', 'Contact', '', 'whiteboard inquiry', 'get a quote for the whiteboard products series', '', '', '0');
-INSERT INTO `cosmo_page` VALUES ('74', 'AboutUs', '', 'China whiteboard,glass whiteboard,flip chart ,whiteboard manufacturer', 'WeYoung -China whiteboard,glass whiteboard,flip chart manufacturer', '<p style=\"text-align:center;\">\r\n	<br />\r\n</p>\r\n<p>\r\n	<br />\r\n</p>\r\n<p style=\"text-align:center;\">\r\n	<img src=\"/Uploads/201705/5928f0030778e.jpg\" alt=\"\" /> \r\n</p>\r\n<p>\r\n	<br />\r\n</p>\r\n<p>\r\n	<span style=\"font-family:Arial;font-size:16px;line-height:26.6667px;white-space:normal;\">Established\r\n in Foshan in 1993, one of the most famous industrial cities in China, \r\nWenyang Stationery Manufacturing Co., Ltd. is a manufacturer and \r\nexporter specializing in whiteboards, notice boards, chalk boards, \r\nflip chart easels, whiteboard stands, print racks, magazine stands, \r\nnewspaper stands. Our factory covers an area of 25,000 square meters. As\r\n one of the biggest whiteboard manufacturers and whiteboard standards \r\nsetters in China, we are one of the best producers with the highest \r\nquality standards,and got the certificate of ISO9001:2008,BV CERT,TUV \r\nCERT,SGS CERT.</span> \r\n</p>\r\n<p style=\"text-align:center;\">\r\n	<img src=\"/Uploads/201705/5926796e10f5a.jpg\" alt=\"\" /> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	<span style=\"font-size:16px;font-family:Arial;line-height:2;\">So far, the products have been exported to\r\n50 countries including USA, Germany, Japan, Australia, UAE, etc. We have\r\nestablished good business relationships with many of the world’s multinational\r\ncompanies such as 3M, Comix,and be a supplier of 2012 LONDON OLYMPIC GAMES and\r\n2016 RIO OLYMPIC GAMES.</span> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-align:center;\">\r\n	<br />\r\n</p>\r\n<p style=\"text-align:center;\">\r\n	<img src=\"/Uploads/201706/593faec12ff48.jpg\" alt=\"\" /> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	<span style=\"font-size:16px;font-family:Arial;line-height:2;\">During the past 24 years, our company has\r\nadhered to the management concept of trust and cooperation, superior product\r\nquality and corporate cultural development for our personnel. Our corporate\r\nvision attracts a group of highly skilled technicians and professional\r\nmanagement staff that are eager and ready to serve our customers.&nbsp; As a result, our product quality meets\r\nworld-class standards. We also offer OEM and custom made services wherein we\r\ntailor the product according to the specifications and design of our clients. </span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	<br />\r\n</p>\r\n<p class=\"MsoNormal\">\r\n	<span style=\"font-size:16px;font-family:Arial;line-height:2;\">Honesty as the foundation, credit standing\r\nas rule, quality and quantity assured, development together. We sincerely would\r\nlike to cooperate with you on the basis of mutual benefit. You are warmly\r\nwelcome to visit us.</span> \r\n</p>\r\n<br />', '', '0');
-INSERT INTO `cosmo_page` VALUES ('103', 'Thanks', '', '', '', '', '', '0');
-INSERT INTO `cosmo_page` VALUES ('108', 'NEWS', '', '', '', '', '', '0');
+INSERT INTO `cosmo_page` VALUES ('1', '关于我们', '', '', '', '<p>\r\n	<span style=\"line-height:2;\">&nbsp; &nbsp;Sichuan Hui Da Tong (Phedaton) Mechanical Equipment Manufacturing Co., Ltd Is located at Chongzhou Industrial port in&nbsp;T EDA, an industrial concentration development area in Sichuan. Established in the year of 2012 with a registered capital of 11 million&nbsp;yuan, Now we’ve reached an annual turnover of $ 90 million, at the same time, we have obtained the import &amp; export certificates issued by the Ministry of Foreign Trade and Economic Cooperation and General Administration of Customs of PRC.</span>\r\n</p>\r\n<p>\r\n	<span style=\"line-height:2;\">&nbsp;&nbsp;We are mainly engaged in research, production and sales of dish-washing machine. With an innovation-driven culture, we’ve been dedicating in laser cutter, Automatic welding machine as well as Highland field kitchen car. Our major products have been widely used for cleaning.</span> \r\n</p>\r\n<p>\r\n	<span style=\"line-height:2;\">Featured with advanced technology, reliable performance and high durability, our Phedaton products earn good reputation. We&nbsp;have 2 in-house manufacturing plants and 2 exhibition centers and over 100 staffs around Chengdu, China.&nbsp;Honored as “High-Tech Enterprise”, we have acquired more than 15 National patents,&nbsp;among which two patents are Municipal Science and Technology Progress Award.</span> \r\n</p>\r\n<p>\r\n	<span style=\"line-height:2;\">&nbsp;&nbsp;Apart from the 2 manufacturing plants, we have a robotics lab, a heavy equipment production base (built by a joint effort with Sichuan Xihe Mechanical and Electrical Equipment Manufacturing Co.,Ltd), and an automation equipment lab (built by a joint effort with Sichuan Agricultural University).Based on a disciplined and professional R&amp;D and production team, we produce and deliver quality products as well as projects, receiving strongly positive feedbacks from clients.</span> \r\n</p>', '', '0', '');
+INSERT INTO `cosmo_page` VALUES ('2', '新闻中心', '', '', '', '', '', '0', '');
+INSERT INTO `cosmo_page` VALUES ('3', '案例中心', '', '', '', '', '', '0', '');
+INSERT INTO `cosmo_page` VALUES ('4', '联系我们', '', '', '', '', '', '0', '');
+INSERT INTO `cosmo_page` VALUES ('5', '关于茅台510', '', '', '', '', '', '0', '');
+INSERT INTO `cosmo_page` VALUES ('6', '关于茅台510', '', '', '', '', '', '0', '');
+INSERT INTO `cosmo_page` VALUES ('14', 'product', '', '', '', '', '', '0', '');
+INSERT INTO `cosmo_page` VALUES ('24', 'Video', '', '', '', '', '', '0', '');
+INSERT INTO `cosmo_page` VALUES ('25', 'Micro Hi-Fi', '/Uploads/201609/57d7bd53a3317.jpg', '', '', '', '', '0', '');
+INSERT INTO `cosmo_page` VALUES ('27', 'MCB1533', '', '', '', '', '', '0', '');
+INSERT INTO `cosmo_page` VALUES ('39', '联系我们', '', '', '', '<div style=\"padding:0px;margin:0px;color:#8F969F;font-family:Arial, Helvetica, Arial, Verdana, sans-serif;font-size:14px;line-height:28px;white-space:normal;background-color:#FFFFFF;\">\r\n	如有咨询事项，请联系技术客服QQ&nbsp;：3341822209<br />\r\n公司：贵州高峰石油机械股份有限公司<br />\r\n地址：贵州省贵阳市观山湖区长岭南路22号<br />\r\n邮编：550081\r\n</div>\r\n<div style=\"padding:0px;margin:0px;color:#8F969F;font-family:Arial, Helvetica, Arial, Verdana, sans-serif;font-size:14px;line-height:28px;white-space:normal;background-color:#FFFFFF;\">\r\n</div>\r\n<div style=\"padding:0px;margin:0px;color:#8F969F;font-family:Arial, Helvetica, Arial, Verdana, sans-serif;font-size:14px;line-height:28px;white-space:normal;background-color:#FFFFFF;\">\r\n	<p style=\"padding:0px;margin-top:0px;margin-bottom:10px;\">\r\n		<span style=\"padding:0px;margin:0px;font-weight:700;\">国内</span><br />\r\n电话：86-851-84668339<br />\r\n86-851-84810952<br />\r\n传真：86-851-84668503<br />\r\n86-851-84810845<br />\r\n邮箱：xsb1@gaofeng-petro.com\r\n	</p>\r\n	<p style=\"padding:0px;margin-top:0px;margin-bottom:10px;\">\r\n		&nbsp;\r\n	</p>\r\n</div>\r\n<div style=\"padding:0px;margin:0px;color:#8F969F;font-family:Arial, Helvetica, Arial, Verdana, sans-serif;font-size:14px;line-height:28px;white-space:normal;background-color:#FFFFFF;\">\r\n	<span style=\"padding:0px;margin:0px;font-weight:700;\">国际</span><br />\r\n电话：86-851-87995502<br />\r\n传真：86-851-87995503<br />\r\n邮箱：sales@gaofeng-petro.com<br />\r\n网址：<a href=\"http://www.gaofeng-petro.com/\" style=\"padding:0px;margin:0px;color:#006FA8;\">www.gaofeng-petro.com</a>\r\n</div>', '', '0', '');
+INSERT INTO `cosmo_page` VALUES ('77', 'Highlight', '', '', '', '<p>\r\n	<table style=\"width:100%;\" cellpadding=\"2\" cellspacing=\"0\" border=\"1\" bordercolor=\"#FFFFFF\">\r\n		<tbody>\r\n			<tr>\r\n				<td rowspan=\"3\">\r\n					<p>\r\n						<img src=\"/Uploads/201705/590be5d6c608c.png\" style=\"line-height:1.5;\" /> \r\n					</p>\r\n				</td>\r\n				<td style=\"vertical-align:bottom;\">\r\n					<p>\r\n						<img src=\"/Uploads/201705/590be5e96a5d1.jpg\" style=\"line-height:1.5;\" /> \r\n					</p>\r\n				</td>\r\n			</tr>\r\n			<tr>\r\n				<td style=\"height:50%;\">\r\n					<h3 style=\"box-sizing:border-box;margin:20px 0px 1rem;padding:0.8rem 0px 1.5rem;font-family:Arial;font-weight:500;line-height:1.1;color:#4EB136;font-size:24px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#4EB136;white-space:normal;background-color:#FFFFFF;\">\r\n						<span style=\"line-height:3;\">Mobile Flipchart Easel</span> \r\n					</h3>\r\n				</td>\r\n			</tr>\r\n			<tr>\r\n				<td>\r\n					<p style=\"box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding:0px;color:#333333;font-family:Arial;font-size:14px;line-height:20px;white-space:normal;background-color:#FFFFFF;\">\r\n						<img src=\"http://wenyang.networkgrand.com/images/2.png\" style=\"box-sizing:border-box;margin:0px 5px 0px 0px;padding:0px;vertical-align:middle;\" /><strong><span style=\"font-size:16px;line-height:1.5;\">Board Size:70x100cm(28\"x40\")</span></strong><strong><span style=\"font-size:16px;\"></span></strong> \r\n					</p>\r\n					<p style=\"box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding:0px;color:#333333;font-family:Arial;font-size:14px;line-height:20px;white-space:normal;background-color:#FFFFFF;\">\r\n						<img src=\"http://wenyang.networkgrand.com/images/2.png\" style=\"color:#333333;font-family:Arial;font-size:14px;line-height:20px;white-space:normal;box-sizing:border-box;margin:0px 5px 0px 0px;padding:0px;vertical-align:middle;\" /><strong><span style=\"font-size:16px;\"></span></strong><strong><span style=\"font-size:16px;line-height:1.5;\">Max Height:195cm(78\")</span></strong> \r\n					</p>\r\n					<p style=\"box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding:0px;color:#333333;font-family:Arial;font-size:14px;line-height:20px;white-space:normal;background-color:#FFFFFF;\">\r\n						<span class=\"Advantage\" style=\"box-sizing:border-box;margin:0px;padding:0px;font-size:0.7rem;\"><strong><span style=\"font-size:16px;\"><img src=\"http://wenyang.networkgrand.com/images/2.png\" style=\"color:#333333;font-family:Arial;font-size:14px;line-height:20px;white-space:normal;box-sizing:border-box;margin:0px 5px 0px 0px;padding:0px;vertical-align:middle;max-width:100%;\" /><span style=\"line-height:1.5;\">Board: H</span></span></strong><strong><span style=\"font-size:16px;line-height:1.5;\">igh quality lacquered steel sheet surface with magnetic, aluminum frame, ABS corner;</span></strong></span> \r\n					</p>\r\n					<p style=\"box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding:0px;color:#333333;font-family:Arial;font-size:14px;line-height:20px;white-space:normal;background-color:#FFFFFF;\">\r\n						<img src=\"http://wenyang.networkgrand.com/images/2.png\" style=\"box-sizing:border-box;margin:0px 5px 0px 0px;padding:0px;vertical-align:middle;\" /><strong style=\"color:#333333;font-family:Arial;line-height:20px;white-space:normal;background-color:#FFFFFF;\"><span style=\"font-size:16px;line-height:1.5;\">S</span></strong><span class=\"Advantage\" style=\"box-sizing:border-box;margin:0px;padding:0px;font-size:0.7rem;\"><strong><span style=\"font-size:16px;\"></span><span style=\"font-size:16px;line-height:1.5;\">tand: Steel tube,five star let,dia 5cm castor with brake,height adjustable.Round base dia 68cm(26.7\");</span></strong></span> \r\n					</p>\r\n					<p style=\"box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding:0px;color:#333333;font-family:Arial;font-size:14px;line-height:20px;white-space:normal;background-color:#FFFFFF;\">\r\n						<img src=\"http://wenyang.networkgrand.com/images/2.png\" style=\"box-sizing:border-box;margin:0px 5px 0px 0px;padding:0px;vertical-align:middle;\" /><span class=\"Advantage\" style=\"box-sizing:border-box;margin:0px;padding:0px;font-size:16px;line-height:1.5;\"><strong>Accessories: 1 pcs magnetic eraser,3 pcs magnets;</strong></span> \r\n					</p>\r\n					<p style=\"box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding:0px;color:#333333;font-family:Arial;font-size:14px;line-height:20px;white-space:normal;background-color:#FFFFFF;\">\r\n						<span class=\"Advantage\" style=\"box-sizing:border-box;margin:0px;padding:0px;font-size:0.7rem;\"><img src=\"http://wenyang.networkgrand.com/images/2.png\" style=\"color:#333333;font-family:Arial;font-size:14px;line-height:20px;white-space:normal;box-sizing:border-box;margin:0px 5px 0px 0px;padding:0px;vertical-align:middle;max-width:100%;\" /><strong><span style=\"font-size:16px;line-height:1.5;\">Extra Choice: Extention bar.</span></strong></span> \r\n					</p>\r\n					<p style=\"box-sizing:border-box;margin-top:0px;margin-bottom:10px;padding:0px;color:#333333;font-family:Arial;font-size:14px;line-height:20px;white-space:normal;background-color:#FFFFFF;\">\r\n						<img src=\"http://wenyang.networkgrand.com/images/2.png\" style=\"font-size:14px;box-sizing:border-box;margin:0px 5px 0px 0px;padding:0px;vertical-align:middle;\" /><strong><span style=\"font-size:16px;line-height:1.5;\">Packing:1set/ctn,0.096cbm/pcs,&nbsp;</span></strong><strong><span style=\"font-size:16px;line-height:1.5;\">G.W.:15.7kgs/set;</span></strong> \r\n					</p>\r\n<br />\r\n				</td>\r\n			</tr>\r\n		</tbody>\r\n	</table>\r\n</p>', '', '0', '');
+INSERT INTO `cosmo_page` VALUES ('78', 'Contact', '', 'whiteboard inquiry', 'get a quote for the whiteboard products series', '', '', '0', '');
+INSERT INTO `cosmo_page` VALUES ('74', 'AboutUs', '', 'China whiteboard,glass whiteboard,flip chart ,whiteboard manufacturer', 'WeYoung -China whiteboard,glass whiteboard,flip chart manufacturer', '<p>\r\n	Shanghai Jason Plastic Co.,Ltd is a professional manufacturer which established in\r\n                Jiading District Shanghai in 2003.\r\n                Main Products: Educational Toys, Plastic Injection Products, Electronic Products,\r\n                Cosmetic Packagings, Cosmetic fillings and so on.\r\n</p>\r\n<a class=\"about-contact\" href=\"#contact\"> Contact Us</a>', '', '0', '<p>\r\n	Shanghai Jason Plastic Co.,Ltd is a professional manufacturer which established in\r\n                Jiading District Shanghai in 2003.\r\n                Main Products: Educational Toys, Plastic Injection Products, Electronic Products,\r\n                Cosmetic Packagings, Cosmetic fillings and so on.\r\n</p>\r\n<a class=\"about-contact\" href=\"#contact\"> Contact Us</a>');
+INSERT INTO `cosmo_page` VALUES ('103', 'Thanks', '', '', '', '', '', '0', '');
+INSERT INTO `cosmo_page` VALUES ('108', 'NEWS', '', '', '', '', '', '0', '');
 
 -- ----------------------------
 -- Table structure for cosmo_posid
@@ -1439,15 +1490,23 @@ CREATE TABLE `cosmo_product` (
   `available_one` mediumtext NOT NULL,
   `available_two` text NOT NULL,
   `model` varchar(255) NOT NULL DEFAULT '',
+  `cont` text NOT NULL,
+  `radis` varchar(255) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
   KEY `status` (`id`,`status`,`listorder`),
   KEY `catid` (`id`,`catid`,`status`),
   KEY `listorder` (`id`,`catid`,`status`,`listorder`)
-) ENGINE=MyISAM AUTO_INCREMENT=109 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=115 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of cosmo_product
 -- ----------------------------
+INSERT INTO `cosmo_product` VALUES ('109', '73', '2', 'admin', 'Product description of 75% alcohol disinfectant gel', '', '/Public/www/images/product.png', '', '', '', '/product_109.html', '', '0', '1', '0', '0', '1585708520', '1585708855', '0', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '<div class=\"title\">\r\n	Product description of 75% alcohol disinfectant gel\r\n</div>\r\n<p>\r\n	Main active ingredient: 75±5% alcohol (V/V)\r\n                Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,\r\n                clean\r\n</p>\r\n<a class=\"down\" href=\"\">Download</a>', '1');
+INSERT INTO `cosmo_product` VALUES ('110', '73', '2', 'admin', 'Product description of 75% alcohol disinfectant gel', '', '/Public/www/images/product2.png', '', '', '', '/product_110.html', '', '0', '1', '0', '0', '1585708581', '1585708874', '0', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '<div class=\"title\">\r\n	Product description of 75% alcohol disinfectant gel\r\n</div>\r\n<p>\r\n	Main active ingredient: 75±5% alcohol (V/V)\r\n                Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,\r\n                clean\r\n</p>\r\n<a class=\"down\" href=\"\">Download</a>', '1');
+INSERT INTO `cosmo_product` VALUES ('111', '73', '2', 'admin', 'Product description of 75% alcohol disinfectant gel', '', '/Public/www/images/product3.png', '', '', '', '/product_111.html', '', '0', '1', '0', '0', '1585708641', '1585708898', '0', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '<div class=\"title\">\r\n	Product description of 75% alcohol disinfectant gel\r\n</div>\r\n<p>\r\n	Main active ingredient: 75±5% alcohol (V/V)\r\n                Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,\r\n                clean\r\n</p>', '2');
+INSERT INTO `cosmo_product` VALUES ('112', '73', '2', 'admin', 'Product description of 75% alcohol disinfectant gel', '', '/Public/www/images/product4.png', '', '', '', '/product_112.html', '', '0', '1', '0', '0', '1585708743', '1585709068', '0', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '<div class=\"title\" style=\"white-space:normal;\">\r\n	Product description of 75% alcohol disinfectant gel\r\n</div>\r\n<p style=\"white-space:normal;\">\r\n	Main active ingredient: 75±5% alcohol (V/V) Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic, clean\r\n</p>\r\n<a class=\"down\" href=\"http://jiasong.com/index.php?g=Admin&amp;m=Product&amp;a=edit&amp;id=109\" style=\"white-space:normal;\">Download</a>', '2');
+INSERT INTO `cosmo_product` VALUES ('113', '73', '2', 'admin', 'Product description of 75% alcohol disinfectant gel', '', '/Public/www/images/product5.png', '', '', '', '/product_113.html', '', '0', '1', '0', '0', '1585709009', '1585709009', '0', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '<div class=\"title\" style=\"white-space:normal;\">\r\n	Product description of 75% alcohol disinfectant gel\r\n</div>\r\n<p style=\"white-space:normal;\">\r\n	Main active ingredient: 75±5% alcohol (V/V) Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic, clean\r\n</p>\r\n<a class=\"down\" href=\"http://jiasong.com/index.php?g=Admin&amp;m=Product&amp;a=edit&amp;id=109\" style=\"white-space:normal;\">Download</a>', '1');
+INSERT INTO `cosmo_product` VALUES ('114', '73', '2', 'admin', 'Product description of 75% alcohol disinfectant gel', '', '/Public/www/images/product6.png', '', '', '', '/product_114.html', '', '0', '1', '0', '0', '1585709044', '1585709044', '0', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '<div class=\"title\" style=\"white-space:normal;\">\r\n	Product description of 75% alcohol disinfectant gel\r\n</div>\r\n<p style=\"white-space:normal;\">\r\n	Main active ingredient: 75±5% alcohol (V/V) Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic, clean\r\n</p>\r\n<a class=\"down\" href=\"http://jiasong.com/index.php?g=Admin&amp;m=Product&amp;a=edit&amp;id=109\" style=\"white-space:normal;\">Download</a>', '1');
 
 -- ----------------------------
 -- Table structure for cosmo_role
@@ -1519,8 +1578,8 @@ CREATE TABLE `cosmo_slide` (
 -- ----------------------------
 -- Records of cosmo_slide
 -- ----------------------------
-INSERT INTO `cosmo_slide` VALUES ('1', '首页banner', '', '', '1', '220', '220', '5', '1', '0');
-INSERT INTO `cosmo_slide` VALUES ('2', '手机版banner', '', '', '1', '22', '22', '5', '1', '0');
+INSERT INTO `cosmo_slide` VALUES ('1', '首页banner', '', '', '1', '1920', '700', '5', '1', '0');
+INSERT INTO `cosmo_slide` VALUES ('2', 'about轮番', '', '', '1', '652', '376', '5', '1', '0');
 
 -- ----------------------------
 -- Table structure for cosmo_slide_data
@@ -1543,14 +1602,8 @@ CREATE TABLE `cosmo_slide_data` (
 -- ----------------------------
 -- Records of cosmo_slide_data
 -- ----------------------------
-INSERT INTO `cosmo_slide_data` VALUES ('3', '2', '01', '/Uploads/201810/5bcda1c7383a4.jpg', '', '0', '1', '0', '');
-INSERT INTO `cosmo_slide_data` VALUES ('7', '1', 'banner1', '/Uploads/201812/5c1767d2ee058.jpg', '', '0', '1', '0', '');
-INSERT INTO `cosmo_slide_data` VALUES ('8', '1', 'banner2', '/Uploads/201812/5c1767eba085e.jpg', '', '0', '1', '0', '');
-INSERT INTO `cosmo_slide_data` VALUES ('9', '1', 'banner3', '/Uploads/201812/5c1768185f4b8.jpg', '', '0', '1', '0', '');
-INSERT INTO `cosmo_slide_data` VALUES ('10', '2', '02', '/Uploads/201810/5bcda1e670926.jpg', '', '0', '1', '0', '');
-INSERT INTO `cosmo_slide_data` VALUES ('11', '2', '03', '/Uploads/201810/5bcda1f4e634a.jpg', '', '0', '1', '0', '');
-INSERT INTO `cosmo_slide_data` VALUES ('12', '1', 'banner4', '/Uploads/201904/5cb3e98c70fb9.jpg', '', '0', '0', '0', '');
-INSERT INTO `cosmo_slide_data` VALUES ('13', '2', 'banner4', '/Uploads/201904/5cb3e9a06768e.jpg', '', '0', '0', '0', '');
+INSERT INTO `cosmo_slide_data` VALUES ('7', '1', 'banner1', '/Uploads/202003/5e8311da70f58.png', '', '0', '1', '0', '<div class=\"title\">\r\n	Here Is The Title\r\n</div>\r\n<p>\r\n	Here is the subtitleHere is the subtitleHere is the subtitleHere\r\n</p>\r\n<a href=\"#contact\"> Contact Us</a>');
+INSERT INTO `cosmo_slide_data` VALUES ('11', '2', '03', '/Public/www/images/about-sw.png', '', '0', '1', '0', '');
 
 -- ----------------------------
 -- Table structure for cosmo_type
@@ -1628,6 +1681,6 @@ CREATE TABLE `cosmo_user` (
 -- ----------------------------
 -- Records of cosmo_user
 -- ----------------------------
-INSERT INTO `cosmo_user` VALUES ('4', '2', 'jiasong', 'bf1ce60ba6c0b5b1ed2936ac9c8753627cd1ef98', 'osd@jiasong.cn', '', '', '', '1', '', '', '', '', '', '141', '1540782434', '0', '1561964411', '61.140.27.219', '27.45.146.101', '1', '0.00', '0', '');
-INSERT INTO `cosmo_user` VALUES ('2', '1', 'admin', 'fabaa88b6979f99875d10d053a1b128e90920d98', 'info@cosmoing.com', 'admin', '', '', '1', '', '', '', '', '', '89', '1502869825', '0', '1585551384', '122.97.176.27', '127.0.0.1', '1', '0.00', '0', '');
+INSERT INTO `cosmo_user` VALUES ('4', '2', 'jiasong', 'e6eb25051634adf8f105c5ab9dcdb172340a2328', 'osd@jiasong.cn', '', '', '', '1', '', '', '', '', '', '141', '1540782434', '0', '1561964411', '61.140.27.219', '27.45.146.101', '1', '0.00', '0', '');
+INSERT INTO `cosmo_user` VALUES ('2', '1', 'admin', 'fabaa88b6979f99875d10d053a1b128e90920d98', 'info@cosmoing.com', 'admin', '', '', '1', '', '', '', '', '', '90', '1502869825', '0', '1585705236', '122.97.176.27', '127.0.0.1', '1', '0.00', '0', '');
 SET FOREIGN_KEY_CHECKS=1;
