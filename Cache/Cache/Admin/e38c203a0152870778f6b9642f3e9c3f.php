@@ -73,96 +73,55 @@ function googleTranslateElementInit() {
 
 
 
-<form method='post'  id="form1" action="<?php echo U('Config/dosite');?>">
-<table width="100%"  cellpadding=0 cellspacing=0  class="table_form">
-  <tr>
-    <th width="120"><?php echo L('config_mail_md');?></th>
-    <td class="y-bg">
-     <input name="mail_type"   value="1" onclick="showsmtp(this)" type="radio"  <?php if($mail_type == 1): ?>checked<?php endif; ?>> <?php echo L('config_mail_smtp');?>
-	 <input name="mail_type"  value="2" onclick="showsmtp(this)" type="radio"  <?php if($mail_type == 2): ?>checked<?php endif; ?>  <?php if(substr(strtolower(PHP_OS), 0, 3) == 'win') echo 'disabled'; ?>/> <?php echo L('config_mail_mailfun');?>
-	 <input name="mail_type"   value="3" onclick="showsmtp(this)" type="radio"  <?php if($mail_type == 3): ?>checked<?php endif; ?>> sendmail
-	</td>
-  </tr>
-  <tbody id="smtpconfig" style="">
-  <tr>
-    <th><?php echo L('config_mail_server');?></th>
-    <td class="y-bg"><input type="text" class="input-text" name="mail_server" id="mail_server" size="30" value="<?php echo ($mail_server); ?>"/></td>
-  </tr>
-  <tr>
-    <th><?php echo L('config_mail_port');?></th>
-    <td class="y-bg"><input type="text" class="input-text" name="mail_port" id="mail_port" size="30" value="<?php echo ($mail_port); ?>"/></td>
-  </tr>
-  <tr>
-    <th><?php echo L('config_mail_from');?></th>
-    <td class="y-bg"><input type="text" class="input-text" name="mail_from" id="mail_from" size="30" value="<?php echo ($mail_from); ?>"/></td>
-  </tr>
-  <tr>
-    <th><?php echo L('config_mail_auth');?></th>
-    <td class="y-bg">
-    <input name="mail_auth" id="mail_auth" value="1" type="radio" <?php if($mail_auth == 1): ?>checked<?php endif; ?>> <?php echo L('open_select');?>	<input name="mail_auth" id="mail_auth" value="0" type="radio" <?php if($mail_auth == 0): ?>checked<?php endif; ?> > <?php echo L('close_select');?></td>
-  </tr>
+ <div id="infobox" >
+ <a href="<?php echo U('Slide/index');?>" style="float:right;"><?php echo L(gobacklist);?></a>
+ <?php echo ($slide[name]); ?> : <a href="<?php echo U('Slide/picmanage?fid='.$_GET[fid]);?>" class="ui-btn"><?php echo L('return');?> - <?php echo L('images_manage');?></a>
+</div>
 
-	  <tr>
-	    <th><?php echo L('config_mail_user');?></th>
-	    <td class="y-bg"><input type="text" class="input-text" name="mail_user" id="mail_user" size="30" value="<?php echo ($mail_user); ?>"/></td>
-	  </tr>
-	  <tr>
-	    <th><?php echo L('config_mail_password');?></th>
-	    <td class="y-bg"><input type="password" class="input-text" name="mail_password" id="mail_password" size="30" value="<?php echo ($mail_password); ?>"/></td>
-	  </tr>
 
- </tbody>
+<form name="myform" id="myform" action="<?php if($action_name=='addpic'): echo U($module_name.'/insertpic'); else: echo U($module_name.'/updatepic'); endif; ?>" method="post">
+<table cellpadding=0 cellspacing=0 class="table_form" width="100%">
+	<tr>
+		  <td width="120"><font color="red">*</font><?php echo L('title');?></td>
+		  <td><input type="text" id="title" name="title" value="<?php echo ($vo["title"]); ?>" class="input-text" size="50" validate="required:true,cn_username:true, minlength:2, maxlength:20"/></td>
+	</tr>
+<tr>
+		  <td width="120"><?php echo L('description');?></td>
+		  <td>
+       <?php echo $Form->editor(array('field'=>'description','setup'=>array('toolbar'=>'full','flashupload'=>'1')),$vo[description]);?> 
+                  </td>
+	</tr>
+	<tr>
+		  <td><?php echo L(link);?></td>
+		  <td><input type="text" id="link" name="link" value="<?php echo ($vo["link"]); ?>" class="input-text" size="50" /></td>
+	</tr>
+	<tr>
+		  <td><?php echo L(pic);?></td>
+		  <td>
+		   <div class="pic_box"  ><div id="pic_aid_box" style="display:none;"></div>
+			<input type="text"  id="pic" name="pic"  value="<?php echo ($vo['pic']); ?>" class="input-text" size="40"/><input type="button" class="button" value="<?php echo L(upload);?>" onclick="javascript:swfupload('pic_uploadfile','pic','<?php echo L(uploadfiles);?>',1,1,0,10,'jpeg,jpg,png,gif',5,230,'<?php echo ($yourphp_auth); ?>',yesdo,nodo)" />  <a href="javascript:void(0);" onclick="showpicbox($('#pic').val());"> <?php echo L(view);?></a>
+            <?php echo L('size');?>：<?php echo ($slide['width']); ?>*<?php echo ($slide['height']); ?>px
+           </div>
+            
+		 </td>
+	</tr>
+	<tr>
+		  <td><?php echo L(STATUS);?></td>
+		  <td><?php echo Form::radio(array('field'=>'status','options'=>array('1'=>L('display_yes'),'0'=>L('display_no'))),$vo['status']);?></td>
+	</tr>
 
-<tbody id="sendmailconfig" style="">
- <!-- <tr>
-    <th><?php echo L('config_mail_sendmail');?></th>
-    <td class="y-bg"><input type="text" class="input-text" name="mail_sendmail" id="mail_sendmail" size="30" value="<?php echo ($mail_sendmail); ?>"/></td>
-  </tr> -->
- </tbody>
 
-  <tr>
-    <th><?php echo L('config_mail_test');?></th>
-    <td class="y-bg"><input type="text" class="input-text" name="mail_to" id="mail_to" size="30" value=""/> <input type="button" class="button" onClick="javascript:test_mail();" value="<?php echo L('config_mail_testsed');?>"></td>
-  </tr>
-  </table>
-<div class="btn">
-<INPUT TYPE="submit"  value="<?php echo L('save');?>" class="button buttonBtn" >
-<input TYPE="reset"  value="<?php echo L('reset');?>" class="button">
+</table>
+<div  class="btn">
+<?php if($vo['id']!=''): ?><input TYPE="hidden" name="id" value="<?php echo ($vo["id"]); ?>"><?php endif; ?>
+<input TYPE="hidden" name="fid" value="<?php echo ($fid); ?>">
+<INPUT TYPE="submit"  value="<?php echo L('dosubmit');?>" class="button buttonBtn" >
+<input TYPE="reset"  value="<?php echo L('cancel');?>" class="button">
 </div>
 </form>
 </div>
-<script>
-function showsmtp(obj){
 
-	if(obj){
-	var issmtp  = $(obj).val();
-	}else{
-	var issmtp = $("input[name=mail_type][checked]").val();
-	}
-
-	if(issmtp==1){
-		$('#smtpconfig').show();
-		$('#sendmailconfig').hide();
-	}else if(issmtp==3){
-		$('#smtpconfig').hide();
-		$('#sendmailconfig').show();
-	}else{
-		$('#smtpconfig').hide();
-		$('#sendmailconfig').hide();
-	}
-}
-function test_mail(){
-
- 	var mail_type =  $("input[name=mail_type][checked]").val();
-
-
-    $.post('<?php echo U("Config/testmail");?>&mail_to='+$('#mail_to').val(),{mail_type:mail_type,mail_sendmail:$('#mail_sendmail').val(),mail_server:$('#mail_server').val(),mail_port:$('#mail_port').val(),mail_user:$('#mail_user').val(),mail_password:$('#mail_password').val(),mail_auth:$('#mail_auth').val(),mail_auth:$('#mail_auth').val(),mail_from:$('#mail_from').val()}, function(data){
-	alert(data.info);
-	},"json");
-
-}
-showsmtp();
-</script>
+</body></html>
 
 </body>
 </html>

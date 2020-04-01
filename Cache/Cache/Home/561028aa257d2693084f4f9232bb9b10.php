@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -22,9 +22,9 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
 
-    <meta name="keywords" content="{$seo_keywords}" />
-    <meta name="description" content="{$seo_description}" />
-    <title>{if MODULE_NAME != 'Index'}{$seo_title}{else}{$site_name}{/if}</title>
+    <meta name="keywords" content="<?php echo ($seo_keywords); ?>" />
+    <meta name="description" content="<?php echo ($seo_description); ?>" />
+    <title><?php if(MODULE_NAME != 'Index') : echo ($seo_title); else : echo ($site_name); endif;?></title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="renderer" content="webkit">
@@ -81,9 +81,9 @@
         <div class="top-bar clearfix">
             <div class="container">
                 <div class="row">
-                    <div class="phone col-lg-3 col-md-3 col-sm-4"><span>+86-21-59101751-153</span></div>
-                    <div class="eamil col-lg-3 col-md-3 col-sm-4">
-                        <a href="mailto:{$email}" target="_blank" class="emails">
+                    <div class="phone col-lg-3 col-md-3 col-sm-3"><span>+86-21-59101751-153</span></div>
+                    <div class="eamil col-lg-3 col-md-3 col-sm-3">
+                        <a href="mailto:<?php echo ($email); ?>" target="_blank" class="emails">
                             <span>info@gerpman.com</span></a>
                     </div>
                 </div>
@@ -119,3 +119,61 @@
             </div>
         </nav>
     </header>
+
+<!--面包屑导航-->
+<div class="mianbao">
+    <!-- <div class="mb_dao">
+        <img src="__PUBLIC__/www/images/home-icon.png" onclick="window.open('http://<?php echo $_SERVER['HTTP_HOST']?>','_self');"/>
+        <a href="/contact.html">Contact Us</a>
+    </div> -->
+</div>
+
+<!--联系我们内容部分-->
+<div class="contact" style="background: #fff;margin-top: 150px;padding: 80px 0">
+    <h4>WE ARE MORE THAN HAPPY TO ANSWER ANY ENQUIRIES VIA THIS CONTACT PAGE OR EMAIL!!!</h4>
+    <div class="contact_center">
+        <div class="center_left">
+            <h4>TO GET IN TOUCH</h4>
+            <h5><img src="__PUBLIC__/www/images/c1.png" alt="" />HEAD OFFICE LOCATION</h5>
+            <p><?php echo ($address); ?></p>
+
+            <h5><img src="__PUBLIC__/www/images/c2.png" alt="" />OFFICE CONTACT</h5>
+            <p><span>TEL:</span> <?php echo ($phone); ?> </p>
+
+            <p><span>FAX: </span><?php echo ($domestic_fax); ?></p>
+            <p><span>EMAIL: </span><?php echo ($email); ?></p>
+        </div>
+        <div class="center_right">
+            <h4>LEAVE A MESSAGE</h4>
+            <form name="form" method="post" action="index.php?g=Home&a=message" id="contact_form" >
+            <input name="forward" type="hidden" value="<?php echo ($_SERVER['SERVER_NAME']); if($catid) : ?>/index.php?m=<?php echo ($Categorys[$catid]['module']); ?>&a=index&id=<?php echo ($catid); else :?>/index.php<?php endif;?>"/>
+            <input type="hidden" name="lang" value="<?php echo ($Lang); ?>">
+            <span style="marg-right:5px;color:red;font-weight:700;">*</span>&nbsp;<input type="text" name="name" id="name" placeholder="name">
+            <span style="marg-right:5px;color:red;font-weight:700;">*</span>&nbsp;<input type="text" name="phone" id="phone" placeholder="Phone">
+            <span style="marg-right:5px;color:red;font-weight:700;">*</span>&nbsp;<input type="text" name="email" id="mail" placeholder="Email">
+            <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                <input type="submit" class="contact_send" value="SUBMIT NOW">
+            </form>
+        </div>
+    </div>
+    <div class="map_div">
+		<iframe src="http://www.google.cn/maps/embed?pb=!1m18!1m12!1m3!1d1838.9095370799!2d113.23523165818717!3d22.809166996265365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340248e1014a77b5%3A0xaeddd6f6aeeff16f!2z5bm_5Lic6ZS75Y6L5py65bqK5Y6C!5e0!3m2!1szh-CN!2scn!4v1545381409014" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+</div>
+<!--顶部图片-->
+<div class="top_img">
+  <img src="__PUBLIC__/www/images/product_bander.jpg" alt="" />
+</div>
+
+<!-- footer -->
+<footer>
+    <div class="copy"> © 2020 Shanghai Jason Plastic Co.,Ltd </div>
+    <div class="goTop">
+        <i class="topIcon"></i>
+        <p>TOP</p>
+    </div>
+</footer>
+</body>
+
+</html>

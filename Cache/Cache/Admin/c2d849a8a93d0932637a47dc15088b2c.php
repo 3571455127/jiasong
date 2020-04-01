@@ -72,39 +72,48 @@ function googleTranslateElementInit() {
 	</script><?php endif; ?>
 
 
-<form name="myform" action="<?php echo U('Module/listorder');?>" method="post">
+
+<div id="infobox" >
+ <a href="<?php echo U('Slide/index');?>" style="float:right;"><?php echo L(gobacklist);?></a>
+<?php echo ($slide[name]); ?> : <a href="<?php echo U('Slide/addpic?fid='.$slide[id]);?>"  class="ui-btn"><?php echo L(add_pic);?></a>
+</div>
+
+<form name="myform" id="myform" action="" method="post">
 <div class="table-list">
     <table width="100%" cellspacing="0">
         <thead>
       		<tr>
+			<th width="30"><?php echo L('listorder');?></th>
 			<th width="40">ID</th>
-			<th width="90" align="left" ><?php echo L('module_name');?></th>
-			<th width="90" align="left" ><?php echo L('module_table');?></th>
-			<th width="300" align="left" ><?php echo L('module_description');?></th>
-			<th width="240"><?php echo L('manage');?></th>
+			<th width="180" align="left"><?php echo L(TITLE);?></th>
+			<th align="left"><?php echo L(THUMB);?></th>
+			<th width="50" align="center"><?php echo L(STATUS);?></th>
+			<th width="140"   align="center"><?php echo L('manage');?></th>
       		</tr>
       	</thead>
       	<tbody>
       		<?php if(is_array($list)): $k = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr>
+			<td width="40" align='center'><input name='listorders[<?php echo ($vo["id"]); ?>]' type='text' size='3' value='<?php echo ($vo["listorder"]); ?>' class='input-text-c'></td>
 			<td align="center"><?php echo ($vo['id']); ?></td>
-      		<td><?php echo ($vo['title']); ?></td>
-      		<td><?php echo ($vo['name']); ?></td>
-      		<td><?php echo ($vo['description']); ?></td>
-      		<td align="center">
-			<a href="<?php echo U('Field/index',array(moduleid=>$vo['id']));?>"><?php echo L('module_field');?></a> |
-			<a href="<?php echo U('Module/edit',array(id=>$vo['id']));?>"><?php echo L('edit');?></a>		|
-			<?php if($vo[status]==1): ?><a href="<?php echo U('Module/status',array(id=>$vo['id'],status=>0));?>"><font color="green"><?php echo L('enable');?></font></a>
-			<?php else: ?>
-				<a href="<?php echo U('Module/status',array(id=>$vo['id'],status=>1));?>"><font color="red"><?php echo L('disable');?></font></a><?php endif; ?>
-		 | <?php if($vo['issystem']): ?><font color="#CFCFCF"><?php echo L('delete');?></font>
-		 <?php else: ?>
-		 <a href="<?php echo U('Module/delete',array(id=>$vo['id']));?>"  onclick="return confirm('<?php echo L('module_real_uninstall');?>')"><?php echo L('delete');?></a><?php endif; ?>
-		 </td>
+      		<td align="left"><?php echo ($vo['title']); ?></td>
+			<td align="left"><img src="<?php echo ($vo['pic']); ?>" width="240"></td>
+			<td align="center"><?php if(($vo['status']) == "1"): echo L('display_yes');?>
+      		<?php else: ?>
+      		<?php echo L('display_no'); endif; ?></td>
+			<td align="center">
+			<a href="<?php echo U('Slide/editpic',array(fid=>$fid,id=>$vo['id']));?>"><?php echo L('edit');?></a> | <a href="javascript:confirm_delete('<?php echo U('Slide/deletepic',array(id=>$vo['id']));?>')"><?php echo L('delete');?></a></td>
       		</tr><?php endforeach; endif; else: echo "" ;endif; ?>
       	</tbody>
     </table>
+
+		<div class="btn">
+		<input type="button" class="button" name="dosubmit" value="<?php echo L('listorder')?>" onclick="myform.action='<?php echo U($module_name.'/listorder');?>';$('#myform').submit();"/> </div>
+	</div>
 </div>
-</form></div>
+</form>
+
+<div id="pages" class="page"><?php echo ($page); ?></div>
+</body></html>
 
 </body>
 </html>
