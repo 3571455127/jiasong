@@ -173,26 +173,23 @@
             </div>
             <?php endif; endforeach; endif;?>
         </div>
-        <div class="pro-pc">
-          <!-- wap -->
-          <div class="pro-wap">
-            <?php  $_result=M("Product")->field("thumb,title,radis,cont,listorder,id")->where(" 1  AND status=1  AND catid=73")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-                <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
-                  <div class="box-img">
-                    <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>">
-                  </div>
-                </div>
-                <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
-                  <div class="pro-content clearfix">
-                    <?php echo ($r["cont"]); ?>
-                  </div>
 
+        <!-- wap -->
+        <div class="pro-wap">
+          <?php  $_result=M("Product")->field("thumb,title,radis,cont,listorder,id")->where(" 1  AND status=1  AND catid=73")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
+              <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
+                <div class="box-img">
+                  <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>">
                 </div>
-              </div><?php endforeach; endif;?>
-          </div>
+              </div>
+              <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
+                <div class="pro-content clearfix">
+                  <?php echo ($r["cont"]); ?>
+                </div>
+
+              </div>
+            </div><?php endforeach; endif;?>
         </div>
-
-
 
       </div>
     </div>

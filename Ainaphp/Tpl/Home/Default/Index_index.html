@@ -77,28 +77,25 @@
             {/if}
           </YP:list>
         </div>
-        <div class="pro-pc">
-          <!-- wap -->
-          <div class="pro-wap">
-            <YP:list order="listorder desc" catid="73" id="r" limit="12" field='thumb,title,radis,cont,listorder,id'>
-              <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-                <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
-                  <div class="box-img">
-                    <img src="{$r.thumb}" alt="{$r.title}">
-                  </div>
-                </div>
-                <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
-                  <div class="pro-content clearfix">
-                    {$r.cont}
-                  </div>
 
+        <!-- wap -->
+        <div class="pro-wap">
+          <YP:list order="listorder desc" catid="73" id="r" limit="12" field='thumb,title,radis,cont,listorder,id'>
+            <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
+              <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
+                <div class="box-img">
+                  <img src="{$r.thumb}" alt="{$r.title}">
                 </div>
               </div>
-            </YP:list>
-          </div>
+              <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
+                <div class="pro-content clearfix">
+                  {$r.cont}
+                </div>
+
+              </div>
+            </div>
+          </YP:list>
         </div>
-
-
 
       </div>
     </div>

@@ -1221,5 +1221,8 @@ header .navbar-fixed-top .navbar-brand img {
         overflow-x: hidden;
     }
 
+    .index .swiper-btn {
+        display: none !important;
+    }
 
 }
