@@ -1195,4 +1195,8 @@ header .navbar-fixed-top .navbar-brand img {
         padding: 242px 0;
     }
 
+    html {
+        overflow-x: hidden;
+    }
+
 }
