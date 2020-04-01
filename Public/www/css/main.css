@@ -897,6 +897,28 @@ footer .copy {
     .index .feedback h3::after {
         right: -10px;
     }
+
+    .index .partner .swiper-button-prev,
+    .index .feedback .swiper-button-prev {
+        left: 10px;
+    }
+
+    .index .feedback .swiper-button-prev,
+    .index .feedback .swiper-button-next {
+        color: #9ad919;
+        border-color: #9ad919;
+    }
+
+    .index .feedback .swiper-button-prev:hover,
+    .index .feedback .swiper-button-next:hover {
+        background-color: #9ad919;
+        color: #fff;
+    }
+
+    .index .partner .swiper-button-next,
+    .index .feedback .swiper-button-next {
+        right: 10px;
+    }
 }
 
 @media all and (max-width: 980px) {
@@ -1198,5 +1220,6 @@ header .navbar-fixed-top .navbar-brand img {
     html {
         overflow-x: hidden;
     }
+
 
 }
