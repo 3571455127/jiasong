@@ -4,24 +4,35 @@
   <div id="home" class="banner">
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <YP:list name="slide_data" id="r" limit="5" field="*" where="fid = 1" key="n">
-          <div class="swiper-slide">
-            <div class="container">
-              <div class="row">
-                <div class="contant">
-                  <!-- <div class="title">Here Is The Title</div>
-                  <p>Here is the subtitleHere is the subtitleHere is the subtitleHere</p>
-                  <a href="#contact"> Contact Us</a> -->
-                  {$r.description}
-                </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="row">
+              <div class="contant">
+                <div class="title ani" swiper-animate-effect="slideInLeft">Here Is The Title</div>
+                <p class="ani" swiper-animate-effect="slideInLeft" swiper-animate-delay="0.2s">Here is the subtitleHere is the subtitleHere is the subtitleHere</p>
+                <a href="contact"> Contact Us</a>
               </div>
             </div>
-            <a href="" target="_blank"> <img src="{$r.pic}" alt="{$r.title}"></a>
+
           </div>
-        </YP:list>
-        <!-- <div class="swiper-slide">
-          <img src="__PUBLIC__/www/images/banner.png" alt="">
-        </div> -->
+
+          <a href="" target="_blank"> <img src="__PUBLIC__/www/images/banner.png" alt=""></a>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="row">
+              <div class="contant">
+                <div class="title ani" swiper-animate-effect="slideInLeft">Here Is The Title</div>
+                <p class="ani" swiper-animate-effect="slideInLeft" swiper-animate-delay="0.2s">Here is the subtitleHere is the subtitleHere is the subtitleHere</p>
+                <a href="contact"> Contact Us</a>
+              </div>
+            </div>
+
+          </div>
+
+          <a href="" target="_blank"> <img src="https://www.yige-tech.com/Uploads/201912/5e0474a17d430.jpg" alt=""></a>
+        </div>
+
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-btn">

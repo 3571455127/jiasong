@@ -1,9 +1,11 @@
 $(function () {
     // banner   
     var mySwiper = new Swiper('.banner .swiper-container', {
-        loop: true,
         autoplay: true,
-        speed: 1200,
+        speed: 1500,
+        autoHeight: true,
+        effect: 'fade',
+        loop: true,
         pagination: {
             el: '.banner .swiper-pagination',
             clickable: true,
@@ -12,6 +14,16 @@ $(function () {
             nextEl: '.banner .swiper-button-next',
             prevEl: '.banner .swiper-button-prev',
         },
+        on: {
+            init: function () {
+                swiperAnimateCache(this);
+                swiperAnimate(this);
+            },
+            slideChangeTransitionEnd: function () {
+                swiperAnimate(this);
+
+            }
+        }
 
     })
 

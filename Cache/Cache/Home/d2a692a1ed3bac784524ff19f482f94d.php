@@ -40,10 +40,12 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <!-- css-->
     <link rel="stylesheet" href="__PUBLIC__/www/css/swiper.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/www/css/animate.min.css">
     <link rel="stylesheet" href="__PUBLIC__/www/css/bootstrap.min.css">
     <link rel="stylesheet" href="__PUBLIC__/www/css/main.css">
     <script src='__PUBLIC__/www/js/jquery.min.js'></script>
     <script src="__PUBLIC__/www/js/swiper.min.js"></script>
+    <script src="__PUBLIC__/www/js/swiper.animate.min.js"></script>
     <script src="__PUBLIC__/www/js/bootstrap.min.js"></script>
     <script src="__PUBLIC__/www/js/main.js"></script>
     <!-- <script>
@@ -125,22 +127,35 @@
   <div id="home" class="banner">
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <?php  $_result=M("slide_data")->field("*")->where("fid = 1 AND status=1 ")->order("id desc")->limit("5")->select();; if ($_result): $n=0;foreach($_result as $key=>$r):++$n;$mod = ($n % 2 );?><div class="swiper-slide">
-            <div class="container">
-              <div class="row">
-                <div class="contant">
-                  <!-- <div class="title">Here Is The Title</div>
-                  <p>Here is the subtitleHere is the subtitleHere is the subtitleHere</p>
-                  <a href="#contact"> Contact Us</a> -->
-                  <?php echo ($r["description"]); ?>
-                </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="row">
+              <div class="contant">
+                <div class="title ani" swiper-animate-effect="slideInLeft">Here Is The Title</div>
+                <p class="ani" swiper-animate-effect="slideInLeft" swiper-animate-delay="0.2s">Here is the subtitleHere is the subtitleHere is the subtitleHere</p>
+                <a href="contact"> Contact Us</a>
               </div>
             </div>
-            <a href="" target="_blank"> <img src="<?php echo ($r["pic"]); ?>" alt="<?php echo ($r["title"]); ?>"></a>
-          </div><?php endforeach; endif;?>
-        <!-- <div class="swiper-slide">
-          <img src="__PUBLIC__/www/images/banner.png" alt="">
-        </div> -->
+
+          </div>
+
+          <a href="" target="_blank"> <img src="__PUBLIC__/www/images/banner.png" alt=""></a>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="row">
+              <div class="contant">
+                <div class="title ani" swiper-animate-effect="slideInLeft">Here Is The Title</div>
+                <p class="ani" swiper-animate-effect="slideInLeft" swiper-animate-delay="0.2s">Here is the subtitleHere is the subtitleHere is the subtitleHere</p>
+                <a href="contact"> Contact Us</a>
+              </div>
+            </div>
+
+          </div>
+
+          <a href="" target="_blank"> <img src="https://www.yige-tech.com/Uploads/201912/5e0474a17d430.jpg" alt=""></a>
+        </div>
+
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-btn">
