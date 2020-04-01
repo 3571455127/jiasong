@@ -2,24 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Google Tag Manager -->
-    <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-TNMWNT9');
-    </script>
-    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
 
     <meta name="keywords" content="{$seo_keywords}" />
@@ -40,53 +22,48 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <!-- css-->
     <link rel="stylesheet" href="__PUBLIC__/www/css/swiper.min.css">
-    <link rel="stylesheet" href="__PUBLIC__/www/css/animate.min.css">
+        <link rel="stylesheet" href="__PUBLIC__/www/css/animate.min.css">
     <link rel="stylesheet" href="__PUBLIC__/www/css/bootstrap.min.css">
     <link rel="stylesheet" href="__PUBLIC__/www/css/main.css">
     <script src='__PUBLIC__/www/js/jquery.min.js'></script>
     <script src="__PUBLIC__/www/js/swiper.min.js"></script>
-    <script src="__PUBLIC__/www/js/swiper.animate.min.js"></script>
+        <script src="__PUBLIC__/www/js/swiper.animate.min.js"></script>
     <script src="__PUBLIC__/www/js/bootstrap.min.js"></script>
     <script src="__PUBLIC__/www/js/main.js"></script>
-    <!-- <script>
-        function IsPC() {
-            var userAgentInfo = navigator.userAgent;
-            var Agents = ["Android", "iPhone",
-                "SymbianOS", "Windows Phone",
-                "iPad", "iPod"
-            ];
-            var flag = true;
-            for (var v = 0; v < Agents.length; v++) {
-                if (userAgentInfo.indexOf(Agents[v]) > 0) {
-                    flag = false;
-                    break;
-                }
-            }
-            return flag;
-        }
-        var isp = IsPC();
-        if (!isp) {
-            window.location.href = "/mobile.php";
-        }
-    </script> -->
+    <script>
+//        function IsPC() {
+//            var userAgentInfo = navigator.userAgent;
+//            var Agents = ["Android", "iPhone",
+//                "SymbianOS", "Windows Phone",
+//                "iPad", "iPod"
+//            ];
+//            var flag = true;
+//            for (var v = 0; v < Agents.length; v++) {
+//                if (userAgentInfo.indexOf(Agents[v]) > 0) {
+//                    flag = false;
+//                    break;
+//                }
+//            }
+//            return flag;
+//        }
+//        var isp = IsPC();
+//        if (!isp) {
+//            window.location.href = "/mobile.php";
+//        }
+    </script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
-
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNMWNT9" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
     <!-- header -->
     <header>
         <div class="top-bar clearfix">
             <div class="container">
                 <div class="row">
-                    <div class="phone col-lg-3 col-md-3 col-sm-4"><span>+86-21-59101751-153</span></div>
+                    <div class="phone col-lg-3 col-md-3 col-sm-4"><span>{$phone}</span></div>
                     <div class="eamil col-lg-3 col-md-3 col-sm-4">
-                        <a href="mailto:{$email}" target="_blank" class="emails">
-                            <span>info@gerpman.com</span></a>
+                        <a href="mailto:{$site_email}" target="_blank" class="emails">
+                            <span>{$site_email}</span></a>
                     </div>
                 </div>
             </div>

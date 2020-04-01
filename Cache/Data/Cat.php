@@ -1,1 +1,1 @@
-<?php	return array ( 'product' => '73', 'about' => '74', 'cases' => '77', 'service' => '108', 'contact' => '78', 'thanks' => '103', );?>
+<?php	return array ( 'Businessscope' => '110', 'product' => '73', 'about' => '74', 'Partner' => '77', 'Customer' => '108', 'contact' => '78', 'thanks' => '103', );?>

@@ -2,24 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Google Tag Manager -->
-    <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-TNMWNT9');
-    </script>
-    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
 
     <meta name="keywords" content="<?php echo ($seo_keywords); ?>" />
@@ -40,53 +22,46 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <!-- css-->
     <link rel="stylesheet" href="__PUBLIC__/www/css/swiper.min.css">
-    <link rel="stylesheet" href="__PUBLIC__/www/css/animate.min.css">
     <link rel="stylesheet" href="__PUBLIC__/www/css/bootstrap.min.css">
     <link rel="stylesheet" href="__PUBLIC__/www/css/main.css">
     <script src='__PUBLIC__/www/js/jquery.min.js'></script>
     <script src="__PUBLIC__/www/js/swiper.min.js"></script>
-    <script src="__PUBLIC__/www/js/swiper.animate.min.js"></script>
     <script src="__PUBLIC__/www/js/bootstrap.min.js"></script>
     <script src="__PUBLIC__/www/js/main.js"></script>
-    <!-- <script>
-        function IsPC() {
-            var userAgentInfo = navigator.userAgent;
-            var Agents = ["Android", "iPhone",
-                "SymbianOS", "Windows Phone",
-                "iPad", "iPod"
-            ];
-            var flag = true;
-            for (var v = 0; v < Agents.length; v++) {
-                if (userAgentInfo.indexOf(Agents[v]) > 0) {
-                    flag = false;
-                    break;
-                }
-            }
-            return flag;
-        }
-        var isp = IsPC();
-        if (!isp) {
-            window.location.href = "/mobile.php";
-        }
-    </script> -->
+    <script>
+//        function IsPC() {
+//            var userAgentInfo = navigator.userAgent;
+//            var Agents = ["Android", "iPhone",
+//                "SymbianOS", "Windows Phone",
+//                "iPad", "iPod"
+//            ];
+//            var flag = true;
+//            for (var v = 0; v < Agents.length; v++) {
+//                if (userAgentInfo.indexOf(Agents[v]) > 0) {
+//                    flag = false;
+//                    break;
+//                }
+//            }
+//            return flag;
+//        }
+//        var isp = IsPC();
+//        if (!isp) {
+//            window.location.href = "/mobile.php";
+//        }
+    </script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
-
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNMWNT9" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
     <!-- header -->
     <header>
         <div class="top-bar clearfix">
             <div class="container">
                 <div class="row">
-                    <div class="phone col-lg-3 col-md-3 col-sm-4"><span>+86-21-59101751-153</span></div>
+                    <div class="phone col-lg-3 col-md-3 col-sm-4"><span><?php echo ($phone); ?></span></div>
                     <div class="eamil col-lg-3 col-md-3 col-sm-4">
-                        <a href="mailto:<?php echo ($email); ?>" target="_blank" class="emails">
-                            <span>info@gerpman.com</span></a>
+                        <a href="mailto:<?php echo ($site_email); ?>" target="_blank" class="emails">
+                            <span><?php echo ($site_email); ?></span></a>
                     </div>
                 </div>
             </div>
@@ -127,35 +102,22 @@
   <div id="home" class="banner">
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="container">
-            <div class="row">
-              <div class="contant">
-                <div class="title ani" swiper-animate-effect="slideInLeft">Here Is The Title</div>
-                <p class="ani" swiper-animate-effect="slideInLeft" swiper-animate-delay="0.2s">Here is the subtitleHere is the subtitleHere is the subtitleHere</p>
-                <a href="contact"> Contact Us</a>
+        <?php  $_result=M("slide_data")->field("*")->where("fid = 1 AND status=1 ")->order("id desc")->limit("5")->select();; if ($_result): $n=0;foreach($_result as $key=>$r):++$n;$mod = ($n % 2 );?><div class="swiper-slide">
+            <div class="container">
+              <div class="row">
+                <div class="contant">
+<!--                   <div class="title">Here Is The Title</div>
+                  <p>Here is the subtitleHere is the subtitleHere is the subtitleHere</p>
+                  <a href="#contact"> Contact Us</a> -->
+                  <?php echo ($r["description"]); ?>
+                </div>
               </div>
             </div>
-
-          </div>
-
-          <a href="" target="_blank"> <img src="__PUBLIC__/www/images/banner.png" alt=""></a>
-        </div>
-        <div class="swiper-slide">
-          <div class="container">
-            <div class="row">
-              <div class="contant">
-                <div class="title ani" swiper-animate-effect="slideInLeft">Here Is The Title</div>
-                <p class="ani" swiper-animate-effect="slideInLeft" swiper-animate-delay="0.2s">Here is the subtitleHere is the subtitleHere is the subtitleHere</p>
-                <a href="contact"> Contact Us</a>
-              </div>
-            </div>
-
-          </div>
-
-          <a href="" target="_blank"> <img src="https://www.yige-tech.com/Uploads/201912/5e0474a17d430.jpg" alt=""></a>
-        </div>
-
+            <a href="<?php echo ($r["link"]); ?>" target="_blank" title="<?php echo ($r["title"]); ?>"> <img src="<?php echo ($r["pic"]); ?>" alt="<?php echo ($r["title"]); ?>"></a>
+          </div><?php endforeach; endif;?>
+        <!-- <div class="swiper-slide">
+          <img src="__PUBLIC__/www/images/banner.png" alt="">
+        </div> -->
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-btn">
@@ -171,268 +133,39 @@
     <div class="product">
       <h3>Product</h3>
       <div class="list clearfix">
-
-        <!-- pc -->
-        <!-- 图文 -->
-        <div class="pro-pc">
-          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-            <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
-              <div class="box-img">
-                <img src="__PUBLIC__/www/images/product.png" alt="">
-              </div>
-
-            </div>
-            <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
-              <div class="pro-content">
-                <div class="title">Product description of 75% alcohol disinfectant gel
-                </div>
-                <p>
-                  Main active ingredient: 75±5% alcohol (V/V)
-                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
-                  clean
-                </p>
-                <a class="down" href="" download="">Download</a>
-              </div>
-
-            </div>
-          </div>
-          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-            <div class="img col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="box-img">
-                <img src="__PUBLIC__/www/images/product2.png" alt="">
-              </div>
-
-            </div>
-            <div class="txt col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="pro-content">
-                <div class="title">Product description of 75% alcohol disinfectant gel
-                </div>
-                <p>
-                  Main active ingredient: 75±5% alcohol (V/V)
-                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
-                  clean
-                </p>
-                <a class="down" href="" download="">Download</a>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- 文图 -->
-          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-            <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
-              <div class="pro-content">
-                <div class="title">Product description of 75% alcohol disinfectant gel
-                </div>
-                <p>
-                  Main active ingredient: 75±5% alcohol (V/V)
-                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
-                  clean
-                </p>
-                <a class="down" href="" download="">Download</a>
-              </div>
-
-            </div>
-            <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
-              <div class="box-img">
-                <img src="__PUBLIC__/www/images/product3.png" alt="">
-              </div>
-
+          <?php  $_result=M("Product")->field("thumb,title,radis,cont,listorder,id")->where(" 1  AND status=1  AND catid=73")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><!-- 图文 -->
+                    <?php if($r['radis']==1) : ?>
+        <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
+          <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
+            <div class="box-img">
+              <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>">
             </div>
 
           </div>
-          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-            <div class="txt col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="pro-content">
-                <div class="title">Product description of 75% alcohol disinfectant gel
-                </div>
-                <p>
-                  Main active ingredient: 75±5% alcohol (V/V)
-                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
-                  clean
-                </p>
-                <a class="down" href="" download="">Download</a>
-              </div>
-
+          <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
+            <div class="pro-content">
+             <?php echo ($r["cont"]); ?>
             </div>
-            <div class="img col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="box-img">
-                <img src="__PUBLIC__/www/images/product4.png" alt="">
-              </div>
-            </div>
-          </div>
 
-          <!-- 图文 -->
-          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-            <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
-              <div class="box-img">
-                <img src="__PUBLIC__/www/images/product5.png" alt="">
-              </div>
-
-            </div>
-            <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
-              <div class="pro-content">
-                <div class="title">Product description of 75% alcohol disinfectant gel
-                </div>
-                <p>
-                  Main active ingredient: 75±5% alcohol (V/V)
-                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
-                  clean
-                </p>
-                <a class="down" href="" download="">Download</a>
-              </div>
-
-            </div>
-          </div>
-          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-            <div class="img col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="box-img">
-                <img src="__PUBLIC__/www/images/product6.png" alt="">
-              </div>
-
-            </div>
-            <div class="txt col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="pro-content">
-                <div class="title">Product description of 75% alcohol disinfectant gel
-                </div>
-                <p>
-                  Main active ingredient: 75±5% alcohol (V/V)
-                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
-                  clean
-                </p>
-                <a class="down" href="" download="">Download</a>
-              </div>
-
-            </div>
           </div>
         </div>
-
-        <!-- wap -->
-        <div class="pro-wap">
-          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-            <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
-              <div class="box-img">
-                <img src="__PUBLIC__/www/images/product.png" alt="">
-              </div>
+            <?php else :?>
+<div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
+          <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
+            <div class="pro-content">
+              <?php echo ($r["cont"]); ?>
             </div>
-            <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
-              <div class="pro-content clearfix">
-                <div class="title">Product description of 75% alcohol disinfectant gel
-                </div>
-                <p>
-                  Main active ingredient: 75±5% alcohol (V/V)
-                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
-                  clean
-                </p>
-                <a class="down" href="" download="">Download</a>
-              </div>
 
-            </div>
           </div>
-          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-            <div class="img col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="box-img">
-                <img src="__PUBLIC__/www/images/product2.png" alt="">
-              </div>
-
+          <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
+            <div class="box-img">
+              <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>">
             </div>
-            <div class="txt col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="pro-content clearfix">
-                <div class="title">Product description of 75% alcohol disinfectant gel
-                </div>
-                <p>
-                  Main active ingredient: 75±5% alcohol (V/V)
-                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
-                  clean
-                </p>
-                <a class="down" href="" download="">Download</a>
-              </div>
 
-            </div>
           </div>
-          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-            <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
-              <div class="box-img">
-                <img src="__PUBLIC__/www/images/product3.png" alt="">
-              </div>
-            </div>
-            <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
-              <div class="pro-content clearfix">
-                <div class="title">Product description of 75% alcohol disinfectant gel
-                </div>
-                <p>
-                  Main active ingredient: 75±5% alcohol (V/V)
-                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
-                  clean
-                </p>
-                <a class="down" href="" download="">Download</a>
-              </div>
 
-            </div>
-          </div>
-          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-            <div class="img col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="box-img">
-                <img src="__PUBLIC__/www/images/product4.png" alt="">
-              </div>
-            </div>
-            <div class="txt col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="pro-content clearfix">
-                <div class="title">Product description of 75% alcohol disinfectant gel
-                </div>
-                <p>
-                  Main active ingredient: 75±5% alcohol (V/V)
-                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
-                  clean
-                </p>
-                <a class="down" href="" download="">Download</a>
-              </div>
-
-            </div>
-          </div>
-          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-            <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
-              <div class="box-img">
-                <img src="__PUBLIC__/www/images/product5.png" alt="">
-              </div>
-
-            </div>
-            <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
-              <div class="pro-content clearfix">
-                <div class="title">Product description of 75% alcohol disinfectant gel
-                </div>
-                <p>
-                  Main active ingredient: 75±5% alcohol (V/V)
-                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
-                  clean
-                </p>
-                <a class="down" href="" download="">Download</a>
-              </div>
-
-            </div>
-          </div>
-          <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-            <div class="img col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="box-img">
-                <img src="__PUBLIC__/www/images/product6.png" alt="">
-              </div>
-
-            </div>
-            <div class="txt col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="pro-content clearfix">
-                <div class="title">Product description of 75% alcohol disinfectant gel
-                </div>
-                <p>
-                  Main active ingredient: 75±5% alcohol (V/V)
-                  Scope of use: suitable for skin surface disinfection, antibacterial, bacteriostatic,
-                  clean
-                </p>
-                <a class="down" href="" download="">Download</a>
-              </div>
-
-            </div>
-          </div>
         </div>
+                    <?php endif; endforeach; endif;?>
       </div>
     </div>
 
@@ -446,23 +179,14 @@
           <h3>about us</h3>
           <div class="top clearfix">
             <div class="about-txt col-lg-6 col-md-6 col-sm-6 col-lg-12">
-              <p>
-                Shanghai Jason Plastic Co.,Ltd is a professional manufacturer which established in
-                Jiading District Shanghai in 2003.
-                Main Products: Educational Toys, Plastic Injection Products, Electronic Products,
-                Cosmetic Packagings, Cosmetic fillings and so on.
-              </p>
-              <a class="about-contact" href="#contact"> Contact Us</a>
+              <?php getcatvar('page','id = 74','cont');?>
             </div>
             <div class="about-swiper col-lg-6 col-md-6 col-sm-6 col-lg-12">
               <div class="swiper-container">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="__PUBLIC__/www/images/about-sw.png" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="__PUBLIC__/www/images/about-sw.png" alt="">
-                  </div>
+                    <?php  $_result=M("slide_data")->field("*")->where("fid = 2 AND status=1 ")->order("id desc")->limit("5")->select();; if ($_result): $n=0;foreach($_result as $key=>$r):++$n;$mod = ($n % 2 );?><div class="swiper-slide">
+                    <img src="<?php echo ($r["pic"]); ?>" alt="<?php echo ($r["title"]); ?>">
+                  </div><?php endforeach; endif;?>
                 </div>
                 <div class="swiper-pagination"></div>
               </div>
@@ -471,32 +195,10 @@
           <div class="business">
             <div class="title">Business scope</div>
             <div class="list clearfix">
-              <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <div class="box-img"><img src="__PUBLIC__/www/images/business1.png" alt=""></div>
-                <p> Mold design and manufacturing </p>
-              </div>
-              <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <div class="box-img"><img src="__PUBLIC__/www/images/business2.png" alt=""></div>
-                <p>Plastic injection manufacture</p>
-              </div>
-              <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <div class="box-img"><img src="__PUBLIC__/www/images/business3.png" alt=""></div>
-                <p>Electronics</p>
-              </div>
-              <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <div class="box-img"><img src="__PUBLIC__/www/images/business4.png" alt=""></div>
-                <p>Gold stamping</p>
-              </div>
-              <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <div class="box-img"><img src="__PUBLIC__/www/images/business5.png" alt=""></div>
-                <p>Printing</p>
-              </div>
-              <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <div class="box-img"><img src="__PUBLIC__/www/images/business6.png" alt=""></div>
-                <p>Packaging</p>
-              </div>
-
-
+                <?php  $_result=M("Case")->field("thumb,title,listorder,id")->where(" 1  AND status=1  AND catid=110")->order("listorder desc")->limit("120")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="box col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                <div class="box-img"><img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>"></div>
+                <p><?php echo ($r["title"]); ?></p>
+              </div><?php endforeach; endif;?>
             </div>
           </div>
         </div>
@@ -513,29 +215,14 @@
           <div class="partner-box">
             <div class="swiper-container">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                  
+                  <?php  $_result=M("History")->field("thumb,title,listorder,id")->where(" 1  AND status=1  AND catid=77")->order("listorder desc")->limit("120")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="swiper-slide">
                   <div class="box-img">
-                    <img src="__PUBLIC__/www/images/partner1.png" alt="">
+                    <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>">
                   </div>
-
-                </div>
-                <div class="swiper-slide">
-                  <div class="box-img">
-                    <img src="__PUBLIC__/www/images/partner2.png" alt="">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="box-img">
-                    <img src="__PUBLIC__/www/images/partner3.png" alt="">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="box-img">
-                    <img src="__PUBLIC__/www/images/partner2.png" alt="">
-                  </div>
-                </div>
+                </div><?php endforeach; endif;?>
               </div>
-              <div class="swiper-pagination"></div>
+
             </div>
             <div class="swiper-btn">
               <div class="swiper-button-prev"></div>
@@ -558,37 +245,16 @@
           <div class="feedback-box">
             <div class="swiper-container">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                  <?php  $_result=M("Customer")->field("thumb,title,cont,listorder,id")->where(" 1  AND status=1  AND catid=108")->order("listorder desc")->limit("120")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="swiper-slide">
                   <div class="box clearfix">
-                    <div class="img col-lg-4 col-xs-4"><img src="__PUBLIC__/www/images/feedback.png" alt=""></div>
-                    <div class="txt col-lg-8 col-xs-8">
-                      <div class="title">here is the title</div>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-                        suspendisse
-                        ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                        facilisis. </p>
+                    <div class="img col-lg-4"><img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>"></div>
+                    <div class="txt col-lg-8">
+                      <?php echo ($r["cont"]); ?>
                     </div>
                   </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="box clearfix">
-                    <div class="img col-lg-4 col-xs-4"><img src="__PUBLIC__/www/images/feedback.png" alt=""></div>
-                    <div class="txt col-lg-8 col-xs-8">
-                      <div class="title">here is the title</div>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-                        suspendisse
-                        ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                        facilisis. </p>
-                    </div>
-                  </div>
-                </div>
+                </div><?php endforeach; endif;?>
 
               </div>
-              <div class="swiper-pagination"></div>
             </div>
             <div class="swiper-btn">
               <div class="swiper-button-prev swiper-button-white"></div>
@@ -609,11 +275,10 @@
           <h3>Contact Us</h3>
           <div class="form-box clearfix">
 
-            <form class="col-lg-7 col-md-7 col-sm-6" name="form" method="post" onsubmit="return beforeSubmit2(this);"
-              action="">
+            <form class="col-lg-7 col-md-7 col-sm-6" name="form" method="post" onsubmit="return beforeSubmit2(this);" action="index.php?g=Home&a=message">
               <div class="clearfix">
-                <input name="forward" type="hidden" value="www.yaolong.com/index.php">
-                <input type="hidden" name="product" id="product" value="">
+<input name="forward" type="hidden" value="<?php echo ($_SERVER['SERVER_NAME']); if($catid) : ?>/index.php?m=<?php echo ($Categorys[$catid]['module']); ?>&a=index&id=<?php echo ($catid); else :?>/index.php<?php endif;?>"/>
+                <!--<input type="hidden" name="product" id="product" value="">-->
                 <div class="box clearfix">
                   <div class="box-left col-lg-4 col-md-4">
                     <p>Name <span> *</span></p>
@@ -630,7 +295,7 @@
                   <div class="box-left col-lg-4 col-md-4">
                     <p>Company name <span>*</span></p>
                   </div>
-                  <div class="col-lg-8 col-md-8"> <input type="text" name="company"></div>
+                  <div class="col-lg-8 col-md-8"> <input type="text" name="com"></div>
                 </div>
                 <div class="box clearfix">
                   <div class="box-left col-lg-4 col-md-4">
@@ -642,27 +307,27 @@
               <div class="box-btns"> <input type="submit" value="SUBMIT" class="submit-btn"></div>
             </form>
             <div class="details col-lg-5 col-md-5 col-sm-6">
-              <h5>Shanghai Jason Plastic Co.,Ltd</h5>
+              <h5><?php echo ($site_name); ?></h5>
               <div class="boxs clearfix">
                 <div class="boxs-img col-lg-2 col-md-2 col-sm-2 col-xs-2"><img src="__PUBLIC__/www/images/address.png"
                     alt="">
                 </div>
                 <div class="boxs-txt col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                  B3,No.108,Pengfeng Rd,Malu,Jiading,Shanghai,China 201801 </div>
+                  <?php echo ($address); ?> </div>
               </div>
               <div class="boxs clearfix">
                 <div class="boxs-img col-lg-2 col-md-2 col-sm-2 col-xs-2"><img src="__PUBLIC__/www/images/eamil.png"
                     alt="">
                 </div>
                 <div class="boxs-txt col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                  <a class="eamils" href="mailto:inquiry@fsyaolong.com" target="_blank">info@gerpman.com </a>
+                  <a class="eamils" href="mailto:<?php echo ($site_email); ?>" target="_blank"><?php echo ($site_email); ?> </a>
                 </div>
               </div>
               <div class="boxs clearfix">
                 <div class="boxs-img col-lg-2 col-md-2 col-sm-2 col-xs-2"><img src="__PUBLIC__/www/images/phone.png"
                     alt="">
                 </div>
-                <div class="boxs-txt col-lg-10 col-md-10 col-sm-10 col-xs-10"> +86-21-59101751-153
+                <div class="boxs-txt col-lg-10 col-md-10 col-sm-10 col-xs-10"> <?php echo ($phone); ?>
                 </div>
               </div>
 
@@ -677,7 +342,7 @@
 </div>
 <!-- footer -->
 <footer>
-    <div class="copy"> © 2020 Shanghai Jason Plastic Co.,Ltd </div>
+    <div class="copy"> <?php echo ($cop); ?> </div>
     <div class="goTop">
         <i class="topIcon"></i>
         <p>TOP</p>
