@@ -1,31 +1,5 @@
 $(function () {
-    // banner   
-    var mySwiper = new Swiper('.banner .swiper-container', {
-        autoplay: true,
-        speed: 1500,
-        autoHeight: true,
-        effect: 'fade',
-        loop: true,
-        pagination: {
-            el: '.banner .swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.banner .swiper-button-next',
-            prevEl: '.banner .swiper-button-prev',
-        },
-        on: {
-            init: function () {
-                swiperAnimateCache(this);
-                swiperAnimate(this);
-            },
-            slideChangeTransitionEnd: function () {
-                swiperAnimate(this);
 
-            }
-        }
-
-    })
 
     // about
     var mySwiper = new Swiper('.about .swiper-container', {
@@ -42,6 +16,16 @@ $(function () {
     //定义变量获取屏幕视口宽度
     var windowWidth = $(window).width();
     if (windowWidth < 768) {
+        // wap-banner
+        var mySwiper = new Swiper('.wap-banner .swiper-container', {
+            loop: true,
+            autoplay: true,
+            speed: 1200,
+            pagination: {
+                el: '.wap-banner .swiper-pagination',
+                clickable: true,
+            },
+        })
         // partenr
         var mySwiper = new Swiper('.partner .swiper-container', {
             loop: true,
@@ -83,6 +67,35 @@ $(function () {
 
     }
     if (windowWidth >= 768) {
+        // pc-banner    
+
+        var mySwiper = new Swiper('.pc-banner .swiper-container', {
+            autoplay: true,
+            speed: 1500,
+            autoHeight: true,
+            effect: 'fade',
+            loop: true,
+            pagination: {
+                el: '.pc-banner .swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.pc-banner .swiper-button-next',
+                prevEl: '.pc-banner .swiper-button-prev',
+            },
+            on: {
+                init: function () {
+                    swiperAnimateCache(this);
+                    swiperAnimate(this);
+                },
+                slideChangeTransitionEnd: function () {
+                    swiperAnimate(this);
+
+                }
+            }
+
+        })
+        // partner
         var mySwiper = new Swiper('.partner .swiper-container', {
             loop: true,
             autoplay: true,
@@ -94,6 +107,7 @@ $(function () {
                 prevEl: '.partner .swiper-button-prev',
             },
         })
+        // feedback
         var mySwiper = new Swiper('.feedback .swiper-container', {
             loop: true,
             autoplay: true,

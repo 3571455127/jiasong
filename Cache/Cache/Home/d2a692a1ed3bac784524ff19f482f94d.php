@@ -102,36 +102,53 @@
 
   <!-- banner  -->
   <div id="home" class="banner">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <?php  $_result=M("slide_data")->field("*")->where("fid = 1 AND status=1 ")->order("id desc")->limit("5")->select();; if ($_result): $n=0;foreach($_result as $key=>$r):++$n;$mod = ($n % 2 );?><div class="swiper-slide">
-            <div class="container">
-              <div class="row">
-                <div class="contant">
-                  <!--                   <div class="title">Here Is The Title</div>
-                  <p>Here is the subtitleHere is the subtitleHere is the subtitleHere</p>
-                  <a href="#contact"> Contact Us</a> -->
-                  <div class="title ani" swiper-animate-effect="slideInLeft" swiper-animate-delay="0.2s"><?php echo ($r["title"]); ?>
+    <!-- pc -->
+    <div class="pc-banner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <?php  $_result=M("slide_data")->field("*")->where("fid = 1 AND status=1 ")->order("id desc")->limit("5")->select();; if ($_result): $n=0;foreach($_result as $key=>$r):++$n;$mod = ($n % 2 );?><div class="swiper-slide">
+              <div class="container">
+                <div class="row">
+                  <div class="contant">
+
+                    <div class="title ani" swiper-animate-effect="slideInLeft" swiper-animate-delay="0.2s"><?php echo ($r["title"]); ?>
+                    </div>
+                    <p class="ani" swiper-animate-effect="slideInLeft" swiper-animate-delay="0.2s"><?php echo ($r["description"]); ?></p>
+                    <a class="ani" swiper-animate-effect="slideInLeft" swiper-animate-delay="0.4s" href="contact">
+                      Contact
+                      Us</a>
                   </div>
-                  <p class="ani" swiper-animate-effect="slideInLeft" swiper-animate-delay="0.2s"><?php echo ($r["description"]); ?></p>
-                  <a class="ani" swiper-animate-effect="slideInLeft" swiper-animate-delay="0.4s" href="contact"> Contact
-                    Us</a>
                 </div>
               </div>
-            </div>
-            <a href="<?php echo ($r["link"]); ?>" target="_blank" title="<?php echo ($r["title"]); ?>"> <img src="<?php echo ($r["pic"]); ?>" alt="<?php echo ($r["title"]); ?>"></a>
-          </div><?php endforeach; endif;?>
-        <!-- <div class="swiper-slide">
-          <img src="__PUBLIC__/www/images/banner.png" alt="">
-        </div> -->
-      </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-btn">
-        <div class="swiper-button-prev swiper-button-white"></div>
-        <div class="swiper-button-next swiper-button-white"></div>
-      </div>
+              <a href="<?php echo ($r["link"]); ?>" target="_blank" title="<?php echo ($r["title"]); ?>"> <img src="<?php echo ($r["pic"]); ?>" alt="<?php echo ($r["title"]); ?>"></a>
+            </div><?php endforeach; endif;?>
 
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-btn">
+          <div class="swiper-button-prev swiper-button-white"></div>
+          <div class="swiper-button-next swiper-button-white"></div>
+        </div>
+
+      </div>
     </div>
+
+    <!-- wap -->
+    <div class="wap-banner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <?php  $_result=M("slide_data")->field("*")->where("fid = 1 AND status=1 ")->order("id desc")->limit("5")->select();; if ($_result): $n=0;foreach($_result as $key=>$r):++$n;$mod = ($n % 2 );?><div class="swiper-slide">
+              <a href="<?php echo ($r["link"]); ?>" target="_blank" title="<?php echo ($r["title"]); ?>">
+                <img src="__PUBLIC__/www/images/banner-wap.png" alt="<?php echo ($r["title"]); ?>">
+              </a>
+            </div><?php endforeach; endif;?>
+
+        </div>
+        <div class="swiper-pagination"></div>
+
+      </div>
+    </div>
+
   </div>
 
   <!-- product -->

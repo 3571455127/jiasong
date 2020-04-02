@@ -2,38 +2,57 @@
 
   <!-- banner  -->
   <div id="home" class="banner">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <YP:list name="slide_data" id="r" limit="5" field="*" where="fid = 1" key="n">
-          <div class="swiper-slide">
-            <div class="container">
-              <div class="row">
-                <div class="contant">
-                  <!--                   <div class="title">Here Is The Title</div>
-                  <p>Here is the subtitleHere is the subtitleHere is the subtitleHere</p>
-                  <a href="#contact"> Contact Us</a> -->
-                  <div class="title ani" swiper-animate-effect="slideInLeft" swiper-animate-delay="0.2s">{$r.title}
+    <!-- pc -->
+    <div class="pc-banner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <YP:list name="slide_data" id="r" limit="5" field="*" where="fid = 1" key="n">
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="row">
+                  <div class="contant">
+
+                    <div class="title ani" swiper-animate-effect="slideInLeft" swiper-animate-delay="0.2s">{$r.title}
+                    </div>
+                    <p class="ani" swiper-animate-effect="slideInLeft" swiper-animate-delay="0.2s">{$r.description}</p>
+                    <a class="ani" swiper-animate-effect="slideInLeft" swiper-animate-delay="0.4s" href="contact">
+                      Contact
+                      Us</a>
                   </div>
-                  <p class="ani" swiper-animate-effect="slideInLeft" swiper-animate-delay="0.2s">{$r.description}</p>
-                  <a class="ani" swiper-animate-effect="slideInLeft" swiper-animate-delay="0.4s" href="contact"> Contact
-                    Us</a>
                 </div>
               </div>
+              <a href="{$r.link}" target="_blank" title="{$r.title}"> <img src="{$r.pic}" alt="{$r.title}"></a>
             </div>
-            <a href="{$r.link}" target="_blank" title="{$r.title}"> <img src="{$r.pic}" alt="{$r.title}"></a>
-          </div>
-        </YP:list>
-        <!-- <div class="swiper-slide">
-          <img src="__PUBLIC__/www/images/banner.png" alt="">
-        </div> -->
-      </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-btn">
-        <div class="swiper-button-prev swiper-button-white"></div>
-        <div class="swiper-button-next swiper-button-white"></div>
-      </div>
+          </YP:list>
 
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-btn">
+          <div class="swiper-button-prev swiper-button-white"></div>
+          <div class="swiper-button-next swiper-button-white"></div>
+        </div>
+
+      </div>
     </div>
+
+    <!-- wap -->
+    <div class="wap-banner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <YP:list name="slide_data" id="r" limit="5" field="*" where="fid = 1" key="n">
+            <div class="swiper-slide">
+              <a href="{$r.link}" target="_blank" title="{$r.title}">
+                <img src="__PUBLIC__/www/images/banner-wap.png" alt="{$r.title}">
+              </a>
+            </div>
+          </YP:list>
+
+        </div>
+        <div class="swiper-pagination"></div>
+
+      </div>
+    </div>
+
   </div>
 
   <!-- product -->
