@@ -282,18 +282,21 @@
   <!-- Feedback -->
   <div id="feedback">
     <div class="feedback">
-      <h3>Customer Feedback</h3>
+      <h3>OUR QUALIFICATIONS</h3>
       <div class="container">
         <div class="row">
           <div class="feedback-box">
             <div class="swiper-container">
               <div class="swiper-wrapper">
                 <?php  $_result=M("Customer")->field("thumb,title,cont,listorder,id")->where(" 1  AND status=1  AND catid=108")->order("listorder desc")->limit("120")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="swiper-slide">
-                    <div class="box clearfix">
+                    <!-- <div class="box clearfix">
                       <div class="img col-lg-4 col-xs-4"><img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>"></div>
                       <div class="txt col-lg-8 col-xs-8">
                         <?php echo ($r["cont"]); ?>
                       </div>
+                    </div> -->
+                    <div class="box-img">
+                      <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>">
                     </div>
                   </div><?php endforeach; endif;?>
 
