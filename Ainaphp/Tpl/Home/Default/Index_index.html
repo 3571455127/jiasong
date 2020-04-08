@@ -39,10 +39,10 @@
     <div class="wap-banner">
       <div class="swiper-container">
         <div class="swiper-wrapper">
-          <YP:list name="slide_data" id="r" limit="5" field="*" where="fid = 1" key="n">
+          <YP:list name="slide_data" id="r" limit="5" field="*" where="fid = 3" key="n">
             <div class="swiper-slide">
               <a href="{$r.link}" target="_blank" title="{$r.title}">
-                <img src="__PUBLIC__/www/images/banner-wap.png" alt="{$r.title}">
+                <img src="{$r.pic}" alt="{$r.title}">
               </a>
             </div>
           </YP:list>

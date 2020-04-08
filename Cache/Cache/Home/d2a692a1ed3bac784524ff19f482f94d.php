@@ -139,7 +139,7 @@
         <div class="swiper-wrapper">
           <?php  $_result=M("slide_data")->field("*")->where("fid = 1 AND status=1 ")->order("id desc")->limit("5")->select();; if ($_result): $n=0;foreach($_result as $key=>$r):++$n;$mod = ($n % 2 );?><div class="swiper-slide">
               <a href="<?php echo ($r["link"]); ?>" target="_blank" title="<?php echo ($r["title"]); ?>">
-                <img src="__PUBLIC__/www/images/banner-wap.png" alt="<?php echo ($r["title"]); ?>">
+                <img src="<?php echo ($r["pic"]); ?>" alt="<?php echo ($r["title"]); ?>">
               </a>
             </div><?php endforeach; endif;?>
 
