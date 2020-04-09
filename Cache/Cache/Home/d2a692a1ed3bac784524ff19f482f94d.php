@@ -89,7 +89,7 @@
                             <li><a href="#product">Product</a></li>
                             <li><a href="#about">About us</a></li>
                             <li><a href="#partner">Partner</a></li>
-                            <li><a href="#feedback">Customer Feedback</a></li>
+                            <li><a href="#feedback">Certification</a></li>
                             <li><a href="#contact">Contact us</a></li>
                         </ul>
                     </div>
@@ -107,6 +107,7 @@
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <?php  $_result=M("slide_data")->field("*")->where("fid = 1 AND status=1 ")->order("id desc")->limit("5")->select();; if ($_result): $n=0;foreach($_result as $key=>$r):++$n;$mod = ($n % 2 );?><div class="swiper-slide">
+                <?php if($r['title']!=11) : ?>
               <div class="container">
                 <div class="row">
                   <div class="contant">
@@ -120,6 +121,7 @@
                   </div>
                 </div>
               </div>
+                <?php endif;?>
               <a href="<?php echo ($r["link"]); ?>" target="_blank" title="<?php echo ($r["title"]); ?>"> <img src="<?php echo ($r["pic"]); ?>" alt="<?php echo ($r["title"]); ?>"></a>
             </div><?php endforeach; endif;?>
 
@@ -137,7 +139,7 @@
     <div class="wap-banner">
       <div class="swiper-container">
         <div class="swiper-wrapper">
-          <?php  $_result=M("slide_data")->field("*")->where("fid = 1 AND status=1 ")->order("id desc")->limit("5")->select();; if ($_result): $n=0;foreach($_result as $key=>$r):++$n;$mod = ($n % 2 );?><div class="swiper-slide">
+          <?php  $_result=M("slide_data")->field("*")->where("fid = 3 AND status=1 ")->order("id desc")->limit("5")->select();; if ($_result): $n=0;foreach($_result as $key=>$r):++$n;$mod = ($n % 2 );?><div class="swiper-slide">
               <a href="<?php echo ($r["link"]); ?>" target="_blank" title="<?php echo ($r["title"]); ?>">
                 <img src="<?php echo ($r["pic"]); ?>" alt="<?php echo ($r["title"]); ?>">
               </a>
