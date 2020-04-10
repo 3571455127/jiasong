@@ -1,6 +1,32 @@
 $(function () {
 
+    // pc轮播
 
+    // pc-partner
+    var mySwiper = new Swiper('.pc-partner .swiper-container', {
+        loop: true,
+        autoplay: true,
+        speed: 1200,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.pc-partner .swiper-button-next',
+            prevEl: '.pc-partner .swiper-button-prev',
+        },
+    })
+
+    // pc-feedback
+    var mySwiper = new Swiper('.pc-feedback .swiper-container', {
+        loop: true,
+        autoplay: true,
+        speed: 1200,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.pc-feedback .swiper-button-next',
+            prevEl: '.pc-feedback .swiper-button-prev',
+        },
+    });
     // about
     var mySwiper = new Swiper('.about .swiper-container', {
         loop: true,
@@ -13,113 +39,46 @@ $(function () {
     })
 
 
-    //定义变量获取屏幕视口宽度
-    var windowWidth = $(window).width();
-    if (windowWidth < 768) {
-        // wap-banner
-        var mySwiper = new Swiper('.wap-banner .swiper-container', {
-            loop: true,
-            autoplay: true,
-            speed: 1200,
-            pagination: {
-                el: '.wap-banner .swiper-pagination',
-                clickable: true,
-            },
-        })
-        // partenr
-        var mySwiper = new Swiper('.partner .swiper-container', {
-            loop: true,
-            autoplay: true,
-            speed: 1200,
-            slidesPerView: 2,
-            spaceBetween: 20,
-            navigation: {
-                nextEl: '.partner .swiper-button-next',
-                prevEl: '.partner .swiper-button-prev',
-            },
-            pagination: {
-                el: '.partner .swiper-pagination',
-                clickable: true,
-            },
-        })
-        // Feedback
-        var mySwiper = new Swiper('.feedback .swiper-container', {
-            loop: true,
-            speed: 1200,
-            autoplay: true,
-            spaceBetween: 10,
-            navigation: {
-                nextEl: '.feedback .swiper-button-next',
-                prevEl: '.feedback .swiper-button-prev',
-            },
-            pagination: {
-                el: '.feedback .swiper-pagination',
-                clickable: true,
-            },
 
-        });
+    // wap 轮播
+    // wap-banner
+    var mySwiper = new Swiper('.wap-banner .swiper-container', {
+        loop: true,
+        autoplay: true,
+        speed: 1200,
+        pagination: {
+            el: '.wap-banner .swiper-pagination',
+            clickable: true,
+        },
+    })
+    // wap-partenr
+    var mySwiper = new Swiper('.wap-partner .swiper-container', {
+        loop: true,
+        autoplay: true,
+        speed: 1200,
+        slidesPerView: 2,
+        spaceBetween: 20,
+        pagination: {
+            el: '.wap-partner .swiper-pagination',
+            clickable: true,
+        },
+    })
+    // wap-feedback
+    var mySwiper = new Swiper('.wap-feedback .swiper-container', {
+        loop: true,
+        speed: 1200,
+        autoplay: true,
+        spaceBetween: 10,
+        pagination: {
+            el: '.wap-feedback .swiper-pagination',
+            clickable: true,
+        },
 
-        $(".nav li").click(function () {
-            $(this).parent().parent().removeClass("in");
-        })
-
-
-
-    }
-    if (windowWidth >= 768) {
-        // pc-banner    
-
-        var mySwiper = new Swiper('.pc-banner .swiper-container', {
-            autoplay: true,
-            speed: 1500,
-            autoHeight: true,
-            effect: 'fade',
-            loop: true,
-            pagination: {
-                el: '.pc-banner .swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.pc-banner .swiper-button-next',
-                prevEl: '.pc-banner .swiper-button-prev',
-            },
-            on: {
-                init: function () {
-                    swiperAnimateCache(this);
-                    swiperAnimate(this);
-                },
-                slideChangeTransitionEnd: function () {
-                    swiperAnimate(this);
-
-                }
-            }
-
-        })
-        // partner
-        var mySwiper = new Swiper('.partner .swiper-container', {
-            loop: true,
-            autoplay: true,
-            speed: 1200,
-            slidesPerView: 3,
-            spaceBetween: 30,
-            navigation: {
-                nextEl: '.partner .swiper-button-next',
-                prevEl: '.partner .swiper-button-prev',
-            },
-        })
-        // feedback
-        var mySwiper = new Swiper('.feedback .swiper-container', {
-            loop: true,
-            autoplay: true,
-            speed: 1200,
-            slidesPerView: 3,
-            spaceBetween: 30,
-            navigation: {
-                nextEl: '.feedback .swiper-button-next',
-                prevEl: '.feedback .swiper-button-prev',
-            },
-        });
-    }
+    });
+    // wap右上导航
+    $(".nav li").click(function () {
+        $(this).parent().parent().removeClass("in");
+    })
 
 
     // 滚动监听
@@ -141,6 +100,35 @@ $(function () {
             scrollTop: 0
         }, 1000);
     });
+    
+    // banner
+    var mySwiper = new Swiper('.pc-banner .swiper-container', {
+        autoplay: true,
+        speed: 1500,
+        autoHeight: true,
+        effect: 'fade',
+        loop: true,
+        pagination: {
+            el: '.pc-banner .swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.pc-banner .swiper-button-next',
+            prevEl: '.pc-banner .swiper-button-prev',
+        },
+        on: {
+            init: function () {
+                swiperAnimateCache(this);
+                swiperAnimate(this);
+            },
+            slideChangeTransitionEnd: function () {
+                swiperAnimate(this);
+
+            }
+        }
+
+    })
+
 })
 
 var submitcount2 = 0;
@@ -180,3 +168,4 @@ function beforeSubmit2(form) {
     }
 
 }
+

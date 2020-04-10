@@ -8,7 +8,7 @@
         <div class="swiper-wrapper">
           <YP:list name="slide_data" id="r" limit="5" field="*" where="fid = 1" key="n">
             <div class="swiper-slide">
-                {if $r['title']!=11}
+              {if $r['title']!=11}
               <div class="container">
                 <div class="row">
                   <div class="contant">
@@ -22,7 +22,7 @@
                   </div>
                 </div>
               </div>
-                {/if}
+              {/if}
               <a href="{$r.link}" target="_blank" title="{$r.title}"> <img src="{$r.pic}" alt="{$r.title}"></a>
             </div>
           </YP:list>
@@ -55,255 +55,312 @@
       </div>
     </div>
 
-  </div>
-
-  <!-- product -->
-  <div id="product">
-    <div class="product">
-      <h3>Product</h3>
-      <div class="list clearfix">
-        <div class="pro-pc">
-          <YP:list order="listorder desc" catid="73" id="r" limit="12" field='thumb,title,radis,cont,listorder,id'>
-            <!-- 图文 -->
-            {if $r['radis']==1}
-            <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-              <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
-                <div class="box-img">
-                  <img src="{$r.thumb}" alt="{$r.title}">
-                </div>
-
-              </div>
-              <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
-                <div class="pro-content">
-                  {$r.cont}
-                </div>
-
-              </div>
-            </div>
-            {else}
-            <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-              <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
-                <div class="pro-content">
-                  {$r.cont}
-                </div>
-
-              </div>
-              <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
-                <div class="box-img">
-                  <img src="{$r.thumb}" alt="{$r.title}">
-                </div>
-
-              </div>
-
-            </div>
-            {/if}
-          </YP:list>
-        </div>
-        <!-- wap -->
-        <div class="pro-wap">
-          <YP:list order="listorder desc" catid="73" id="r" limit="12" field='thumb,title,radis,cont,listorder,id'>
-            <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
-              <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
-                <div class="box-img">
-                  <img src="{$r.thumb}" alt="{$r.title}">
-                </div>
-              </div>
-              <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
-                <div class="pro-content clearfix">
-                  {$r.cont}
-                </div>
-
-              </div>
-            </div>
-          </YP:list>
-        </div>
-      </div>
-
-
-
-    </div>
-  </div>
-
-  <!-- about -->
-  <div id="about">
-    <div class="about">
-      <div class="container">
-        <div class="row">
-          <h3>about us</h3>
-          <div class="top clearfix">
-            <div class="about-txt col-lg-6 col-md-6 col-sm-6 col-lg-12">
-              <?php getcatvar('page','id = 74','cont');?>
-            </div>
-            <div class="about-swiper col-lg-6 col-md-6 col-sm-6 col-lg-12">
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <YP:list name="slide_data" id="r" limit="5" field="*" where="fid = 2" key="n">
-                    <div class="swiper-slide">
-                      <img src="{$r.pic}" alt="{$r.title}">
-                    </div>
-                  </YP:list>
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-          </div>
-          <div class="business">
-            <div class="title">Business scope</div>
-            <div class="list clearfix">
-              <YP:list order="listorder desc" catid="110" id="r" limit="120" field='thumb,title,listorder,id'>
-                <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                  <div class="box-img"><img src="{$r.thumb}" alt="{$r.title}"></div>
-                  <p>{$r.title}</p>
-                </div>
-              </YP:list>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Partner -->
-  <div id="partner">
-    <div class="partner">
-      <h3>Partner</h3>
-      <div class="container">
-        <div class="row">
-          <div class="partner-box">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-
-                <YP:list order="listorder desc" catid="77" id="r" limit="120" field='thumb,title,listorder,id'>
-                  <div class="swiper-slide">
-                    <div class="box-img">
-                      <img src="{$r.thumb}" alt="{$r.title}">
-                    </div>
+    <!-- product -->
+    <div id="product">
+      <div class="product">
+        <h3>Product</h3>
+        <div class="list clearfix">
+          <div class="pro-pc">
+            <YP:list order="listorder desc" catid="73" id="r" limit="12" field='thumb,title,radis,cont,listorder,id'>
+              <!-- 图文 -->
+              {if $r['radis']==1}
+              <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
+                <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
+                  <div class="box-img">
+                    <img src="{$r.thumb}" alt="{$r.title}">
                   </div>
-                </YP:list>
+
+                </div>
+                <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
+                  <div class="pro-content">
+                    {$r.cont}
+                  </div>
+
+                </div>
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
-            <div class="swiper-btn">
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
+              {else}
+              <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
+                <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
+                  <div class="pro-content">
+                    {$r.cont}
+                  </div>
 
+                </div>
+                <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
+                  <div class="box-img">
+                    <img src="{$r.thumb}" alt="{$r.title}">
+                  </div>
+
+                </div>
+
+              </div>
+              {/if}
+            </YP:list>
           </div>
+          <!-- wap -->
+          <div class="pro-wap">
+            <YP:list order="listorder desc" catid="73" id="r" limit="12" field='thumb,title,radis,cont,listorder,id'>
+              <div class="box col-lg-6 col-md-12 col-sm-12 col-xs-12 clearfix">
+                <div class="img col-lg-6  col-md-6 col-sm-6 col-xs-12">
+                  <div class="box-img">
+                    <img src="{$r.thumb}" alt="{$r.title}">
+                  </div>
+                </div>
+                <div class="txt col-lg-6  col-md-6 col-sm-6 col-xs-12">
+                  <div class="pro-content clearfix">
+                    {$r.cont}
+                  </div>
 
+                </div>
+              </div>
+            </YP:list>
+          </div>
         </div>
+
+
+
       </div>
     </div>
-  </div>
 
-  <!-- Feedback -->
-  <div id="feedback">
-    <div class="feedback">
-      <h3>OUR QUALIFICATIONS</h3>
-      <div class="container">
-        <div class="row">
-          <div class="feedback-box">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <YP:list order="listorder desc" catid="108" id="r" limit="120" field='thumb,title,cont,listorder,id'>
-                  <div class="swiper-slide">
-                    <!-- <div class="box clearfix">
-                      <div class="img col-lg-4 col-xs-4"><img src="{$r.thumb}" alt="{$r.title}"></div>
-                      <div class="txt col-lg-8 col-xs-8">
-                        {$r.cont}
+    <!-- about -->
+    <div id="about">
+      <div class="about">
+        <div class="container">
+          <div class="row">
+            <h3>about us</h3>
+            <div class="top clearfix">
+              <div class="about-txt col-lg-6 col-md-6 col-sm-6 col-lg-12">
+                <?php getcatvar('page','id = 74','cont');?>
+              </div>
+              <div class="about-swiper col-lg-6 col-md-6 col-sm-6 col-lg-12">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <YP:list name="slide_data" id="r" limit="5" field="*" where="fid = 2" key="n">
+                      <div class="swiper-slide">
+                        <img src="{$r.pic}" alt="{$r.title}">
                       </div>
-                    </div> -->
-                    <div class="box-img">
-                      <img src="{$r.thumb}" alt="{$r.title}">
-                    </div>
+                    </YP:list>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+            <div class="business">
+              <div class="title">Business scope</div>
+              <div class="list clearfix">
+                <YP:list order="listorder desc" catid="110" id="r" limit="120" field='thumb,title,listorder,id'>
+                  <div class="box col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="box-img"><img src="{$r.thumb}" alt="{$r.title}"></div>
+                    <p>{$r.title}</p>
                   </div>
                 </YP:list>
-
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
-            <div class="swiper-btn">
-              <div class="swiper-button-prev swiper-button-white"></div>
-              <div class="swiper-button-next swiper-button-white"></div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- contact -->
-  <div id="contact">
-    <div class="contact">
-      <div class="container">
-        <div class="row">
-          <h3>Contact Us</h3>
-          <div class="form-box clearfix">
-
-            <form class="col-lg-7 col-md-7 col-sm-6" name="form" method="post" onsubmit="return beforeSubmit2(this);"
-              action="index.php?g=Home&a=message">
-              <div class="clearfix">
-                <input name="forward" type="hidden"
-                  value="{$_SERVER['SERVER_NAME']}{if $catid}/index.php?m={$Categorys[$catid]['module']}&a=index&id={$catid}{else}/index.php{/if}" />
-                <!--<input type="hidden" name="product" id="product" value="">-->
-                <div class="box clearfix">
-                  <div class="box-left col-lg-4 col-md-4">
-                    <p>Name <span> *</span></p>
-                  </div>
-                  <div class="col-lg-8 col-md-8"> <input type="text" name="name"></div>
-                </div>
-                <div class="box clearfix">
-                  <div class="box-left col-lg-4 col-md-4">
-                    <p>Email <span>*</span></p>
-                  </div>
-                  <div class="col-lg-8 col-md-8"> <input type="text" name="email"></div>
-                </div>
-                <div class="box clearfix">
-                  <div class="box-left col-lg-4 col-md-4">
-                    <p>Company name <span>*</span></p>
-                  </div>
-                  <div class="col-lg-8 col-md-8"> <input type="text" name="com"></div>
-                </div>
-                <div class="box clearfix">
-                  <div class="box-left col-lg-4 col-md-4">
-                    <p> Message <span>*</span></p>
-                  </div>
-                  <div class="col-lg-8 col-md-8"> <textarea name="message"></textarea></div>
-                </div>
-              </div>
-              <div class="box-btns"> <input type="submit" value="SUBMIT" class="submit-btn"></div>
-            </form>
-            <div class="details col-lg-5 col-md-5 col-sm-6">
-              <h5>{$site_name}</h5>
-              <div class="boxs clearfix">
-                <div class="boxs-img col-lg-2 col-md-2 col-sm-2 col-xs-2"><img src="__PUBLIC__/www/images/address.png"
-                    alt="">
-                </div>
-                <div class="boxs-txt col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                  {$address} </div>
-              </div>
-              <div class="boxs clearfix">
-                <div class="boxs-img col-lg-2 col-md-2 col-sm-2 col-xs-2"><img src="__PUBLIC__/www/images/eamil.png"
-                    alt="">
-                </div>
-                <div class="boxs-txt col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                  <a class="eamils" href="mailto:{$site_email}" target="_blank">{$site_email} </a>
-                </div>
-              </div>
-              <div class="boxs clearfix">
-                <div class="boxs-img col-lg-2 col-md-2 col-sm-2 col-xs-2"><img src="__PUBLIC__/www/images/phone.png"
-                    alt="">
-                </div>
-                <div class="boxs-txt col-lg-10 col-md-10 col-sm-10 col-xs-10"> {$phone}
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
       </div>
     </div>
 
-  </div>
+    <!-- Partner -->
+    <div id="partner">
+      <div class="partner">
+        <h3>Partner</h3>
+        <div class="container">
+          <div class="row">
+            <!-- pc -->
+            <div class="pc-partner">
+              <div class="partner-box">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
 
-</div>
+                    <YP:list order="listorder desc" catid="77" id="r" limit="120" field='thumb,title,listorder,id'>
+                      <div class="swiper-slide">
+                        <div class="box-img">
+                          <img src="{$r.thumb}" alt="{$r.title}">
+                        </div>
+                      </div>
+                    </YP:list>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-btn">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- wap -->
+            <div class="wap-partner">
+              <div class="partner-box">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <YP:list order="listorder desc" catid="77" id="r" limit="120" field='thumb,title,listorder,id'>
+                      <div class="swiper-slide">
+                        <div class="box-img">
+                          <img src="{$r.thumb}" alt="{$r.title}">
+                        </div>
+                      </div>
+                    </YP:list>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-btn">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feedback -->
+    <div id="feedback">
+      <div class="feedback">
+        <h3>OUR QUALIFICATIONS</h3>
+        <div class="container">
+          <div class="row">
+            <!-- pc -->
+            <div class="pc-feedback">
+              <div class="feedback-box">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <YP:list order="listorder desc" catid="108" id="r" limit="120"
+                      field='thumb,title,cont,listorder,id'>
+                      <div class="swiper-slide">
+                        <!-- <div class="box clearfix">
+                        <div class="img col-lg-4 col-xs-4"><img src="{$r.thumb}" alt="{$r.title}"></div>
+                        <div class="txt col-lg-8 col-xs-8">
+                          {$r.cont}
+                        </div>
+                      </div> -->
+                        <div class="box-img">
+                          <img src="{$r.thumb}" alt="{$r.title}">
+                        </div>
+                      </div>
+                    </YP:list>
+
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-btn">
+                  <div class="swiper-button-prev swiper-button-white"></div>
+                  <div class="swiper-button-next swiper-button-white"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- wap -->
+            <div class="wap-feedback">
+              <div class="feedback-box">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <YP:list order="listorder desc" catid="108" id="r" limit="120"
+                      field='thumb,title,cont,listorder,id'>
+                      <div class="swiper-slide">
+                        <!-- <div class="box clearfix">
+                        <div class="img col-lg-4 col-xs-4"><img src="{$r.thumb}" alt="{$r.title}"></div>
+                        <div class="txt col-lg-8 col-xs-8">
+                          {$r.cont}
+                        </div>
+                      </div> -->
+                        <div class="box-img">
+                          <img src="{$r.thumb}" alt="{$r.title}">
+                        </div>
+                      </div>
+                    </YP:list>
+
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-btn">
+                  <div class="swiper-button-prev swiper-button-white"></div>
+                  <div class="swiper-button-next swiper-button-white"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+      <div class="contact">
+        <div class="container">
+          <div class="row">
+            <h3>Contact Us</h3>
+            <div class="form-box clearfix">
+
+              <form class="col-lg-7 col-md-7 col-sm-6" name="form" method="post" onsubmit="return beforeSubmit2(this);"
+                action="index.php?g=Home&a=message">
+                <div class="clearfix">
+                  <input name="forward" type="hidden"
+                    value="{$_SERVER['SERVER_NAME']}{if $catid}/index.php?m={$Categorys[$catid]['module']}&a=index&id={$catid}{else}/index.php{/if}" />
+                  <!--<input type="hidden" name="product" id="product" value="">-->
+                  <div class="box clearfix">
+                    <div class="box-left col-lg-4 col-md-4">
+                      <p>Name <span> *</span></p>
+                    </div>
+                    <div class="col-lg-8 col-md-8"> <input type="text" name="name"></div>
+                  </div>
+                  <div class="box clearfix">
+                    <div class="box-left col-lg-4 col-md-4">
+                      <p>Email <span>*</span></p>
+                    </div>
+                    <div class="col-lg-8 col-md-8"> <input type="text" name="email"></div>
+                  </div>
+                  <div class="box clearfix">
+                    <div class="box-left col-lg-4 col-md-4">
+                      <p>Company name <span>*</span></p>
+                    </div>
+                    <div class="col-lg-8 col-md-8"> <input type="text" name="com"></div>
+                  </div>
+                  <div class="box clearfix">
+                    <div class="box-left col-lg-4 col-md-4">
+                      <p> Message <span>*</span></p>
+                    </div>
+                    <div class="col-lg-8 col-md-8"> <textarea name="message"></textarea></div>
+                  </div>
+                </div>
+                <div class="box-btns"> <input type="submit" value="SUBMIT" class="submit-btn"></div>
+              </form>
+              <div class="details col-lg-5 col-md-5 col-sm-6">
+                <h5>{$site_name}</h5>
+                <div class="boxs clearfix">
+                  <div class="boxs-img col-lg-2 col-md-2 col-sm-2 col-xs-2"><img src="__PUBLIC__/www/images/address.png"
+                      alt="">
+                  </div>
+                  <div class="boxs-txt col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                    {$address} </div>
+                </div>
+                <div class="boxs clearfix">
+                  <div class="boxs-img col-lg-2 col-md-2 col-sm-2 col-xs-2"><img src="__PUBLIC__/www/images/eamil.png"
+                      alt="">
+                  </div>
+                  <div class="boxs-txt col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                    <a class="eamils" href="mailto:{$site_email}" target="_blank">{$site_email} </a>
+                  </div>
+                </div>
+                <div class="boxs clearfix">
+                  <div class="boxs-img col-lg-2 col-md-2 col-sm-2 col-xs-2"><img src="__PUBLIC__/www/images/phone.png"
+                      alt="">
+                  </div>
+                  <div class="boxs-txt col-lg-10 col-md-10 col-sm-10 col-xs-10"> {$phone}
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
